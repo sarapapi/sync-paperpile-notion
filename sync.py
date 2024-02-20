@@ -95,7 +95,7 @@ def notion_add_entry(
         "Authorization": f"Bearer {NOTION_TOKEN}"
     }
     response = requests.post(url, json=payload, headers=headers)
-    pprint.pprint(json.loads(response.text))
+    # pprint.pprint(json.loads(response.text))
 
 
 def notion_update_page(
@@ -239,14 +239,6 @@ def main():
     
     writer = bibtexparser.bwriter.BibTexWriter()
 
-    # print(bibtexparser.bwriter.to_bibtex(bibliography))
-    # writer = bibtexparser.bwriter.BibTexWriter()
-    # writer.contents = ['entries']
-    # writer.indent = '  '
-    # writer.order_entries_by = ('ENTRYTYPE', 'author', 'year')
-    # bibtex_str = bibtexparser.dumps(bibliography, writer)
-    # print(bibtex_str)
-
     if os.path.exists(ARCHIVE_PATH):
         with open(ARCHIVE_PATH, "rb") as archive_file:
             archive = pickle.load(archive_file)
@@ -275,16 +267,16 @@ def main():
         bibtex = writer._entry_to_bibtex(entry)
         bibtex = bibtex[:2000]
         
-        notion_add_entry(
-                title=title,
-                authors=authors,
-                abstract=abstract,
-                year=year,
-                link=link,
-                doi=doi,
-                content_type=content_type,
-                bibtex=bibtex,
-            )
+        # notion_add_entry(
+        #         title=title,
+        #         authors=authors,
+        #         abstract=abstract,
+        #         year=year,
+        #         link=link,
+        #         doi=doi,
+        #         content_type=content_type,
+        #         bibtex=bibtex,
+        #     )
         if ref_id not in archive_ids: # new page
             notion_add_entry(
                 title=title,
