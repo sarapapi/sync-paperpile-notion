@@ -40,6 +40,7 @@ def notion_add_entry(
     doi="",
     content_type="Blog Post",
     bibtex="",
+    icon="",
 ):
     url = "https://api.notion.com/v1/pages"
     payload = {
@@ -82,6 +83,10 @@ def notion_add_entry(
                 }],
             },     
         },
+        "icon": {
+        "type": "emoji",
+        "emoji": icon,
+        },
     }
     if link:
         payload["properties"]["Link"]= {"url": link}
@@ -108,6 +113,7 @@ def notion_update_page(
     doi="",
     content_type="Blog Post",
     bibtex="",
+    icon="",
 ):
     url = f"https://api.notion.com/v1/pages/{page_id}"
     payload = {
@@ -149,6 +155,10 @@ def notion_update_page(
                     }
                 }],
             },     
+        },
+        "icon": {
+        "type": "emoji",
+        "emoji": icon,
         },
     }
     if link:
@@ -263,6 +273,7 @@ def main():
         link = entry.get("url", "")
         doi = entry.get("DOI", "")
         ref_id = entry.get("ID")
+        icon = "📄" if entry.get("ENTRYTYPE", "") in STANDARD_TYPES else "🌍"
         
         bibtex = writer._entry_to_bibtex(entry)
         bibtex = bibtex[:2000]
@@ -276,6 +287,7 @@ def main():
         #         doi=doi,
         #         content_type=content_type,
         #         bibtex=bibtex,
+        #         icon=icon,
         #     )
         if ref_id not in archive_ids: # new page
             notion_add_entry(
@@ -287,6 +299,7 @@ def main():
                 doi=doi,
                 content_type=content_type,
                 bibtex=bibtex,
+                icon=icon,
             )
             update_archive = True
         elif entry not in archive: # update existing page
@@ -302,6 +315,7 @@ def main():
                     doi=doi,
                     content_type=content_type,
                     bibtex=bibtex,
+                    icon=icon,
                 )
                 update_archive = True
 
