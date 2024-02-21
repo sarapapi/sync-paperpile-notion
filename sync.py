@@ -264,7 +264,7 @@ def main():
         title = clean_str(title)
 
         authors = entry.get("author", "")
-        authors = authors.replace(" and ", ", ")
+        authors = authors.replace(" and ", "; ")
         authors = clean_str(authors)
 
         abstract = entry.get("abstract", "")
