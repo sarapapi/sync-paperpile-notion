@@ -38,7 +38,7 @@ def notion_add_entry(
     year="0",
     link="",
     doi="",
-    content_type="Blog Post",
+    content_type=[{"name": "Blog Post"}],
     bibtex="",
     icon="",
 ):
@@ -52,7 +52,7 @@ def notion_add_entry(
                 "title": [{"text": {"content": title}}],
             },
             "Type": {
-                "multi_select": [{"name": content_type}],
+                "multi_select": content_type,
             },
             "Authors": {
                 "rich_text": [{
@@ -111,7 +111,7 @@ def notion_update_page(
     year="0",
     link="",
     doi="",
-    content_type="Blog Post",
+    content_type=[{"name": "Blog Post"}],
     bibtex="",
     icon="",
 ):
@@ -125,7 +125,7 @@ def notion_update_page(
                 "title": [{"text": {"content": title}}],
             },
             "Type": {
-                "multi_select": [{"name": content_type}],
+                "multi_select": content_type,
             },
             "Authors": {
                 "rich_text": [{
@@ -268,7 +268,11 @@ def main():
         authors = clean_str(authors)
 
         abstract = entry.get("abstract", "")
-        content_type = "Paper" if entry.get("ENTRYTYPE", "") in STANDARD_TYPES else "Blog Post"
+        content_type = [{"name": "Paper"}] if entry.get("ENTRYTYPE", "") in STANDARD_TYPES else [{"name": "Blog Post"}]
+        if "Models" in entry.get("keywords", "").split(",").strip():
+            content_type.append({"name": "Model"})
+        if "Datasets" in entry.get("keywords", "").split(",").strip():
+            content_type.append({"name": "Dataset"})
         year = entry.get("year", "")
         link = entry.get("url", "")
         doi = entry.get("DOI", "")
