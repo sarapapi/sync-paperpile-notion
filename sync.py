@@ -269,9 +269,9 @@ def main():
 
         abstract = entry.get("abstract", "")
         content_type = [{"name": "Paper"}] if entry.get("ENTRYTYPE", "") in STANDARD_TYPES else [{"name": "Blog Post"}]
-        if "Models" in entry.get("keywords", "").split(",").strip():
+        if "Models" in entry.get("keywords", ""):
             content_type.append({"name": "Model"})
-        if "Datasets" in entry.get("keywords", "").split(",").strip():
+        if "Datasets" in entry.get("keywords", ""):
             content_type.append({"name": "Dataset"})
         year = entry.get("year", "")
         link = entry.get("url", "")
