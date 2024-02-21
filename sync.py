@@ -209,6 +209,7 @@ def notion_fetch_page(ref_id):
 def clean_str(string):
     string = string.strip()
     string = string.replace("\n", " ")
+    string = string.replace("\'", "'")
     string = string.replace(r"\"a", "ä")
     string = string.replace(r"\"e", "ë")
     string = string.replace(r"\"i", "ï")
