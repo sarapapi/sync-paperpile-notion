@@ -325,7 +325,8 @@ def main():
                 icon=icon,
             )
             update_archive = True
-        elif entry not in archive: # update existing page
+        #elif entry not in archive: # update existing page
+        else:
             page_id = notion_fetch_page(ref_id)
             if page_id != -1:
                 notion_update_page(
