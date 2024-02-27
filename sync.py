@@ -343,11 +343,26 @@ def main():
                     icon=icon,
                 )
                 update_archive = True
+            # if page_id != -1:
+            #     notion_update_page(
+            #         page_id=page_id,
+            #         title=title,
+            #         authors=authors,
+            #         abstract=abstract,
+            #         year=year,
+            #         link=link,
+            #         doi=doi,
+            #         content_type=content_type,
+            #         wp=wp,
+            #         bibtex=bibtex,
+            #         icon=icon,
+            #     )
+            #     update_archive = True
 
-    # only update the archive if necessary
-    if update_archive:
-        with open(ARCHIVE_PATH, "wb") as archive_file:
-            archive = pickle.dump(bibliography.entries, archive_file)
+    # # only update the archive if necessary
+    # if update_archive:
+    #     with open(ARCHIVE_PATH, "wb") as archive_file:
+    #         archive = pickle.dump(bibliography.entries, archive_file)
 
 
 if __name__ == "__main__":
