@@ -359,10 +359,10 @@ def main():
             #     )
             #     update_archive = True
 
-    # # only update the archive if necessary
-    # if update_archive:
-    #     with open(ARCHIVE_PATH, "wb") as archive_file:
-    #         archive = pickle.dump(bibliography.entries, archive_file)
+    # only update the archive if necessary
+    if update_archive:
+        with open(ARCHIVE_PATH, "wb") as archive_file:
+            archive = pickle.dump(bibliography.entries, archive_file)
 
 
 if __name__ == "__main__":
