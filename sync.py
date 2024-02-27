@@ -39,6 +39,7 @@ def notion_add_entry(
     link="",
     doi="",
     content_type=[{"name": "Blog Post"}],
+    wp=[],
     bibtex="",
     icon="",
 ):
@@ -53,6 +54,9 @@ def notion_add_entry(
             },
             "Type": {
                 "multi_select": content_type,
+            },
+            "Interested WP": {
+                "multi_select": wp,
             },
             "Authors": {
                 "rich_text": [{
@@ -112,6 +116,7 @@ def notion_update_page(
     link="",
     doi="",
     content_type=[{"name": "Blog Post"}],
+    wp=[],
     bibtex="",
     icon="",
 ):
@@ -126,6 +131,9 @@ def notion_update_page(
             },
             "Type": {
                 "multi_select": content_type,
+            },
+            "Interested WP": {
+                "multi_select": wp,
             },
             "Authors": {
                 "rich_text": [{
@@ -274,6 +282,15 @@ def main():
             content_type.append({"name": "Model"})
         if "Datasets" in entry.get("keywords", ""):
             content_type.append({"name": "Dataset"})
+        wp = []
+        if "WP3" in entry.get("keywords", ""):
+            wp.append({"name": "WP3"})
+        if "WP4" in entry.get("keywords", ""):
+            wp.append({"name": "WP4"})
+        if "WP5" in entry.get("keywords", ""):
+            wp.append({"name": "WP5"})
+        if "WP6" in entry.get("keywords", ""):
+            wp.append({"name": "WP6"})    
         year = entry.get("year", "")
         link = entry.get("url", "")
         doi = entry.get("DOI", "")
@@ -303,6 +320,7 @@ def main():
                 link=link,
                 doi=doi,
                 content_type=content_type,
+                wp=wp,
                 bibtex=bibtex,
                 icon=icon,
             )
@@ -319,6 +337,7 @@ def main():
                     link=link,
                     doi=doi,
                     content_type=content_type,
+                    wp=wp,
                     bibtex=bibtex,
                     icon=icon,
                 )
