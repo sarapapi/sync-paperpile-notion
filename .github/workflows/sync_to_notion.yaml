@@ -4,7 +4,7 @@ name: Sync To Notion
 on: [push, ]
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.repository }}-concurrency-for-workflow
   cancel-in-progress: false
 
 jobs:
