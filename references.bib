@@ -1,16 +1,41 @@
-@MISC{Pandey2024-fy,
-  title        = "{BharatGPT} Aims to Become Meta of Indic {LLMs}",
-  booktitle    = "Analytics India Magazine",
-  author       = "Pandey, Mohit",
-  abstract     = "BharatGPT researchers know the power of open source and have
-                  plans to release a bunch of models initially for the
-                  developer community.",
-  month        =  jan,
-  year         =  2024,
-  url          = "https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/",
-  howpublished = "\url{https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/}",
-  note         = "Accessed: 2024-2-27",
-  language     = "en"
+@ARTICLE{Moschella2022-uh,
+  title         = "Relative representations enable zero-shot latent space
+                   communication",
+  author        = "Moschella, Luca and Maiorca, Valentino and Fumero, Marco and
+                   Norelli, Antonio and Locatello, Francesco and Rodol{\`a},
+                   Emanuele",
+  abstract      = "Neural networks embed the geometric structure of a data
+                   manifold lying in a high-dimensional space into latent
+                   representations. Ideally, the distribution of the data
+                   points in the latent space should depend only on the task,
+                   the data, the loss, and other architecture-specific
+                   constraints. However, factors such as the random weights
+                   initialization, training hyperparameters, or other sources
+                   of randomness in the training phase may induce incoherent
+                   latent spaces that hinder any form of reuse. Nevertheless,
+                   we empirically observe that, under the same data and
+                   modeling choices, the angles between the encodings within
+                   distinct latent spaces do not change. In this work, we
+                   propose the latent similarity between each sample and a
+                   fixed set of anchors as an alternative data representation,
+                   demonstrating that it can enforce the desired invariances
+                   without any additional training. We show how neural
+                   architectures can leverage these relative representations to
+                   guarantee, in practice, invariance to latent isometries and
+                   rescalings, effectively enabling latent space communication:
+                   from zero-shot model stitching to latent space comparison
+                   between diverse settings. We extensively validate the
+                   generalization capability of our approach on different
+                   datasets, spanning various modalities (images, text,
+                   graphs), tasks (e.g., classification, reconstruction) and
+                   architectures (e.g., CNNs, GCNs, transformers).",
+  month         =  sep,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2209.15430",
+  archivePrefix = "arXiv",
+  eprint        = "2209.15430",
+  primaryClass  = "cs.LG",
+  arxivid       = "2209.15430"
 }
 
 @ARTICLE{Wang2023-gz,
@@ -55,68 +80,6 @@
   arxivid       = "2302.10035"
 }
 
-@ARTICLE{Thompson2024-gz,
-  title         = "A Shocking Amount of the Web is Machine Translated: Insights
-                   from {Multi-Way} Parallelism",
-  author        = "Thompson, Brian and Dhaliwal, Mehak Preet and Frisch, Peter
-                   and Domhan, Tobias and Federico, Marcello",
-  abstract      = "We show that content on the web is often translated into
-                   many languages, and the low quality of these multi-way
-                   translations indicates they were likely created using
-                   Machine Translation (MT). Multi-way parallel, machine
-                   generated content not only dominates the translations in
-                   lower resource languages; it also constitutes a large
-                   fraction of the total web content in those languages. We
-                   also find evidence of a selection bias in the type of
-                   content which is translated into many languages, consistent
-                   with low quality English content being translated en masse
-                   into many lower resource languages, via MT. Our work raises
-                   serious concerns about training models such as multilingual
-                   large language models on both monolingual and bilingual data
-                   scraped from the web.",
-  month         =  jan,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2401.05749",
-  archivePrefix = "arXiv",
-  eprint        = "2401.05749",
-  primaryClass  = "cs.CL",
-  arxivid       = "2401.05749"
-}
-
-@ARTICLE{Hassid2023-uv,
-  title         = "Textually Pretrained Speech Language Models",
-  author        = "Hassid, Michael and Remez, Tal and Nguyen, Tu Anh and Gat,
-                   Itai and Conneau, Alexis and Kreuk, Felix and Copet, Jade
-                   and Defossez, Alexandre and Synnaeve, Gabriel and Dupoux,
-                   Emmanuel and Schwartz, Roy and Adi, Yossi",
-  abstract      = "Speech language models (SpeechLMs) process and generate
-                   acoustic data only, without textual supervision. In this
-                   work, we propose TWIST, a method for training SpeechLMs
-                   using a warm-start from a pretrained textual language
-                   models. We show using both automatic and human evaluations
-                   that TWIST outperforms a cold-start SpeechLM across the
-                   board. We empirically analyze the effect of different model
-                   design choices such as the speech tokenizer, the pretrained
-                   textual model, and the dataset size. We find that model and
-                   dataset scale both play an important role in constructing
-                   better-performing SpeechLMs. Based on our observations, we
-                   present the largest (to the best of our knowledge) SpeechLM
-                   both in terms of number of parameters and training data. We
-                   additionally introduce two spoken versions of the StoryCloze
-                   textual benchmark to further improve model evaluation and
-                   advance future research in the field. We make speech
-                   samples, code and models publicly available:
-                   https://pages.cs.huji.ac.il/adiyoss-lab/twist/ .",
-  month         =  may,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2305.13009",
-  keywords      = "WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2305.13009",
-  primaryClass  = "cs.CL",
-  arxivid       = "2305.13009"
-}
-
 @ARTICLE{Huang2023-di,
   title         = "{AudioGPT}: Understanding and Generating Speech, Music,
                    Sound, and Talking Head",
@@ -156,78 +119,101 @@
   arxivid       = "2304.12995"
 }
 
-@MISC{noauthor_undated-xw,
-  title        = "Accelerating Generative {AI} with {PyTorch} {IV}: Seamless
-                  {M4T}, fast",
-  booktitle    = "{PyTorch}",
-  abstract     = "This post is the fourth part of a multi-series blog focused
-                  on how to accelerate generative AI models with pure, native
-                  PyTorch. To skip to the code, check out our github
-                  (seamless\_communication, fairseq2). We are excited to share
-                  a breadth of newly released PyTorch performance features
-                  alongside practical examples to see how far we can push
-                  PyTorch native performance. In part one, we showed how to
-                  accelerate Segment Anything over 8x using only pure, native
-                  PyTorch. In part two, we showed how to accelerate Llama-7B by
-                  almost 10x using only native PyTorch optimizations. In part
-                  three, we showed how to accelerate text-to-image diffusion
-                  models up to 3x using only native Pytorch optimizations.",
-  url          = "https://pytorch.org/blog/accelerating-generative-ai-4/",
-  howpublished = "\url{https://pytorch.org/blog/accelerating-generative-ai-4/}",
-  note         = "Accessed: 2024-2-27",
-  language     = "en"
-}
-
-@ARTICLE{Moschella2022-uh,
-  title         = "Relative representations enable zero-shot latent space
-                   communication",
-  author        = "Moschella, Luca and Maiorca, Valentino and Fumero, Marco and
-                   Norelli, Antonio and Locatello, Francesco and Rodol{\`a},
-                   Emanuele",
-  abstract      = "Neural networks embed the geometric structure of a data
-                   manifold lying in a high-dimensional space into latent
-                   representations. Ideally, the distribution of the data
-                   points in the latent space should depend only on the task,
-                   the data, the loss, and other architecture-specific
-                   constraints. However, factors such as the random weights
-                   initialization, training hyperparameters, or other sources
-                   of randomness in the training phase may induce incoherent
-                   latent spaces that hinder any form of reuse. Nevertheless,
-                   we empirically observe that, under the same data and
-                   modeling choices, the angles between the encodings within
-                   distinct latent spaces do not change. In this work, we
-                   propose the latent similarity between each sample and a
-                   fixed set of anchors as an alternative data representation,
-                   demonstrating that it can enforce the desired invariances
-                   without any additional training. We show how neural
-                   architectures can leverage these relative representations to
-                   guarantee, in practice, invariance to latent isometries and
-                   rescalings, effectively enabling latent space communication:
-                   from zero-shot model stitching to latent space comparison
-                   between diverse settings. We extensively validate the
-                   generalization capability of our approach on different
-                   datasets, spanning various modalities (images, text,
-                   graphs), tasks (e.g., classification, reconstruction) and
-                   architectures (e.g., CNNs, GCNs, transformers).",
-  month         =  sep,
-  year          =  2022,
-  url           = "http://arxiv.org/abs/2209.15430",
+@ARTICLE{Hassid2023-uv,
+  title         = "Textually Pretrained Speech Language Models",
+  author        = "Hassid, Michael and Remez, Tal and Nguyen, Tu Anh and Gat,
+                   Itai and Conneau, Alexis and Kreuk, Felix and Copet, Jade
+                   and Defossez, Alexandre and Synnaeve, Gabriel and Dupoux,
+                   Emmanuel and Schwartz, Roy and Adi, Yossi",
+  abstract      = "Speech language models (SpeechLMs) process and generate
+                   acoustic data only, without textual supervision. In this
+                   work, we propose TWIST, a method for training SpeechLMs
+                   using a warm-start from a pretrained textual language
+                   models. We show using both automatic and human evaluations
+                   that TWIST outperforms a cold-start SpeechLM across the
+                   board. We empirically analyze the effect of different model
+                   design choices such as the speech tokenizer, the pretrained
+                   textual model, and the dataset size. We find that model and
+                   dataset scale both play an important role in constructing
+                   better-performing SpeechLMs. Based on our observations, we
+                   present the largest (to the best of our knowledge) SpeechLM
+                   both in terms of number of parameters and training data. We
+                   additionally introduce two spoken versions of the StoryCloze
+                   textual benchmark to further improve model evaluation and
+                   advance future research in the field. We make speech
+                   samples, code and models publicly available:
+                   https://pages.cs.huji.ac.il/adiyoss-lab/twist/ .",
+  month         =  may,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2305.13009",
+  keywords      = "WP3",
   archivePrefix = "arXiv",
-  eprint        = "2209.15430",
-  primaryClass  = "cs.LG",
-  arxivid       = "2209.15430"
+  eprint        = "2305.13009",
+  primaryClass  = "cs.CL",
+  arxivid       = "2305.13009"
 }
 
-@ARTICLE{Norelli2024-ui,
-  title   = "{ASIF}: Coupled data turns unimodal models to multimodal without
-             training",
-  author  = "Norelli, Antonio and Fumero, Marco and Maiorca, Valentino and
-             Moschella, Luca and Rodola, Emanuele and Locatello, Francesco",
-  journal = "Adv. Neural Inf. Process. Syst.",
-  volume  =  36,
-  year    =  2024,
-  url     = "https://proceedings.neurips.cc/paper_files/paper/2023/hash/3186591903d9db31770ad131adb5ceb4-Abstract-Conference.html",
-  issn    = "1049-5258"
+@ARTICLE{Gandhi2023-uk,
+  title         = "{Distil-Whisper}: Robust Knowledge Distillation via
+                   {Large-Scale} Pseudo Labelling",
+  author        = "Gandhi, Sanchit and von Platen, Patrick and Rush, Alexander
+                   M",
+  abstract      = "As the size of pre-trained speech recognition models
+                   increases, running these large models in low-latency or
+                   resource-constrained environments becomes challenging. In
+                   this work, we leverage pseudo-labelling to assemble a
+                   large-scale open-source dataset which we use to distill the
+                   Whisper model into a smaller variant, called Distil-Whisper.
+                   Using a simple word error rate (WER) heuristic, we select
+                   only the highest quality pseudo-labels for training. The
+                   distilled model is 5.8 times faster with 51\% fewer
+                   parameters, while performing to within 1\% WER on
+                   out-of-distribution test data in a zero-shot transfer
+                   setting. Distil-Whisper maintains the robustness of the
+                   Whisper model to difficult acoustic conditions, while being
+                   less prone to hallucination errors on long-form audio.
+                   Distil-Whisper is designed to be paired with Whisper for
+                   speculative decoding, yielding a 2 times speed-up while
+                   mathematically ensuring the same outputs as the original
+                   model. To facilitate further research in this domain, we
+                   make our training code, inference code and models publicly
+                   accessible.",
+  month         =  nov,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2311.00430",
+  keywords      = "WP3;WP4",
+  archivePrefix = "arXiv",
+  eprint        = "2311.00430",
+  primaryClass  = "cs.CL",
+  arxivid       = "2311.00430"
+}
+
+@ARTICLE{Thompson2024-gz,
+  title         = "A Shocking Amount of the Web is Machine Translated: Insights
+                   from {Multi-Way} Parallelism",
+  author        = "Thompson, Brian and Dhaliwal, Mehak Preet and Frisch, Peter
+                   and Domhan, Tobias and Federico, Marcello",
+  abstract      = "We show that content on the web is often translated into
+                   many languages, and the low quality of these multi-way
+                   translations indicates they were likely created using
+                   Machine Translation (MT). Multi-way parallel, machine
+                   generated content not only dominates the translations in
+                   lower resource languages; it also constitutes a large
+                   fraction of the total web content in those languages. We
+                   also find evidence of a selection bias in the type of
+                   content which is translated into many languages, consistent
+                   with low quality English content being translated en masse
+                   into many lower resource languages, via MT. Our work raises
+                   serious concerns about training models such as multilingual
+                   large language models on both monolingual and bilingual data
+                   scraped from the web.",
+  month         =  jan,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2401.05749",
+  archivePrefix = "arXiv",
+  eprint        = "2401.05749",
+  primaryClass  = "cs.CL",
+  arxivid       = "2401.05749"
 }
 
 @ARTICLE{Zhang2024-eq,
@@ -262,6 +248,52 @@
   eprint        = "2401.13601",
   primaryClass  = "cs.CL",
   arxivid       = "2401.13601"
+}
+
+@ARTICLE{Fan2024-vn,
+  title         = "{MouSi}: {Poly-Visual-Expert} {Vision-Language} Models",
+  author        = "Fan, Xiaoran and Ji, Tao and Jiang, Changhao and Li, Shuo
+                   and Jin, Senjie and Song, Sirui and Wang, Junke and Hong,
+                   Boyang and Chen, Lu and Zheng, Guodong and Zhang, Ming and
+                   Huang, Caishuang and Zheng, Rui and Xi, Zhiheng and Zhou,
+                   Yuhao and Dou, Shihan and Ye, Junjie and Yan, Hang and Gui,
+                   Tao and Zhang, Qi and Qiu, Xipeng and Huang, Xuanjing and
+                   Wu, Zuxuan and Jiang, Yu-Gang",
+  abstract      = "Current large vision-language models (VLMs) often encounter
+                   challenges such as insufficient capabilities of a single
+                   visual component and excessively long visual tokens. These
+                   issues can limit the model's effectiveness in accurately
+                   interpreting complex visual information and over-lengthy
+                   contextual information. Addressing these challenges is
+                   crucial for enhancing the performance and applicability of
+                   VLMs. This paper proposes the use of ensemble experts
+                   technique to synergizes the capabilities of individual
+                   visual encoders, including those skilled in image-text
+                   matching, OCR, image segmentation, etc. This technique
+                   introduces a fusion network to unify the processing of
+                   outputs from different visual experts, while bridging the
+                   gap between image encoders and pre-trained LLMs. In
+                   addition, we explore different positional encoding schemes
+                   to alleviate the waste of positional encoding caused by
+                   lengthy image feature sequences, effectively addressing the
+                   issue of position overflow and length limitations. For
+                   instance, in our implementation, this technique
+                   significantly reduces the positional occupancy in models
+                   like SAM, from a substantial 4096 to a more efficient and
+                   manageable 64 or even down to 1. Experimental results
+                   demonstrate that VLMs with multiple experts exhibit
+                   consistently superior performance over isolated visual
+                   encoders and mark a significant performance boost as more
+                   experts are integrated. We have open-sourced the training
+                   code used in this report. All of these resources can be
+                   found on our project website.",
+  month         =  jan,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2401.17221",
+  archivePrefix = "arXiv",
+  eprint        = "2401.17221",
+  primaryClass  = "cs.CV",
+  arxivid       = "2401.17221"
 }
 
 @ARTICLE{Groeneveld2024-id,
@@ -347,67 +379,6 @@
   arxivid       = "2402.03749"
 }
 
-@ARTICLE{Gandhi2023-uk,
-  title         = "{Distil-Whisper}: Robust Knowledge Distillation via
-                   {Large-Scale} Pseudo Labelling",
-  author        = "Gandhi, Sanchit and von Platen, Patrick and Rush, Alexander
-                   M",
-  abstract      = "As the size of pre-trained speech recognition models
-                   increases, running these large models in low-latency or
-                   resource-constrained environments becomes challenging. In
-                   this work, we leverage pseudo-labelling to assemble a
-                   large-scale open-source dataset which we use to distill the
-                   Whisper model into a smaller variant, called Distil-Whisper.
-                   Using a simple word error rate (WER) heuristic, we select
-                   only the highest quality pseudo-labels for training. The
-                   distilled model is 5.8 times faster with 51\% fewer
-                   parameters, while performing to within 1\% WER on
-                   out-of-distribution test data in a zero-shot transfer
-                   setting. Distil-Whisper maintains the robustness of the
-                   Whisper model to difficult acoustic conditions, while being
-                   less prone to hallucination errors on long-form audio.
-                   Distil-Whisper is designed to be paired with Whisper for
-                   speculative decoding, yielding a 2 times speed-up while
-                   mathematically ensuring the same outputs as the original
-                   model. To facilitate further research in this domain, we
-                   make our training code, inference code and models publicly
-                   accessible.",
-  month         =  nov,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2311.00430",
-  keywords      = "WP3;WP4",
-  archivePrefix = "arXiv",
-  eprint        = "2311.00430",
-  primaryClass  = "cs.CL",
-  arxivid       = "2311.00430"
-}
-
-@MISC{Puvvada_undated-ry,
-  title        = "{NVIDIA} {NeMo} Canary",
-  author       = "Puvvada*', ['krishna C and {\.Z}elasko*', 'piotr and Huang*',
-                  'he and Hrinchuk*', 'oleksii and Koluguri*', 'nithin Rao and
-                  Majumdar', 'somshubra and Rastorgueva', 'elena and Dhawan',
-                  'kunal and Chen', 'zhehuai and Larukhin', 'vitaly and Balam',
-                  'jagadeesh and Ginsburg'], 'boris",
-  abstract     = "State of the Art Speech Recognition and Translation",
-  url          = "https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/",
-  howpublished = "\url{https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/}",
-  note         = "Accessed: 2024-2-27",
-  keywords     = "Models;WP3;WP4"
-}
-
-@MISC{Xiong_undated-oy,
-  title        = "Introducing The Foundation Model Transparency Index",
-  booktitle    = "Stanford {HAI}",
-  author       = "Xiong, Betty and Zhang, Daniel",
-  abstract     = "A new index rates the transparency of 10 foundation model
-                  companies and finds them lacking.",
-  url          = "https://hai.stanford.edu/news/introducing-foundation-model-transparency-index",
-  howpublished = "\url{https://hai.stanford.edu/news/introducing-foundation-model-transparency-index}",
-  note         = "Accessed: 2024-2-27",
-  language     = "en"
-}
-
 @ARTICLE{Nguyen2024-iu,
   title         = "{SpiRit-LM}: Interleaved Spoken and Written Language Model",
   author        = "Nguyen, Tu Anh and Muller, Benjamin and Yu, Bokai and
@@ -440,4 +411,79 @@
   eprint        = "2402.05755",
   primaryClass  = "cs.CL",
   arxivid       = "2402.05755"
+}
+
+@MISC{Puvvada_undated-ry,
+  title        = "{NVIDIA} {NeMo} Canary",
+  author       = "Puvvada*', ['krishna C and {\.Z}elasko*', 'piotr and Huang*',
+                  'he and Hrinchuk*', 'oleksii and Koluguri*', 'nithin Rao and
+                  Majumdar', 'somshubra and Rastorgueva', 'elena and Dhawan',
+                  'kunal and Chen', 'zhehuai and Larukhin', 'vitaly and Balam',
+                  'jagadeesh and Ginsburg'], 'boris",
+  abstract     = "State of the Art Speech Recognition and Translation",
+  url          = "https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/",
+  howpublished = "\url{https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/}",
+  note         = "Accessed: 2024-2-27",
+  keywords     = "Models;WP3;WP4"
+}
+
+@ARTICLE{Norelli2024-ui,
+  title   = "{ASIF}: Coupled data turns unimodal models to multimodal without
+             training",
+  author  = "Norelli, Antonio and Fumero, Marco and Maiorca, Valentino and
+             Moschella, Luca and Rodola, Emanuele and Locatello, Francesco",
+  journal = "Adv. Neural Inf. Process. Syst.",
+  volume  =  36,
+  year    =  2024,
+  url     = "https://proceedings.neurips.cc/paper_files/paper/2023/hash/3186591903d9db31770ad131adb5ceb4-Abstract-Conference.html",
+  issn    = "1049-5258"
+}
+
+@MISC{Pandey2024-fy,
+  title        = "{BharatGPT} Aims to Become Meta of Indic {LLMs}",
+  booktitle    = "Analytics India Magazine",
+  author       = "Pandey, Mohit",
+  abstract     = "BharatGPT researchers know the power of open source and have
+                  plans to release a bunch of models initially for the
+                  developer community.",
+  month        =  jan,
+  year         =  2024,
+  url          = "https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/",
+  howpublished = "\url{https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/}",
+  note         = "Accessed: 2024-2-27",
+  language     = "en"
+}
+
+@MISC{Xiong_undated-oy,
+  title        = "Introducing The Foundation Model Transparency Index",
+  booktitle    = "Stanford {HAI}",
+  author       = "Xiong, Betty and Zhang, Daniel",
+  abstract     = "A new index rates the transparency of 10 foundation model
+                  companies and finds them lacking.",
+  url          = "https://hai.stanford.edu/news/introducing-foundation-model-transparency-index",
+  howpublished = "\url{https://hai.stanford.edu/news/introducing-foundation-model-transparency-index}",
+  note         = "Accessed: 2024-2-27",
+  language     = "en"
+}
+
+@MISC{noauthor_undated-xw,
+  title        = "Accelerating Generative {AI} with {PyTorch} {IV}: Seamless
+                  {M4T}, fast",
+  booktitle    = "{PyTorch}",
+  abstract     = "This post is the fourth part of a multi-series blog focused
+                  on how to accelerate generative AI models with pure, native
+                  PyTorch. To skip to the code, check out our github
+                  (seamless\_communication, fairseq2). We are excited to share
+                  a breadth of newly released PyTorch performance features
+                  alongside practical examples to see how far we can push
+                  PyTorch native performance. In part one, we showed how to
+                  accelerate Segment Anything over 8x using only pure, native
+                  PyTorch. In part two, we showed how to accelerate Llama-7B by
+                  almost 10x using only native PyTorch optimizations. In part
+                  three, we showed how to accelerate text-to-image diffusion
+                  models up to 3x using only native Pytorch optimizations.",
+  url          = "https://pytorch.org/blog/accelerating-generative-ai-4/",
+  howpublished = "\url{https://pytorch.org/blog/accelerating-generative-ai-4/}",
+  note         = "Accessed: 2024-2-27",
+  language     = "en"
 }
