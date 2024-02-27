@@ -181,7 +181,7 @@ def notion_update_page(
         "Authorization": f"Bearer {NOTION_TOKEN}"
     }
     response = requests.patch(url, json=payload, headers=headers)
-    # pprint.pprint(json.loads(response.text))
+    pprint.pprint(json.loads(response.text))
 
 
 def notion_fetch_page(ref_id):
@@ -327,7 +327,8 @@ def main():
             update_archive = True
         #elif entry not in archive: # update existing page
         else:
-            page_id = notion_fetch_page(ref_id)
+            page_id = notion_fetch_page(title)
+            print(page_id)
             if page_id != -1:
                 notion_update_page(
                     page_id=page_id,
@@ -343,21 +344,6 @@ def main():
                     icon=icon,
                 )
                 update_archive = True
-            # if page_id != -1:
-            #     notion_update_page(
-            #         page_id=page_id,
-            #         title=title,
-            #         authors=authors,
-            #         abstract=abstract,
-            #         year=year,
-            #         link=link,
-            #         doi=doi,
-            #         content_type=content_type,
-            #         wp=wp,
-            #         bibtex=bibtex,
-            #         icon=icon,
-            #     )
-            #     update_archive = True
 
     # only update the archive if necessary
     if update_archive:
