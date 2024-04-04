@@ -36,6 +36,333 @@
   arxivid       = "2402.01831"
 }
 
+@INPROCEEDINGS{Tang2024-vi,
+  title     = "{SALMONN}: Towards Generic Hearing Abilities for Large Language
+               Models",
+  booktitle = "The Twelfth International Conference on Learning Representations",
+  author    = "Tang, Changli and Yu, Wenyi and Sun, Guangzhi and Chen, Xianzhao
+               and Tan, Tian and Li, Wei and Lu, Lu and Ma, Zejun and Zhang,
+               Chao",
+  abstract  = "Hearing is arguably an essential ability of artificial
+               intelligence (AI) agents in the physical world, which refers to
+               the perception and understanding of general auditory information
+               consisting of at least three types of sounds: speech, audio
+               events, and music. In this paper, we propose SALMONN, a speech
+               audio language music open neural network, built by integrating a
+               pre-trained text-based large language model (LLM) with speech
+               and audio encoders into a single multimodal model. SALMONN
+               enables the LLM to directly process and understand general audio
+               inputs and achieve competitive performances on a number of
+               speech and audio tasks used in training, such as automatic
+               speech recognition and translation, auditory-information-based
+               question answering, emotion recognition, speaker verification,
+               and music and audio captioning \textbackslashtextit\{etc.\}
+               SALMONN also has a diverse set of emergent abilities unseen in
+               the training, which includes but is not limited to speech
+               translation to untrained languages, speech-based slot filling,
+               spoken-query-based question answering, audio-based storytelling,
+               and speech audio co-reasoning \textbackslashtextit\{etc\}. The
+               presence of the cross-modal emergent abilities is studied, and a
+               novel few-shot activation tuning approach is proposed to
+               activate such abilities of SALMONN. To our knowledge, SALMONN is
+               the first model of its type and can be regarded as a step
+               towards AI with generic hearing abilities. An interactive demo
+               of SALMONN is available at
+               \textbackslashtexttt\{\textbackslashurl\{https://github.com/bytedance/SALMONN\}\},
+               and the training code and model checkpoints will be released
+               upon acceptance.",
+  year      =  2024,
+  url       = "https://openreview.net/forum?id=14rn7HpKVk",
+  keywords  = "WP4;Models"
+}
+
+@ARTICLE{Wadhawan2024-tf,
+  title         = "{ConTextual}: Evaluating {Context-Sensitive} {Text-Rich}
+                   Visual Reasoning in Large Multimodal Models",
+  author        = "Wadhawan, Rohan and Bansal, Hritik and Chang, Kai-Wei and
+                   Peng, Nanyun",
+  abstract      = "Recent advancements in AI have led to the development of
+                   large multimodal models (LMMs) capable of processing complex
+                   tasks involving joint reasoning over text and visual content
+                   in the image (e.g., navigating maps in public places). This
+                   paper introduces ConTextual, a novel benchmark comprising
+                   instructions designed explicitly to evaluate LMMs' ability
+                   to perform context-sensitive text-rich visual reasoning.
+                   ConTextual emphasizes diverse real-world scenarios (e.g.,
+                   time-reading, navigation, shopping and more) demanding a
+                   deeper understanding of the interactions between textual and
+                   visual elements. Our findings reveal a significant
+                   performance gap of 30.8\% between the best-performing LMM,
+                   GPT-4V(ision), and human capabilities using human evaluation
+                   indicating substantial room for improvement in
+                   context-sensitive text-rich visual reasoning. Notably, while
+                   GPT-4V excelled in abstract categories like meme and quote
+                   interpretation, its overall performance still lagged behind
+                   humans. In addition to human evaluations, we also employed
+                   automatic evaluation metrics using GPT-4, uncovering similar
+                   trends in performance disparities. We also perform a
+                   fine-grained evaluation across diverse visual contexts and
+                   provide qualitative analysis which provides a robust
+                   framework for future advancements in the LMM design.
+                   https://con-textual.github.io/",
+  month         =  jan,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2401.13311",
+  keywords      = "WP3",
+  archivePrefix = "arXiv",
+  eprint        = "2401.13311",
+  primaryClass  = "cs.CV",
+  arxivid       = "2401.13311"
+}
+
+@ARTICLE{Zhu2023-bv,
+  title         = "{LanguageBind}: Extending {Video-Language} Pretraining to
+                   N-modality by Language-based Semantic Alignment",
+  author        = "Zhu, Bin and Lin, Bin and Ning, Munan and Yan, Yang and Cui,
+                   Jiaxi and Wang, Hongfa and Pang, Yatian and Jiang, Wenhao
+                   and Zhang, Junwu and Li, Zongwei and Zhang, Wancai and Li,
+                   Zhifeng and Liu, Wei and Yuan, Li",
+  abstract      = "The video-language (VL) pretraining has achieved remarkable
+                   improvement in multiple downstream tasks. However, the
+                   current VL pretraining framework is hard to extend to
+                   multiple modalities (N modalities, N>=3) beyond vision and
+                   language. We thus propose LanguageBind, taking the language
+                   as the bind across different modalities because the language
+                   modality is well-explored and contains rich semantics.
+                   Specifically, we freeze the language encoder acquired by VL
+                   pretraining, then train encoders for other modalities with
+                   contrastive learning. As a result, all modalities are mapped
+                   to a shared feature space, implementing multi-modal semantic
+                   alignment. While LanguageBind ensures that we can extend VL
+                   modalities to N modalities, we also need a high-quality
+                   dataset with alignment data pairs centered on language. We
+                   thus propose VIDAL-10M with Video, Infrared, Depth, Audio
+                   and their corresponding Language, naming as VIDAL-10M. In
+                   our VIDAL-10M, all videos are from short video platforms
+                   with complete semantics rather than truncated segments from
+                   long videos, and all the video, depth, infrared, and audio
+                   modalities are aligned to their textual descriptions.
+                   LanguageBind has achieved superior performance on a wide
+                   range of 15 benchmarks covering video, audio, depth, and
+                   infrared. Moreover, multiple experiments have provided
+                   evidence for the effectiveness of LanguageBind in achieving
+                   indirect alignment and complementarity among diverse
+                   modalities. Code address:
+                   https://github.com/PKU-YuanGroup/LanguageBind",
+  month         =  oct,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2310.01852",
+  keywords      = "WP3",
+  archivePrefix = "arXiv",
+  eprint        = "2310.01852",
+  primaryClass  = "cs.CV",
+  arxivid       = "2310.01852"
+}
+
+@ARTICLE{Yeo2024-tp,
+  title         = "Where Visual Speech Meets Language: {VSP-LLM} Framework for
+                   Efficient and {Context-Aware} Visual Speech Processing",
+  author        = "Yeo, Jeong Hun and Han, Seunghee and Kim, Minsu and Ro, Yong
+                   Man",
+  abstract      = "In visual speech processing, context modeling capability is
+                   one of the most important requirements due to the ambiguous
+                   nature of lip movements. For example, homophenes, words that
+                   share identical lip movements but produce different sounds,
+                   can be distinguished by considering the context. In this
+                   paper, we propose a novel framework, namely Visual Speech
+                   Processing incorporated with LLMs (VSP-LLM), to maximize the
+                   context modeling ability by bringing the overwhelming power
+                   of LLMs. Specifically, VSP-LLM is designed to perform
+                   multi-tasks of visual speech recognition and translation,
+                   where the given instructions control the type of task. The
+                   input video is mapped to the input latent space of a LLM by
+                   employing a self-supervised visual speech model. Focused on
+                   the fact that there is redundant information in input
+                   frames, we propose a novel deduplication method that reduces
+                   the embedded visual features by employing visual speech
+                   units. Through the proposed deduplication and Low Rank
+                   Adaptors (LoRA), VSP-LLM can be trained in a computationally
+                   efficient manner. In the translation dataset, the MuAViC
+                   benchmark, we demonstrate that VSP-LLM can more effectively
+                   recognize and translate lip movements with just 15 hours of
+                   labeled data, compared to the recent translation model
+                   trained with 433 hours of labeld data.",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.15151",
+  keywords      = "WP3",
+  archivePrefix = "arXiv",
+  eprint        = "2402.15151",
+  primaryClass  = "cs.CV",
+  arxivid       = "2402.15151"
+}
+
+@ARTICLE{Tian2024-mu,
+  title         = "{EMO}: Emote Portrait Alive -- Generating Expressive
+                   Portrait Videos with {Audio2Video} Diffusion Model under
+                   Weak Conditions",
+  author        = "Tian, Linrui and Wang, Qi and Zhang, Bang and Bo, Liefeng",
+  abstract      = "In this work, we tackle the challenge of enhancing the
+                   realism and expressiveness in talking head video generation
+                   by focusing on the dynamic and nuanced relationship between
+                   audio cues and facial movements. We identify the limitations
+                   of traditional techniques that often fail to capture the
+                   full spectrum of human expressions and the uniqueness of
+                   individual facial styles. To address these issues, we
+                   propose EMO, a novel framework that utilizes a direct
+                   audio-to-video synthesis approach, bypassing the need for
+                   intermediate 3D models or facial landmarks. Our method
+                   ensures seamless frame transitions and consistent identity
+                   preservation throughout the video, resulting in highly
+                   expressive and lifelike animations. Experimental results
+                   demonsrate that EMO is able to produce not only convincing
+                   speaking videos but also singing videos in various styles,
+                   significantly outperforming existing state-of-the-art
+                   methodologies in terms of expressiveness and realism.",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.17485",
+  keywords      = "Models;WP3",
+  archivePrefix = "arXiv",
+  eprint        = "2402.17485",
+  primaryClass  = "cs.CV",
+  arxivid       = "2402.17485"
+}
+
+@MISC{Pandey2024-fy,
+  title        = "{BharatGPT} Aims to Become Meta of Indic {LLMs}",
+  booktitle    = "Analytics India Magazine",
+  author       = "Pandey, Mohit",
+  abstract     = "BharatGPT researchers know the power of open source and have
+                  plans to release a bunch of models initially for the
+                  developer community.",
+  month        =  jan,
+  year         =  2024,
+  url          = "https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/",
+  howpublished = "\url{https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/}",
+  note         = "Accessed: 2024-2-27",
+  language     = "en"
+}
+
+@MISC{noauthor_undated-ru,
+  title        = "{GPTZero}",
+  booktitle    = "{GPTZero}",
+  abstract     = "Covered by >100 media outlets, GPTZero is the most advanced
+                  AI detector for ChatGPT, GPT-4, Bard. Check up to 50000
+                  characters for AI plagiarism in seconds.",
+  url          = "https://gptzero.me/",
+  howpublished = "\url{https://gptzero.me/}",
+  note         = "Accessed: 2024-2-28",
+  language     = "en"
+}
+
+@MISC{noauthor_undated-xw,
+  title        = "Accelerating Generative {AI} with {PyTorch} {IV}: Seamless
+                  {M4T}, fast",
+  booktitle    = "{PyTorch}",
+  abstract     = "This post is the fourth part of a multi-series blog focused
+                  on how to accelerate generative AI models with pure, native
+                  PyTorch. To skip to the code, check out our github
+                  (seamless\_communication, fairseq2). We are excited to share
+                  a breadth of newly released PyTorch performance features
+                  alongside practical examples to see how far we can push
+                  PyTorch native performance. In part one, we showed how to
+                  accelerate Segment Anything over 8x using only pure, native
+                  PyTorch. In part two, we showed how to accelerate Llama-7B by
+                  almost 10x using only native PyTorch optimizations. In part
+                  three, we showed how to accelerate text-to-image diffusion
+                  models up to 3x using only native Pytorch optimizations.",
+  url          = "https://pytorch.org/blog/accelerating-generative-ai-4/",
+  howpublished = "\url{https://pytorch.org/blog/accelerating-generative-ai-4/}",
+  note         = "Accessed: 2024-2-27",
+  language     = "en"
+}
+
+@MISC{Puvvada_undated-ry,
+  title        = "{NVIDIA} {NeMo} Canary",
+  author       = "Puvvada*', ['krishna C and {\.Z}elasko*', 'piotr and Huang*',
+                  'he and Hrinchuk*', 'oleksii and Koluguri*', 'nithin Rao and
+                  Majumdar', 'somshubra and Rastorgueva', 'elena and Dhawan',
+                  'kunal and Chen', 'zhehuai and Larukhin', 'vitaly and Balam',
+                  'jagadeesh and Ginsburg'], 'boris",
+  abstract     = "State of the Art Speech Recognition and Translation",
+  url          = "https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/",
+  howpublished = "\url{https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/}",
+  note         = "Accessed: 2024-2-27",
+  keywords     = "Models;WP3;WP4"
+}
+
+@MISC{Xiong_undated-oy,
+  title        = "Introducing The Foundation Model Transparency Index",
+  booktitle    = "Stanford {HAI}",
+  author       = "Xiong, Betty and Zhang, Daniel",
+  abstract     = "A new index rates the transparency of 10 foundation model
+                  companies and finds them lacking.",
+  url          = "https://hai.stanford.edu/news/introducing-foundation-model-transparency-index",
+  howpublished = "\url{https://hai.stanford.edu/news/introducing-foundation-model-transparency-index}",
+  note         = "Accessed: 2024-2-27",
+  language     = "en"
+}
+
+@MISC{noauthor_undated-zf,
+  title        = "Revisiting Feature Prediction for Learning Visual
+                  Representations from Video",
+  abstract     = "This paper explores feature prediction as a stand-alone
+                  objective for unsupervised learning from video and introduces
+                  V-JEPA, a collection of vision...",
+  url          = "https://ai.meta.com/research/publications/revisiting-feature-prediction-for-learning-visual-representations-from-video/",
+  howpublished = "\url{https://ai.meta.com/research/publications/revisiting-feature-prediction-for-learning-visual-representations-from-video/}",
+  note         = "Accessed: 2024-2-27",
+  keywords     = "Models",
+  language     = "en"
+}
+
+@MISC{Banks2024-ca,
+  title        = "Gemma: Introducing new state-of-the-art open models",
+  booktitle    = "Google",
+  author       = "Banks, Jeanine",
+  abstract     = "Gemma is a family of lightweight, state-of-the art open
+                  models built from the same research and technology used to
+                  create the Gemini models.",
+  month        =  feb,
+  year         =  2024,
+  url          = "https://blog.google/technology/developers/gemma-open-models/",
+  howpublished = "\url{https://blog.google/technology/developers/gemma-open-models/}",
+  note         = "Accessed: 2024-2-27",
+  keywords     = "Models;WP3",
+  language     = "en"
+}
+
+@ARTICLE{Ioannis_Tsiamas_and_Gerard_I_Gallego_and_Jose_A_R_Fonollosa_and_Marta_R_Costa-jussa2024-fy,
+  title    = "Pushing the Limits of Zero-shot {End-to-End} Speech Translation",
+  author   = "{Ioannis Tsiamas and Gerard I. G{\'a}llego and Jos{\'e} A. R.
+              Fonollosa and Marta R. Costa-juss{\`a}}",
+  abstract = "Data scarcity and the modality gap between the speech and text
+              modalities are two major obstacles of end-to-end Speech
+              Translation (ST) systems, thus hindering their performance. Prior
+              work has attempted to mitigate these challenges by leveraging
+              external MT data and optimizing distance metrics that bring
+              closer the speech-text representations. However, achieving
+              competitive results typically requires some ST data. For this
+              reason, we introduce ZeroSwot, a method for zero-shot ST that
+              bridges the modality gap without any paired ST data. Leveraging a
+              novel CTC compression and Optimal Transport, we train a speech
+              encoder using only ASR data, to align with the representation
+              space of a massively multilingual MT model. The speech encoder
+              seamlessly integrates with the MT model at inference, enabling
+              direct translation from speech to text, across all languages
+              supported by the MT model. Our experiments show that we can
+              effectively close the modality gap without ST data, while our
+              results on MuST-C and CoVoST demonstrate our method's superiority
+              over not only previous zero-shot models, but also supervised
+              ones, achieving state-of-the-art results.",
+  journal  = "arXiv",
+  year     =  2024,
+  url      = "https://arxiv.org/abs/2402.10422",
+  keywords = "WP4;Models",
+  doi      = " https://doi.org/10.48550/arXiv.2402.10422"
+}
+
 @ARTICLE{Alves2024-fx,
   title         = "Tower: An Open Multilingual Large Language Model for
                    {Translation-Related} Tasks",
@@ -98,21 +425,6 @@
   eprint        = "2402.14289",
   primaryClass  = "cs.LG",
   arxivid       = "2402.14289"
-}
-
-@MISC{Pandey2024-fy,
-  title        = "{BharatGPT} Aims to Become Meta of Indic {LLMs}",
-  booktitle    = "Analytics India Magazine",
-  author       = "Pandey, Mohit",
-  abstract     = "BharatGPT researchers know the power of open source and have
-                  plans to release a bunch of models initially for the
-                  developer community.",
-  month        =  jan,
-  year         =  2024,
-  url          = "https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/",
-  howpublished = "\url{https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/}",
-  note         = "Accessed: 2024-2-27",
-  language     = "en"
 }
 
 @ARTICLE{Wang2023-gz,
@@ -219,58 +531,6 @@
   arxivid       = "2305.13009"
 }
 
-@MISC{noauthor_undated-ru,
-  title        = "{GPTZero}",
-  booktitle    = "{GPTZero}",
-  abstract     = "Covered by >100 media outlets, GPTZero is the most advanced
-                  AI detector for ChatGPT, GPT-4, Bard. Check up to 50000
-                  characters for AI plagiarism in seconds.",
-  url          = "https://gptzero.me/",
-  howpublished = "\url{https://gptzero.me/}",
-  note         = "Accessed: 2024-2-28",
-  language     = "en"
-}
-
-@INPROCEEDINGS{Tang2024-vi,
-  title     = "{SALMONN}: Towards Generic Hearing Abilities for Large Language
-               Models",
-  booktitle = "The Twelfth International Conference on Learning Representations",
-  author    = "Tang, Changli and Yu, Wenyi and Sun, Guangzhi and Chen, Xianzhao
-               and Tan, Tian and Li, Wei and Lu, Lu and Ma, Zejun and Zhang,
-               Chao",
-  abstract  = "Hearing is arguably an essential ability of artificial
-               intelligence (AI) agents in the physical world, which refers to
-               the perception and understanding of general auditory information
-               consisting of at least three types of sounds: speech, audio
-               events, and music. In this paper, we propose SALMONN, a speech
-               audio language music open neural network, built by integrating a
-               pre-trained text-based large language model (LLM) with speech
-               and audio encoders into a single multimodal model. SALMONN
-               enables the LLM to directly process and understand general audio
-               inputs and achieve competitive performances on a number of
-               speech and audio tasks used in training, such as automatic
-               speech recognition and translation, auditory-information-based
-               question answering, emotion recognition, speaker verification,
-               and music and audio captioning \textbackslashtextit\{etc.\}
-               SALMONN also has a diverse set of emergent abilities unseen in
-               the training, which includes but is not limited to speech
-               translation to untrained languages, speech-based slot filling,
-               spoken-query-based question answering, audio-based storytelling,
-               and speech audio co-reasoning \textbackslashtextit\{etc\}. The
-               presence of the cross-modal emergent abilities is studied, and a
-               novel few-shot activation tuning approach is proposed to
-               activate such abilities of SALMONN. To our knowledge, SALMONN is
-               the first model of its type and can be regarded as a step
-               towards AI with generic hearing abilities. An interactive demo
-               of SALMONN is available at
-               \textbackslashtexttt\{\textbackslashurl\{https://github.com/bytedance/SALMONN\}\},
-               and the training code and model checkpoints will be released
-               upon acceptance.",
-  year      =  2024,
-  url       = "https://openreview.net/forum?id=14rn7HpKVk",
-  keywords  = "WP4;Models"
-}
-
 @ARTICLE{Huang2023-di,
   title         = "{AudioGPT}: Understanding and Generating Speech, Music,
                    Sound, and Talking Head",
@@ -308,28 +568,6 @@
   eprint        = "2304.12995",
   primaryClass  = "cs.CL",
   arxivid       = "2304.12995"
-}
-
-@MISC{noauthor_undated-xw,
-  title        = "Accelerating Generative {AI} with {PyTorch} {IV}: Seamless
-                  {M4T}, fast",
-  booktitle    = "{PyTorch}",
-  abstract     = "This post is the fourth part of a multi-series blog focused
-                  on how to accelerate generative AI models with pure, native
-                  PyTorch. To skip to the code, check out our github
-                  (seamless\_communication, fairseq2). We are excited to share
-                  a breadth of newly released PyTorch performance features
-                  alongside practical examples to see how far we can push
-                  PyTorch native performance. In part one, we showed how to
-                  accelerate Segment Anything over 8x using only pure, native
-                  PyTorch. In part two, we showed how to accelerate Llama-7B by
-                  almost 10x using only native PyTorch optimizations. In part
-                  three, we showed how to accelerate text-to-image diffusion
-                  models up to 3x using only native Pytorch optimizations.",
-  url          = "https://pytorch.org/blog/accelerating-generative-ai-4/",
-  howpublished = "\url{https://pytorch.org/blog/accelerating-generative-ai-4/}",
-  note         = "Accessed: 2024-2-27",
-  language     = "en"
 }
 
 @ARTICLE{Moschella2022-uh,
@@ -534,32 +772,6 @@
   eprint        = "2311.00430",
   primaryClass  = "cs.CL",
   arxivid       = "2311.00430"
-}
-
-@MISC{Puvvada_undated-ry,
-  title        = "{NVIDIA} {NeMo} Canary",
-  author       = "Puvvada*', ['krishna C and {\.Z}elasko*', 'piotr and Huang*',
-                  'he and Hrinchuk*', 'oleksii and Koluguri*', 'nithin Rao and
-                  Majumdar', 'somshubra and Rastorgueva', 'elena and Dhawan',
-                  'kunal and Chen', 'zhehuai and Larukhin', 'vitaly and Balam',
-                  'jagadeesh and Ginsburg'], 'boris",
-  abstract     = "State of the Art Speech Recognition and Translation",
-  url          = "https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/",
-  howpublished = "\url{https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/}",
-  note         = "Accessed: 2024-2-27",
-  keywords     = "Models;WP3;WP4"
-}
-
-@MISC{Xiong_undated-oy,
-  title        = "Introducing The Foundation Model Transparency Index",
-  booktitle    = "Stanford {HAI}",
-  author       = "Xiong, Betty and Zhang, Daniel",
-  abstract     = "A new index rates the transparency of 10 foundation model
-                  companies and finds them lacking.",
-  url          = "https://hai.stanford.edu/news/introducing-foundation-model-transparency-index",
-  howpublished = "\url{https://hai.stanford.edu/news/introducing-foundation-model-transparency-index}",
-  note         = "Accessed: 2024-2-27",
-  language     = "en"
 }
 
 @ARTICLE{Nguyen2024-iu,
@@ -771,35 +983,6 @@
   arxivid       = "2205.13147"
 }
 
-@MISC{noauthor_undated-zf,
-  title        = "Revisiting Feature Prediction for Learning Visual
-                  Representations from Video",
-  abstract     = "This paper explores feature prediction as a stand-alone
-                  objective for unsupervised learning from video and introduces
-                  V-JEPA, a collection of vision...",
-  url          = "https://ai.meta.com/research/publications/revisiting-feature-prediction-for-learning-visual-representations-from-video/",
-  howpublished = "\url{https://ai.meta.com/research/publications/revisiting-feature-prediction-for-learning-visual-representations-from-video/}",
-  note         = "Accessed: 2024-2-27",
-  keywords     = "Models",
-  language     = "en"
-}
-
-@MISC{Banks2024-ca,
-  title        = "Gemma: Introducing new state-of-the-art open models",
-  booktitle    = "Google",
-  author       = "Banks, Jeanine",
-  abstract     = "Gemma is a family of lightweight, state-of-the art open
-                  models built from the same research and technology used to
-                  create the Gemini models.",
-  month        =  feb,
-  year         =  2024,
-  url          = "https://blog.google/technology/developers/gemma-open-models/",
-  howpublished = "\url{https://blog.google/technology/developers/gemma-open-models/}",
-  note         = "Accessed: 2024-2-27",
-  keywords     = "Models;WP3",
-  language     = "en"
-}
-
 @ARTICLE{Maaz2024-vd,
   title         = "{PALO}: A Polyglot Large Multimodal Model for {5B} People",
   author        = "Maaz, Muhammad and Rasheed, Hanoona and Shaker, Abdelrahman
@@ -915,187 +1098,4 @@
   eprint        = "2312.03700",
   primaryClass  = "cs.CV",
   arxivid       = "2312.03700"
-}
-
-@ARTICLE{Ioannis_Tsiamas_and_Gerard_I_Gallego_and_Jose_A_R_Fonollosa_and_Marta_R_Costa-jussa2024-fy,
-  title    = "Pushing the Limits of Zero-shot {End-to-End} Speech Translation",
-  author   = "{Ioannis Tsiamas and Gerard I. G{\'a}llego and Jos{\'e} A. R.
-              Fonollosa and Marta R. Costa-juss{\`a}}",
-  abstract = "Data scarcity and the modality gap between the speech and text
-              modalities are two major obstacles of end-to-end Speech
-              Translation (ST) systems, thus hindering their performance. Prior
-              work has attempted to mitigate these challenges by leveraging
-              external MT data and optimizing distance metrics that bring
-              closer the speech-text representations. However, achieving
-              competitive results typically requires some ST data. For this
-              reason, we introduce ZeroSwot, a method for zero-shot ST that
-              bridges the modality gap without any paired ST data. Leveraging a
-              novel CTC compression and Optimal Transport, we train a speech
-              encoder using only ASR data, to align with the representation
-              space of a massively multilingual MT model. The speech encoder
-              seamlessly integrates with the MT model at inference, enabling
-              direct translation from speech to text, across all languages
-              supported by the MT model. Our experiments show that we can
-              effectively close the modality gap without ST data, while our
-              results on MuST-C and CoVoST demonstrate our method's superiority
-              over not only previous zero-shot models, but also supervised
-              ones, achieving state-of-the-art results.",
-  journal  = "arXiv",
-  year     =  2024,
-  url      = "https://arxiv.org/abs/2402.10422",
-  keywords = "WP4;Models",
-  doi      = " https://doi.org/10.48550/arXiv.2402.10422"
-}
-
-@ARTICLE{Wadhawan2024-tf,
-  title         = "{ConTextual}: Evaluating {Context-Sensitive} {Text-Rich}
-                   Visual Reasoning in Large Multimodal Models",
-  author        = "Wadhawan, Rohan and Bansal, Hritik and Chang, Kai-Wei and
-                   Peng, Nanyun",
-  abstract      = "Recent advancements in AI have led to the development of
-                   large multimodal models (LMMs) capable of processing complex
-                   tasks involving joint reasoning over text and visual content
-                   in the image (e.g., navigating maps in public places). This
-                   paper introduces ConTextual, a novel benchmark comprising
-                   instructions designed explicitly to evaluate LMMs' ability
-                   to perform context-sensitive text-rich visual reasoning.
-                   ConTextual emphasizes diverse real-world scenarios (e.g.,
-                   time-reading, navigation, shopping and more) demanding a
-                   deeper understanding of the interactions between textual and
-                   visual elements. Our findings reveal a significant
-                   performance gap of 30.8\% between the best-performing LMM,
-                   GPT-4V(ision), and human capabilities using human evaluation
-                   indicating substantial room for improvement in
-                   context-sensitive text-rich visual reasoning. Notably, while
-                   GPT-4V excelled in abstract categories like meme and quote
-                   interpretation, its overall performance still lagged behind
-                   humans. In addition to human evaluations, we also employed
-                   automatic evaluation metrics using GPT-4, uncovering similar
-                   trends in performance disparities. We also perform a
-                   fine-grained evaluation across diverse visual contexts and
-                   provide qualitative analysis which provides a robust
-                   framework for future advancements in the LMM design.
-                   https://con-textual.github.io/",
-  month         =  jan,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2401.13311",
-  keywords      = "WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2401.13311",
-  primaryClass  = "cs.CV",
-  arxivid       = "2401.13311"
-}
-
-@ARTICLE{Zhu2023-bv,
-  title         = "{LanguageBind}: Extending {Video-Language} Pretraining to
-                   N-modality by Language-based Semantic Alignment",
-  author        = "Zhu, Bin and Lin, Bin and Ning, Munan and Yan, Yang and Cui,
-                   Jiaxi and Wang, Hongfa and Pang, Yatian and Jiang, Wenhao
-                   and Zhang, Junwu and Li, Zongwei and Zhang, Wancai and Li,
-                   Zhifeng and Liu, Wei and Yuan, Li",
-  abstract      = "The video-language (VL) pretraining has achieved remarkable
-                   improvement in multiple downstream tasks. However, the
-                   current VL pretraining framework is hard to extend to
-                   multiple modalities (N modalities, N>=3) beyond vision and
-                   language. We thus propose LanguageBind, taking the language
-                   as the bind across different modalities because the language
-                   modality is well-explored and contains rich semantics.
-                   Specifically, we freeze the language encoder acquired by VL
-                   pretraining, then train encoders for other modalities with
-                   contrastive learning. As a result, all modalities are mapped
-                   to a shared feature space, implementing multi-modal semantic
-                   alignment. While LanguageBind ensures that we can extend VL
-                   modalities to N modalities, we also need a high-quality
-                   dataset with alignment data pairs centered on language. We
-                   thus propose VIDAL-10M with Video, Infrared, Depth, Audio
-                   and their corresponding Language, naming as VIDAL-10M. In
-                   our VIDAL-10M, all videos are from short video platforms
-                   with complete semantics rather than truncated segments from
-                   long videos, and all the video, depth, infrared, and audio
-                   modalities are aligned to their textual descriptions.
-                   LanguageBind has achieved superior performance on a wide
-                   range of 15 benchmarks covering video, audio, depth, and
-                   infrared. Moreover, multiple experiments have provided
-                   evidence for the effectiveness of LanguageBind in achieving
-                   indirect alignment and complementarity among diverse
-                   modalities. Code address:
-                   https://github.com/PKU-YuanGroup/LanguageBind",
-  month         =  oct,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2310.01852",
-  keywords      = "WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2310.01852",
-  primaryClass  = "cs.CV",
-  arxivid       = "2310.01852"
-}
-
-@ARTICLE{Yeo2024-tp,
-  title         = "Where Visual Speech Meets Language: {VSP-LLM} Framework for
-                   Efficient and {Context-Aware} Visual Speech Processing",
-  author        = "Yeo, Jeong Hun and Han, Seunghee and Kim, Minsu and Ro, Yong
-                   Man",
-  abstract      = "In visual speech processing, context modeling capability is
-                   one of the most important requirements due to the ambiguous
-                   nature of lip movements. For example, homophenes, words that
-                   share identical lip movements but produce different sounds,
-                   can be distinguished by considering the context. In this
-                   paper, we propose a novel framework, namely Visual Speech
-                   Processing incorporated with LLMs (VSP-LLM), to maximize the
-                   context modeling ability by bringing the overwhelming power
-                   of LLMs. Specifically, VSP-LLM is designed to perform
-                   multi-tasks of visual speech recognition and translation,
-                   where the given instructions control the type of task. The
-                   input video is mapped to the input latent space of a LLM by
-                   employing a self-supervised visual speech model. Focused on
-                   the fact that there is redundant information in input
-                   frames, we propose a novel deduplication method that reduces
-                   the embedded visual features by employing visual speech
-                   units. Through the proposed deduplication and Low Rank
-                   Adaptors (LoRA), VSP-LLM can be trained in a computationally
-                   efficient manner. In the translation dataset, the MuAViC
-                   benchmark, we demonstrate that VSP-LLM can more effectively
-                   recognize and translate lip movements with just 15 hours of
-                   labeled data, compared to the recent translation model
-                   trained with 433 hours of labeld data.",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.15151",
-  keywords      = "WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2402.15151",
-  primaryClass  = "cs.CV",
-  arxivid       = "2402.15151"
-}
-
-@ARTICLE{Tian2024-mu,
-  title         = "{EMO}: Emote Portrait Alive -- Generating Expressive
-                   Portrait Videos with {Audio2Video} Diffusion Model under
-                   Weak Conditions",
-  author        = "Tian, Linrui and Wang, Qi and Zhang, Bang and Bo, Liefeng",
-  abstract      = "In this work, we tackle the challenge of enhancing the
-                   realism and expressiveness in talking head video generation
-                   by focusing on the dynamic and nuanced relationship between
-                   audio cues and facial movements. We identify the limitations
-                   of traditional techniques that often fail to capture the
-                   full spectrum of human expressions and the uniqueness of
-                   individual facial styles. To address these issues, we
-                   propose EMO, a novel framework that utilizes a direct
-                   audio-to-video synthesis approach, bypassing the need for
-                   intermediate 3D models or facial landmarks. Our method
-                   ensures seamless frame transitions and consistent identity
-                   preservation throughout the video, resulting in highly
-                   expressive and lifelike animations. Experimental results
-                   demonsrate that EMO is able to produce not only convincing
-                   speaking videos but also singing videos in various styles,
-                   significantly outperforming existing state-of-the-art
-                   methodologies in terms of expressiveness and realism.",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.17485",
-  keywords      = "Models;WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2402.17485",
-  primaryClass  = "cs.CV",
-  arxivid       = "2402.17485"
 }
