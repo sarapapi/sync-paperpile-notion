@@ -1511,3 +1511,34 @@
   note         = "Accessed: 2024-5-3",
   language     = "en"
 }
+
+@ARTICLE{Wallace2024-dv,
+  title         = "The Instruction Hierarchy: Training {LLMs} to Prioritize
+                   Privileged Instructions",
+  author        = "Wallace, Eric and Xiao, Kai and Leike, Reimar and Weng,
+                   Lilian and Heidecke, Johannes and Beutel, Alex",
+  abstract      = "Today's LLMs are susceptible to prompt injections,
+                   jailbreaks, and other attacks that allow adversaries to
+                   overwrite a model's original instructions with their own
+                   malicious prompts. In this work, we argue that one of the
+                   primary vulnerabilities underlying these attacks is that
+                   LLMs often consider system prompts (e.g., text from an
+                   application developer) to be the same priority as text from
+                   untrusted users and third parties. To address this, we
+                   propose an instruction hierarchy that explicitly defines how
+                   models should behave when instructions of different
+                   priorities conflict. We then propose a data generation
+                   method to demonstrate this hierarchical instruction
+                   following behavior, which teaches LLMs to selectively ignore
+                   lower-privileged instructions. We apply this method to
+                   GPT-3.5, showing that it drastically increases robustness --
+                   even for attack types not seen during training -- while
+                   imposing minimal degradations on standard capabilities.",
+  month         =  apr,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.13208",
+  archivePrefix = "arXiv",
+  eprint        = "2404.13208",
+  primaryClass  = "cs.CR",
+  arxivid       = "2404.13208"
+}
