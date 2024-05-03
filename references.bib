@@ -1,119 +1,99 @@
-@MISC{noauthor_undated-qk,
-  title        = "Empathic Voice Interface ({EVI})",
-  abstract     = "Hume's Empathic Voice Interface (EVI) is the world's first
-                  emotionally intelligent voice AI.",
-  url          = "https://dev.hume.ai/docs/empathic-voice-interface-evi/overview",
-  howpublished = "\url{https://dev.hume.ai/docs/empathic-voice-interface-evi/overview}",
-  note         = "Accessed: 2024-4-2",
-  keywords     = "WP3",
+@MISC{noauthor_undated-ru,
+  title        = "{GPTZero}",
+  booktitle    = "{GPTZero}",
+  abstract     = "Covered by >100 media outlets, GPTZero is the most advanced
+                  AI detector for ChatGPT, GPT-4, Bard. Check up to 50000
+                  characters for AI plagiarism in seconds.",
+  url          = "https://gptzero.me/",
+  howpublished = "\url{https://gptzero.me/}",
+  note         = "Accessed: 2024-2-28",
   language     = "en"
 }
 
-@ARTICLE{Kong2024-yl,
-  title         = "Audio Flamingo: A Novel Audio Language Model with {Few-Shot}
-                   Learning and Dialogue Abilities",
-  author        = "Kong, Zhifeng and Goel, Arushi and Badlani, Rohan and Ping,
-                   Wei and Valle, Rafael and Catanzaro, Bryan",
-  abstract      = "Augmenting large language models (LLMs) to understand audio
-                   -- including non-speech sounds and non-verbal speech -- is
-                   critically important for diverse real-world applications of
-                   LLMs. In this paper, we propose Audio Flamingo, a novel
-                   audio language model with 1) strong audio understanding
-                   abilities, 2) the ability to quickly adapt to unseen tasks
-                   via in-context learning and retrieval, and 3) strong
-                   multi-turn dialogue abilities. We introduce a series of
-                   training techniques, architecture design, and data
-                   strategies to enhance our model with these abilities.
-                   Extensive evaluations across various audio understanding
-                   tasks confirm the efficacy of our method, setting new
-                   state-of-the-art benchmarks.",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.01831",
-  keywords      = "WP3;Models",
+@ARTICLE{Kusupati2022-db,
+  title         = "Matryoshka Representation Learning",
+  author        = "Kusupati, Aditya and Bhatt, Gantavya and Rege, Aniket and
+                   Wallingford, Matthew and Sinha, Aditya and Ramanujan, Vivek
+                   and Howard-Snyder, William and Chen, Kaifeng and Kakade,
+                   Sham and Jain, Prateek and Farhadi, Ali",
+  abstract      = "Learned representations are a central component in modern ML
+                   systems, serving a multitude of downstream tasks. When
+                   training such representations, it is often the case that
+                   computational and statistical constraints for each
+                   downstream task are unknown. In this context rigid, fixed
+                   capacity representations can be either over or
+                   under-accommodating to the task at hand. This leads us to
+                   ask: can we design a flexible representation that can adapt
+                   to multiple downstream tasks with varying computational
+                   resources? Our main contribution is Matryoshka
+                   Representation Learning (MRL) which encodes information at
+                   different granularities and allows a single embedding to
+                   adapt to the computational constraints of downstream tasks.
+                   MRL minimally modifies existing representation learning
+                   pipelines and imposes no additional cost during inference
+                   and deployment. MRL learns coarse-to-fine representations
+                   that are at least as accurate and rich as independently
+                   trained low-dimensional representations. The flexibility
+                   within the learned Matryoshka Representations offer: (a) up
+                   to 14x smaller embedding size for ImageNet-1K classification
+                   at the same level of accuracy; (b) up to 14x real-world
+                   speed-ups for large-scale retrieval on ImageNet-1K and 4K;
+                   and (c) up to 2\% accuracy improvements for long-tail
+                   few-shot classification, all while being as robust as the
+                   original representations. Finally, we show that MRL extends
+                   seamlessly to web-scale datasets (ImageNet, JFT) across
+                   various modalities -- vision (ViT, ResNet), vision +
+                   language (ALIGN) and language (BERT). MRL code and
+                   pretrained models are open-sourced at
+                   https://github.com/RAIVNLab/MRL.",
+  month         =  may,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2205.13147",
+  keywords      = "WP4",
   archivePrefix = "arXiv",
-  eprint        = "2402.01831",
-  primaryClass  = "cs.SD",
-  arxivid       = "2402.01831"
-}
-
-@ARTICLE{Alves2024-fx,
-  title         = "Tower: An Open Multilingual Large Language Model for
-                   {Translation-Related} Tasks",
-  author        = "Alves, Duarte M and Pombal, Jos{\'e} and Guerreiro, Nuno M
-                   and Martins, Pedro H and Alves, Jo{\~a}o and Farajian, Amin
-                   and Peters, Ben and Rei, Ricardo and Fernandes, Patrick and
-                   Agrawal, Sweta and Colombo, Pierre and de Souza, Jos{\'e} G
-                   C and Martins, Andr{\'e} F T",
-  abstract      = "While general-purpose large language models (LLMs)
-                   demonstrate proficiency on multiple tasks within the domain
-                   of translation, approaches based on open LLMs are
-                   competitive only when specializing on a single task. In this
-                   paper, we propose a recipe for tailoring LLMs to multiple
-                   tasks present in translation workflows. We perform continued
-                   pretraining on a multilingual mixture of monolingual and
-                   parallel data, creating TowerBase, followed by finetuning on
-                   instructions relevant for translation processes, creating
-                   TowerInstruct. Our final model surpasses open alternatives
-                   on several tasks relevant to translation workflows and is
-                   competitive with general-purpose closed LLMs. To facilitate
-                   future research, we release the Tower models, our
-                   specialization dataset, an evaluation framework for LLMs
-                   focusing on the translation ecosystem, and a collection of
-                   model generations, including ours, on our benchmark.",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.17733",
-  keywords      = "WP3;Models",
-  archivePrefix = "arXiv",
-  eprint        = "2402.17733",
-  primaryClass  = "cs.CL",
-  arxivid       = "2402.17733"
-}
-
-@ARTICLE{Zhou2024-wp,
-  title         = "{TinyLLaVA}: A Framework of Small-scale Large Multimodal
-                   Models",
-  author        = "Zhou, Baichuan and Hu, Ying and Weng, Xi and Jia, Junlong
-                   and Luo, Jie and Liu, Xien and Wu, Ji and Huang, Lei",
-  abstract      = "We present the TinyLLaVA framework that provides a unified
-                   perspective in designing and analyzing the small-scale Large
-                   Multimodal Models (LMMs). We empirically study the effects
-                   of different vision encoders, connection modules, language
-                   models, training data and training recipes. Our extensive
-                   experiments showed that better quality of data combined with
-                   better training recipes, smaller LMMs can consistently
-                   achieve on-par performances compared to bigger LMMs. Under
-                   our framework, we train a family of small-scale LMMs. Our
-                   best model, TinyLLaVA-3.1B, achieves better overall
-                   performance against existing 7B models such as LLaVA-1.5 and
-                   Qwen-VL. We hope our findings can serve as baselines for
-                   future research in terms of data scaling, training setups
-                   and model selections. Our model weights and codes will be
-                   made public.",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.14289",
-  keywords      = "Models;WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2402.14289",
+  eprint        = "2205.13147",
   primaryClass  = "cs.LG",
-  arxivid       = "2402.14289"
+  arxivid       = "2205.13147"
 }
 
-@MISC{Pandey2024-fy,
-  title        = "{BharatGPT} Aims to Become Meta of Indic {LLMs}",
-  booktitle    = "Analytics India Magazine",
-  author       = "Pandey, Mohit",
-  abstract     = "BharatGPT researchers know the power of open source and have
-                  plans to release a bunch of models initially for the
-                  developer community.",
-  month        =  jan,
-  year         =  2024,
-  url          = "https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/",
-  howpublished = "\url{https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/}",
-  note         = "Accessed: 2024-2-27",
-  language     = "en"
+@ARTICLE{Moschella2022-uh,
+  title         = "Relative representations enable zero-shot latent space
+                   communication",
+  author        = "Moschella, Luca and Maiorca, Valentino and Fumero, Marco and
+                   Norelli, Antonio and Locatello, Francesco and Rodol{\`a},
+                   Emanuele",
+  abstract      = "Neural networks embed the geometric structure of a data
+                   manifold lying in a high-dimensional space into latent
+                   representations. Ideally, the distribution of the data
+                   points in the latent space should depend only on the task,
+                   the data, the loss, and other architecture-specific
+                   constraints. However, factors such as the random weights
+                   initialization, training hyperparameters, or other sources
+                   of randomness in the training phase may induce incoherent
+                   latent spaces that hinder any form of reuse. Nevertheless,
+                   we empirically observe that, under the same data and
+                   modeling choices, the angles between the encodings within
+                   distinct latent spaces do not change. In this work, we
+                   propose the latent similarity between each sample and a
+                   fixed set of anchors as an alternative data representation,
+                   demonstrating that it can enforce the desired invariances
+                   without any additional training. We show how neural
+                   architectures can leverage these relative representations to
+                   guarantee, in practice, invariance to latent isometries and
+                   rescalings, effectively enabling latent space communication:
+                   from zero-shot model stitching to latent space comparison
+                   between diverse settings. We extensively validate the
+                   generalization capability of our approach on different
+                   datasets, spanning various modalities (images, text,
+                   graphs), tasks (e.g., classification, reconstruction) and
+                   architectures (e.g., CNNs, GCNs, transformers).",
+  month         =  sep,
+  year          =  2022,
+  url           = "http://arxiv.org/abs/2209.15430",
+  archivePrefix = "arXiv",
+  eprint        = "2209.15430",
+  primaryClass  = "cs.LG",
+  arxivid       = "2209.15430"
 }
 
 @ARTICLE{Wang2023-gz,
@@ -158,32 +138,77 @@
   arxivid       = "2302.10035"
 }
 
-@ARTICLE{Thompson2024-gz,
-  title         = "A Shocking Amount of the Web is Machine Translated: Insights
-                   from {Multi-Way} Parallelism",
-  author        = "Thompson, Brian and Dhaliwal, Mehak Preet and Frisch, Peter
-                   and Domhan, Tobias and Federico, Marcello",
-  abstract      = "We show that content on the web is often translated into
-                   many languages, and the low quality of these multi-way
-                   translations indicates they were likely created using
-                   Machine Translation (MT). Multi-way parallel, machine
-                   generated content not only dominates the translations in
-                   lower resource languages; it also constitutes a large
-                   fraction of the total web content in those languages. We
-                   also find evidence of a selection bias in the type of
-                   content which is translated into many languages, consistent
-                   with low quality English content being translated en masse
-                   into many lower resource languages, via MT. Our work raises
-                   serious concerns about training models such as multilingual
-                   large language models on both monolingual and bilingual data
-                   scraped from the web.",
-  month         =  jan,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2401.05749",
+@ARTICLE{Huang2023-di,
+  title         = "{AudioGPT}: Understanding and Generating Speech, Music,
+                   Sound, and Talking Head",
+  author        = "Huang, Rongjie and Li, Mingze and Yang, Dongchao and Shi,
+                   Jiatong and Chang, Xuankai and Ye, Zhenhui and Wu, Yuning
+                   and Hong, Zhiqing and Huang, Jiawei and Liu, Jinglin and
+                   Ren, Yi and Zhao, Zhou and Watanabe, Shinji",
+  abstract      = "Large language models (LLMs) have exhibited remarkable
+                   capabilities across a variety of domains and tasks,
+                   challenging our understanding of learning and cognition.
+                   Despite the recent success, current LLMs are not capable of
+                   processing complex audio information or conducting spoken
+                   conversations (like Siri or Alexa). In this work, we propose
+                   a multi-modal AI system named AudioGPT, which complements
+                   LLMs (i.e., ChatGPT) with 1) foundation models to process
+                   complex audio information and solve numerous understanding
+                   and generation tasks; and 2) the input/output interface
+                   (ASR, TTS) to support spoken dialogue. With an increasing
+                   demand to evaluate multi-modal LLMs of human intention
+                   understanding and cooperation with foundation models, we
+                   outline the principles and processes and test AudioGPT in
+                   terms of consistency, capability, and robustness.
+                   Experimental results demonstrate the capabilities of
+                   AudioGPT in solving AI tasks with speech, music, sound, and
+                   talking head understanding and generation in multi-round
+                   dialogues, which empower humans to create rich and diverse
+                   audio content with unprecedented ease. Our system is
+                   publicly available at
+                   \textbackslashurl\{https://github.com/AIGC-Audio/AudioGPT\}.",
+  month         =  apr,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2304.12995",
+  keywords      = "Models;WP3",
   archivePrefix = "arXiv",
-  eprint        = "2401.05749",
+  eprint        = "2304.12995",
   primaryClass  = "cs.CL",
-  arxivid       = "2401.05749"
+  arxivid       = "2304.12995"
+}
+
+@ARTICLE{Zhang2023-dh,
+  title         = "{SpeechGPT}: Empowering Large Language Models with Intrinsic
+                   {Cross-Modal} Conversational Abilities",
+  author        = "Zhang, Dong and Li, Shimin and Zhang, Xin and Zhan, Jun and
+                   Wang, Pengyu and Zhou, Yaqian and Qiu, Xipeng",
+  abstract      = "Multi-modal large language models are regarded as a crucial
+                   step towards Artificial General Intelligence (AGI) and have
+                   garnered significant interest with the emergence of ChatGPT.
+                   However, current speech-language models typically adopt the
+                   cascade paradigm, preventing inter-modal knowledge transfer.
+                   In this paper, we propose SpeechGPT, a large language model
+                   with intrinsic cross-modal conversational abilities, capable
+                   of perceiving and generating multi-model content. With
+                   discrete speech representations, we first construct
+                   SpeechInstruct, a large-scale cross-modal speech instruction
+                   dataset. Additionally, we employ a three-stage training
+                   strategy that includes modality-adaptation pre-training,
+                   cross-modal instruction fine-tuning, and chain-of-modality
+                   instruction fine-tuning. The experimental results
+                   demonstrate that SpeechGPT has an impressive capacity to
+                   follow multi-modal human instructions and highlight the
+                   potential of handling multiple modalities with one model.
+                   Demos are shown in
+                   https://0nutation.github.io/SpeechGPT.github.io/.",
+  month         =  may,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2305.11000",
+  keywords      = "WP3;Models",
+  archivePrefix = "arXiv",
+  eprint        = "2305.11000",
+  primaryClass  = "cs.CL",
+  arxivid       = "2305.11000"
 }
 
 @ARTICLE{Hassid2023-uv,
@@ -220,56 +245,48 @@
   arxivid       = "2305.13009"
 }
 
-@ARTICLE{Ma2024-fj,
-  title         = "An Embarrassingly Simple Approach for {LLM} with Strong
-                   {ASR} Capacity",
-  author        = "Ma, Ziyang and Yang, Guanrou and Yang, Yifan and Gao, Zhifu
-                   and Wang, Jiaming and Du, Zhihao and Yu, Fan and Chen, Qian
-                   and Zheng, Siqi and Zhang, Shiliang and Chen, Xie",
-  abstract      = "In this paper, we focus on solving one of the most important
-                   tasks in the field of speech processing, i.e., automatic
-                   speech recognition (ASR), with speech foundation encoders
-                   and large language models (LLM). Recent works have complex
-                   designs such as compressing the output temporally for the
-                   speech encoder, tackling modal alignment for the projector,
-                   and utilizing parameter-efficient fine-tuning for the LLM.
-                   We found that delicate designs are not necessary, while an
-                   embarrassingly simple composition of off-the-shelf speech
-                   encoder, LLM, and the only trainable linear projector is
-                   competent for the ASR task. To be more specific, we
-                   benchmark and explore various combinations of LLMs and
-                   speech encoders, leading to the optimal LLM-based ASR
-                   system, which we call SLAM-ASR. The proposed SLAM-ASR
-                   provides a clean setup and little task-specific design,
-                   where only the linear projector is trained. To the best of
-                   our knowledge, SLAM-ASR achieves the best performance on the
-                   Librispeech benchmark among LLM-based ASR models and even
-                   outperforms the latest LLM-based audio-universal model
-                   trained on massive pair data. Finally, we explore the
-                   capability emergence of LLM-based ASR in the process of
-                   modal alignment. We hope that our study can facilitate the
-                   research on extending LLM with cross-modality capacity and
-                   shed light on the LLM-based ASR community.",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.08846",
-  keywords      = "Models;WP3",
+@ARTICLE{Zhu2023-bv,
+  title         = "{LanguageBind}: Extending {Video-Language} Pretraining to
+                   N-modality by Language-based Semantic Alignment",
+  author        = "Zhu, Bin and Lin, Bin and Ning, Munan and Yan, Yang and Cui,
+                   Jiaxi and Wang, Hongfa and Pang, Yatian and Jiang, Wenhao
+                   and Zhang, Junwu and Li, Zongwei and Zhang, Wancai and Li,
+                   Zhifeng and Liu, Wei and Yuan, Li",
+  abstract      = "The video-language (VL) pretraining has achieved remarkable
+                   improvement in multiple downstream tasks. However, the
+                   current VL pretraining framework is hard to extend to
+                   multiple modalities (N modalities, N>=3) beyond vision and
+                   language. We thus propose LanguageBind, taking the language
+                   as the bind across different modalities because the language
+                   modality is well-explored and contains rich semantics.
+                   Specifically, we freeze the language encoder acquired by VL
+                   pretraining, then train encoders for other modalities with
+                   contrastive learning. As a result, all modalities are mapped
+                   to a shared feature space, implementing multi-modal semantic
+                   alignment. While LanguageBind ensures that we can extend VL
+                   modalities to N modalities, we also need a high-quality
+                   dataset with alignment data pairs centered on language. We
+                   thus propose VIDAL-10M with Video, Infrared, Depth, Audio
+                   and their corresponding Language, naming as VIDAL-10M. In
+                   our VIDAL-10M, all videos are from short video platforms
+                   with complete semantics rather than truncated segments from
+                   long videos, and all the video, depth, infrared, and audio
+                   modalities are aligned to their textual descriptions.
+                   LanguageBind has achieved superior performance on a wide
+                   range of 15 benchmarks covering video, audio, depth, and
+                   infrared. Moreover, multiple experiments have provided
+                   evidence for the effectiveness of LanguageBind in achieving
+                   indirect alignment and complementarity among diverse
+                   modalities. Code address:
+                   https://github.com/PKU-YuanGroup/LanguageBind",
+  month         =  oct,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2310.01852",
+  keywords      = "WP3",
   archivePrefix = "arXiv",
-  eprint        = "2402.08846",
-  primaryClass  = "cs.CL",
-  arxivid       = "2402.08846"
-}
-
-@MISC{noauthor_undated-ru,
-  title        = "{GPTZero}",
-  booktitle    = "{GPTZero}",
-  abstract     = "Covered by >100 media outlets, GPTZero is the most advanced
-                  AI detector for ChatGPT, GPT-4, Bard. Check up to 50000
-                  characters for AI plagiarism in seconds.",
-  url          = "https://gptzero.me/",
-  howpublished = "\url{https://gptzero.me/}",
-  note         = "Accessed: 2024-2-28",
-  language     = "en"
+  eprint        = "2310.01852",
+  primaryClass  = "cs.CV",
+  arxivid       = "2310.01852"
 }
 
 @INPROCEEDINGS{Tang2024-vi,
@@ -312,236 +329,6 @@
   keywords  = "WP4;Models"
 }
 
-@ARTICLE{Huang2023-di,
-  title         = "{AudioGPT}: Understanding and Generating Speech, Music,
-                   Sound, and Talking Head",
-  author        = "Huang, Rongjie and Li, Mingze and Yang, Dongchao and Shi,
-                   Jiatong and Chang, Xuankai and Ye, Zhenhui and Wu, Yuning
-                   and Hong, Zhiqing and Huang, Jiawei and Liu, Jinglin and
-                   Ren, Yi and Zhao, Zhou and Watanabe, Shinji",
-  abstract      = "Large language models (LLMs) have exhibited remarkable
-                   capabilities across a variety of domains and tasks,
-                   challenging our understanding of learning and cognition.
-                   Despite the recent success, current LLMs are not capable of
-                   processing complex audio information or conducting spoken
-                   conversations (like Siri or Alexa). In this work, we propose
-                   a multi-modal AI system named AudioGPT, which complements
-                   LLMs (i.e., ChatGPT) with 1) foundation models to process
-                   complex audio information and solve numerous understanding
-                   and generation tasks; and 2) the input/output interface
-                   (ASR, TTS) to support spoken dialogue. With an increasing
-                   demand to evaluate multi-modal LLMs of human intention
-                   understanding and cooperation with foundation models, we
-                   outline the principles and processes and test AudioGPT in
-                   terms of consistency, capability, and robustness.
-                   Experimental results demonstrate the capabilities of
-                   AudioGPT in solving AI tasks with speech, music, sound, and
-                   talking head understanding and generation in multi-round
-                   dialogues, which empower humans to create rich and diverse
-                   audio content with unprecedented ease. Our system is
-                   publicly available at
-                   \textbackslashurl\{https://github.com/AIGC-Audio/AudioGPT\}.",
-  month         =  apr,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2304.12995",
-  keywords      = "Models;WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2304.12995",
-  primaryClass  = "cs.CL",
-  arxivid       = "2304.12995"
-}
-
-@MISC{noauthor_undated-xw,
-  title        = "Accelerating Generative {AI} with {PyTorch} {IV}: Seamless
-                  {M4T}, fast",
-  booktitle    = "{PyTorch}",
-  abstract     = "This post is the fourth part of a multi-series blog focused
-                  on how to accelerate generative AI models with pure, native
-                  PyTorch. To skip to the code, check out our github
-                  (seamless\_communication, fairseq2). We are excited to share
-                  a breadth of newly released PyTorch performance features
-                  alongside practical examples to see how far we can push
-                  PyTorch native performance. In part one, we showed how to
-                  accelerate Segment Anything over 8x using only pure, native
-                  PyTorch. In part two, we showed how to accelerate Llama-7B by
-                  almost 10x using only native PyTorch optimizations. In part
-                  three, we showed how to accelerate text-to-image diffusion
-                  models up to 3x using only native Pytorch optimizations.",
-  url          = "https://pytorch.org/blog/accelerating-generative-ai-4/",
-  howpublished = "\url{https://pytorch.org/blog/accelerating-generative-ai-4/}",
-  note         = "Accessed: 2024-2-27",
-  language     = "en"
-}
-
-@ARTICLE{Moschella2022-uh,
-  title         = "Relative representations enable zero-shot latent space
-                   communication",
-  author        = "Moschella, Luca and Maiorca, Valentino and Fumero, Marco and
-                   Norelli, Antonio and Locatello, Francesco and Rodol{\`a},
-                   Emanuele",
-  abstract      = "Neural networks embed the geometric structure of a data
-                   manifold lying in a high-dimensional space into latent
-                   representations. Ideally, the distribution of the data
-                   points in the latent space should depend only on the task,
-                   the data, the loss, and other architecture-specific
-                   constraints. However, factors such as the random weights
-                   initialization, training hyperparameters, or other sources
-                   of randomness in the training phase may induce incoherent
-                   latent spaces that hinder any form of reuse. Nevertheless,
-                   we empirically observe that, under the same data and
-                   modeling choices, the angles between the encodings within
-                   distinct latent spaces do not change. In this work, we
-                   propose the latent similarity between each sample and a
-                   fixed set of anchors as an alternative data representation,
-                   demonstrating that it can enforce the desired invariances
-                   without any additional training. We show how neural
-                   architectures can leverage these relative representations to
-                   guarantee, in practice, invariance to latent isometries and
-                   rescalings, effectively enabling latent space communication:
-                   from zero-shot model stitching to latent space comparison
-                   between diverse settings. We extensively validate the
-                   generalization capability of our approach on different
-                   datasets, spanning various modalities (images, text,
-                   graphs), tasks (e.g., classification, reconstruction) and
-                   architectures (e.g., CNNs, GCNs, transformers).",
-  month         =  sep,
-  year          =  2022,
-  url           = "http://arxiv.org/abs/2209.15430",
-  archivePrefix = "arXiv",
-  eprint        = "2209.15430",
-  primaryClass  = "cs.LG",
-  arxivid       = "2209.15430"
-}
-
-@ARTICLE{Norelli2024-ui,
-  title   = "{ASIF}: Coupled data turns unimodal models to multimodal without
-             training",
-  author  = "Norelli, Antonio and Fumero, Marco and Maiorca, Valentino and
-             Moschella, Luca and Rodola, Emanuele and Locatello, Francesco",
-  journal = "Adv. Neural Inf. Process. Syst.",
-  volume  =  36,
-  year    =  2024,
-  url     = "https://proceedings.neurips.cc/paper_files/paper/2023/hash/3186591903d9db31770ad131adb5ceb4-Abstract-Conference.html",
-  issn    = "1049-5258"
-}
-
-@ARTICLE{Zhang2024-eq,
-  title         = "{MM-LLMs}: Recent Advances in {MultiModal} Large Language
-                   Models",
-  author        = "Zhang, Duzhen and Yu, Yahan and Li, Chenxing and Dong,
-                   Jiahua and Su, Dan and Chu, Chenhui and Yu, Dong",
-  abstract      = "In the past year, MultiModal Large Language Models (MM-LLMs)
-                   have undergone substantial advancements, augmenting
-                   off-the-shelf LLMs to support MM inputs or outputs via
-                   cost-effective training strategies. The resulting models not
-                   only preserve the inherent reasoning and decision-making
-                   capabilities of LLMs but also empower a diverse range of MM
-                   tasks. In this paper, we provide a comprehensive survey
-                   aimed at facilitating further research of MM-LLMs.
-                   Initially, we outline general design formulations for model
-                   architecture and training pipeline. Subsequently, we
-                   introduce a taxonomy encompassing $122$ MM-LLMs, each
-                   characterized by its specific formulations. Furthermore, we
-                   review the performance of selected MM-LLMs on mainstream
-                   benchmarks and summarize key training recipes to enhance the
-                   potency of MM-LLMs. Finally, we explore promising directions
-                   for MM-LLMs while concurrently maintaining a real-time
-                   tracking website for the latest developments in the field.
-                   We hope that this survey contributes to the ongoing
-                   advancement of the MM-LLMs domain.",
-  month         =  jan,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2401.13601",
-  keywords      = "WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2401.13601",
-  primaryClass  = "cs.CL",
-  arxivid       = "2401.13601"
-}
-
-@ARTICLE{Groeneveld2024-id,
-  title         = "{OLMo}: Accelerating the Science of Language Models",
-  author        = "Groeneveld, Dirk and Beltagy, Iz and Walsh, Pete and Bhagia,
-                   Akshita and Kinney, Rodney and Tafjord, Oyvind and Jha,
-                   Ananya Harsh and Ivison, Hamish and Magnusson, Ian and Wang,
-                   Yizhong and Arora, Shane and Atkinson, David and Authur,
-                   Russell and Chandu, Khyathi Raghavi and Cohan, Arman and
-                   Dumas, Jennifer and Elazar, Yanai and Gu, Yuling and Hessel,
-                   Jack and Khot, Tushar and Merrill, William and Morrison,
-                   Jacob and Muennighoff, Niklas and Naik, Aakanksha and Nam,
-                   Crystal and Peters, Matthew E and Pyatkin, Valentina and
-                   Ravichander, Abhilasha and Schwenk, Dustin and Shah, Saurabh
-                   and Smith, Will and Strubell, Emma and Subramani, Nishant
-                   and Wortsman, Mitchell and Dasigi, Pradeep and Lambert,
-                   Nathan and Richardson, Kyle and Zettlemoyer, Luke and Dodge,
-                   Jesse and Lo, Kyle and Soldaini, Luca and Smith, Noah A and
-                   Hajishirzi, Hannaneh",
-  abstract      = "Language models (LMs) have become ubiquitous in both NLP
-                   research and in commercial product offerings. As their
-                   commercial importance has surged, the most powerful models
-                   have become closed off, gated behind proprietary interfaces,
-                   with important details of their training data,
-                   architectures, and development undisclosed. Given the
-                   importance of these details in scientifically studying these
-                   models, including their biases and potential risks, we
-                   believe it is essential for the research community to have
-                   access to powerful, truly open LMs. To this end, this
-                   technical report details the first release of OLMo, a
-                   state-of-the-art, truly Open Language Model and its
-                   framework to build and study the science of language
-                   modeling. Unlike most prior efforts that have only released
-                   model weights and inference code, we release OLMo and the
-                   whole framework, including training data and training and
-                   evaluation code. We hope this release will empower and
-                   strengthen the open research community and inspire a new
-                   wave of innovation.",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.00838",
-  keywords      = "WP3;Models",
-  archivePrefix = "arXiv",
-  eprint        = "2402.00838",
-  primaryClass  = "cs.CL",
-  arxivid       = "2402.00838"
-}
-
-@ARTICLE{Guo2024-qb,
-  title         = "Vision Superalignment: {Weak-to-Strong} Generalization for
-                   Vision Foundation Models",
-  author        = "Guo, Jianyuan and Chen, Hanting and Wang, Chengcheng and
-                   Han, Kai and Xu, Chang and Wang, Yunhe",
-  abstract      = "Recent advancements in large language models have sparked
-                   interest in their extraordinary and near-superhuman
-                   capabilities, leading researchers to explore methods for
-                   evaluating and optimizing these abilities, which is called
-                   superalignment. In this context, our paper delves into the
-                   realm of vision foundation models, focusing on the concept
-                   of weak-to-strong generalization, which involves using a
-                   weaker model to supervise a stronger one, aiming to enhance
-                   the latter's capabilities beyond the former's limits. We
-                   introduce a novel and adaptively adjustable loss function
-                   for weak-to-strong supervision. Our comprehensive
-                   experiments span various scenarios, including few-shot
-                   learning, transfer learning, noisy label learning, and
-                   common knowledge distillation settings. The results are
-                   striking: our approach not only exceeds the performance
-                   benchmarks set by strong-to-strong generalization but also
-                   surpasses the outcomes of fine-tuning strong models with
-                   whole datasets. This compelling evidence underscores the
-                   significant potential of weak-to-strong generalization,
-                   showcasing its capability to substantially elevate the
-                   performance of vision foundation models. The code is
-                   available at
-                   https://github.com/ggjy/vision\_weak\_to\_strong.",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.03749",
-  archivePrefix = "arXiv",
-  eprint        = "2402.03749",
-  primaryClass  = "cs.CV",
-  arxivid       = "2402.03749"
-}
-
 @ARTICLE{Gandhi2023-uk,
   title         = "{Distil-Whisper}: Robust Knowledge Distillation via
                    {Large-Scale} Pseudo Labelling",
@@ -577,64 +364,143 @@
   arxivid       = "2311.00430"
 }
 
-@MISC{Puvvada_undated-ry,
-  title        = "{NVIDIA} {NeMo} Canary",
-  author       = "Puvvada*', ['krishna C and {\.Z}elasko*', 'piotr and Huang*',
-                  'he and Hrinchuk*', 'oleksii and Koluguri*', 'nithin Rao and
-                  Majumdar', 'somshubra and Rastorgueva', 'elena and Dhawan',
-                  'kunal and Chen', 'zhehuai and Larukhin', 'vitaly and Balam',
-                  'jagadeesh and Ginsburg'], 'boris",
-  abstract     = "State of the Art Speech Recognition and Translation",
-  url          = "https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/",
-  howpublished = "\url{https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/}",
-  note         = "Accessed: 2024-2-27",
-  keywords     = "Models;WP3;WP4"
-}
-
-@MISC{Xiong_undated-oy,
-  title        = "Introducing The Foundation Model Transparency Index",
-  booktitle    = "Stanford {HAI}",
-  author       = "Xiong, Betty and Zhang, Daniel",
-  abstract     = "A new index rates the transparency of 10 foundation model
-                  companies and finds them lacking.",
-  url          = "https://hai.stanford.edu/news/introducing-foundation-model-transparency-index",
-  howpublished = "\url{https://hai.stanford.edu/news/introducing-foundation-model-transparency-index}",
-  note         = "Accessed: 2024-2-27",
-  language     = "en"
-}
-
-@ARTICLE{Nguyen2024-iu,
-  title         = "{SpiRit-LM}: Interleaved Spoken and Written Language Model",
-  author        = "Nguyen, Tu Anh and Muller, Benjamin and Yu, Bokai and
-                   Costa-jussa, Marta R and Elbayad, Maha and Popuri, Sravya
-                   and Duquenne, Paul-Ambroise and Algayres, Robin and
-                   Mavlyutov, Ruslan and Gat, Itai and Synnaeve, Gabriel and
-                   Pino, Juan and Sagot, Benoit and Dupoux, Emmanuel",
-  abstract      = "We introduce SPIRIT-LM, a foundation multimodal language
-                   model that freely mixes text and speech. Our model is based
-                   on a pretrained text language model that we extend to the
-                   speech modality by continuously training it on text and
-                   speech units. Speech and text sequences are concatenated as
-                   a single set of tokens, and trained with a word-level
-                   interleaving method using a small automatically-curated
-                   speech-text parallel corpus. SPIRIT-LM comes in two
-                   versions: a BASE version that uses speech semantic units and
-                   an EXPRESSIVE version that models expressivity using pitch
-                   and style units in addition to the semantic units. For both
-                   versions, the text is encoded with subword BPE tokens. The
-                   resulting model displays both the semantic abilities of text
-                   models and the expressive abilities of speech models.
-                   Additionally, we demonstrate that SPIRIT-LM is able to learn
-                   new tasks in a few-shot fashion across modalities (i.e. ASR,
-                   TTS, Speech Classification).",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.05755",
-  keywords      = "Models;WP3;WP4",
+@ARTICLE{Han2023-oa,
+  title         = "{OneLLM}: One Framework to Align All Modalities with
+                   Language",
+  author        = "Han, Jiaming and Gong, Kaixiong and Zhang, Yiyuan and Wang,
+                   Jiaqi and Zhang, Kaipeng and Lin, Dahua and Qiao, Yu and
+                   Gao, Peng and Yue, Xiangyu",
+  abstract      = "Multimodal large language models (MLLMs) have gained
+                   significant attention due to their strong multimodal
+                   understanding capability. However, existing works rely
+                   heavily on modality-specific encoders, which usually differ
+                   in architecture and are limited to common modalities. In
+                   this paper, we present OneLLM, an MLLM that aligns eight
+                   modalities to language using a unified framework. We achieve
+                   this through a unified multimodal encoder and a progressive
+                   multimodal alignment pipeline. In detail, we first train an
+                   image projection module to connect a vision encoder with
+                   LLM. Then, we build a universal projection module (UPM) by
+                   mixing multiple image projection modules and dynamic
+                   routing. Finally, we progressively align more modalities to
+                   LLM with the UPM. To fully leverage the potential of OneLLM
+                   in following instructions, we also curated a comprehensive
+                   multimodal instruction dataset, including 2M items from
+                   image, audio, video, point cloud, depth/normal map, IMU and
+                   fMRI brain activity. OneLLM is evaluated on 25 diverse
+                   benchmarks, encompassing tasks such as multimodal
+                   captioning, question answering and reasoning, where it
+                   delivers excellent performance. Code, data, model and online
+                   demo are available at https://github.com/csuhan/OneLLM",
+  month         =  dec,
+  year          =  2023,
+  url           = "http://arxiv.org/abs/2312.03700",
+  keywords      = "WP3;Models",
   archivePrefix = "arXiv",
-  eprint        = "2402.05755",
+  eprint        = "2312.03700",
+  primaryClass  = "cs.CV",
+  arxivid       = "2312.03700"
+}
+
+@ARTICLE{Thompson2024-gz,
+  title         = "A Shocking Amount of the Web is Machine Translated: Insights
+                   from {Multi-Way} Parallelism",
+  author        = "Thompson, Brian and Dhaliwal, Mehak Preet and Frisch, Peter
+                   and Domhan, Tobias and Federico, Marcello",
+  abstract      = "We show that content on the web is often translated into
+                   many languages, and the low quality of these multi-way
+                   translations indicates they were likely created using
+                   Machine Translation (MT). Multi-way parallel, machine
+                   generated content not only dominates the translations in
+                   lower resource languages; it also constitutes a large
+                   fraction of the total web content in those languages. We
+                   also find evidence of a selection bias in the type of
+                   content which is translated into many languages, consistent
+                   with low quality English content being translated en masse
+                   into many lower resource languages, via MT. Our work raises
+                   serious concerns about training models such as multilingual
+                   large language models on both monolingual and bilingual data
+                   scraped from the web.",
+  month         =  jan,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2401.05749",
+  archivePrefix = "arXiv",
+  eprint        = "2401.05749",
   primaryClass  = "cs.CL",
-  arxivid       = "2402.05755"
+  arxivid       = "2401.05749"
+}
+
+@ARTICLE{Wadhawan2024-tf,
+  title         = "{ConTextual}: Evaluating {Context-Sensitive} {Text-Rich}
+                   Visual Reasoning in Large Multimodal Models",
+  author        = "Wadhawan, Rohan and Bansal, Hritik and Chang, Kai-Wei and
+                   Peng, Nanyun",
+  abstract      = "Recent advancements in AI have led to the development of
+                   large multimodal models (LMMs) capable of processing complex
+                   tasks involving joint reasoning over text and visual content
+                   in the image (e.g., navigating maps in public places). This
+                   paper introduces ConTextual, a novel benchmark comprising
+                   instructions designed explicitly to evaluate LMMs' ability
+                   to perform context-sensitive text-rich visual reasoning.
+                   ConTextual emphasizes diverse real-world scenarios (e.g.,
+                   time-reading, navigation, shopping and more) demanding a
+                   deeper understanding of the interactions between textual and
+                   visual elements. Our findings reveal a significant
+                   performance gap of 30.8\% between the best-performing LMM,
+                   GPT-4V(ision), and human capabilities using human evaluation
+                   indicating substantial room for improvement in
+                   context-sensitive text-rich visual reasoning. Notably, while
+                   GPT-4V excelled in abstract categories like meme and quote
+                   interpretation, its overall performance still lagged behind
+                   humans. In addition to human evaluations, we also employed
+                   automatic evaluation metrics using GPT-4, uncovering similar
+                   trends in performance disparities. We also perform a
+                   fine-grained evaluation across diverse visual contexts and
+                   provide qualitative analysis which provides a robust
+                   framework for future advancements in the LMM design.
+                   https://con-textual.github.io/",
+  month         =  jan,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2401.13311",
+  keywords      = "WP3",
+  archivePrefix = "arXiv",
+  eprint        = "2401.13311",
+  primaryClass  = "cs.CV",
+  arxivid       = "2401.13311"
+}
+
+@ARTICLE{Zhang2024-eq,
+  title         = "{MM-LLMs}: Recent Advances in {MultiModal} Large Language
+                   Models",
+  author        = "Zhang, Duzhen and Yu, Yahan and Li, Chenxing and Dong,
+                   Jiahua and Su, Dan and Chu, Chenhui and Yu, Dong",
+  abstract      = "In the past year, MultiModal Large Language Models (MM-LLMs)
+                   have undergone substantial advancements, augmenting
+                   off-the-shelf LLMs to support MM inputs or outputs via
+                   cost-effective training strategies. The resulting models not
+                   only preserve the inherent reasoning and decision-making
+                   capabilities of LLMs but also empower a diverse range of MM
+                   tasks. In this paper, we provide a comprehensive survey
+                   aimed at facilitating further research of MM-LLMs.
+                   Initially, we outline general design formulations for model
+                   architecture and training pipeline. Subsequently, we
+                   introduce a taxonomy encompassing $122$ MM-LLMs, each
+                   characterized by its specific formulations. Furthermore, we
+                   review the performance of selected MM-LLMs on mainstream
+                   benchmarks and summarize key training recipes to enhance the
+                   potency of MM-LLMs. Finally, we explore promising directions
+                   for MM-LLMs while concurrently maintaining a real-time
+                   tracking website for the latest developments in the field.
+                   We hope that this survey contributes to the ongoing
+                   advancement of the MM-LLMs domain.",
+  month         =  jan,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2401.13601",
+  keywords      = "WP3",
+  archivePrefix = "arXiv",
+  eprint        = "2401.13601",
+  primaryClass  = "cs.CL",
+  arxivid       = "2401.13601"
 }
 
 @ARTICLE{Fan2024-vn,
@@ -684,6 +550,188 @@
   arxivid       = "2401.17221"
 }
 
+@ARTICLE{Groeneveld2024-id,
+  title         = "{OLMo}: Accelerating the Science of Language Models",
+  author        = "Groeneveld, Dirk and Beltagy, Iz and Walsh, Pete and Bhagia,
+                   Akshita and Kinney, Rodney and Tafjord, Oyvind and Jha,
+                   Ananya Harsh and Ivison, Hamish and Magnusson, Ian and Wang,
+                   Yizhong and Arora, Shane and Atkinson, David and Authur,
+                   Russell and Chandu, Khyathi Raghavi and Cohan, Arman and
+                   Dumas, Jennifer and Elazar, Yanai and Gu, Yuling and Hessel,
+                   Jack and Khot, Tushar and Merrill, William and Morrison,
+                   Jacob and Muennighoff, Niklas and Naik, Aakanksha and Nam,
+                   Crystal and Peters, Matthew E and Pyatkin, Valentina and
+                   Ravichander, Abhilasha and Schwenk, Dustin and Shah, Saurabh
+                   and Smith, Will and Strubell, Emma and Subramani, Nishant
+                   and Wortsman, Mitchell and Dasigi, Pradeep and Lambert,
+                   Nathan and Richardson, Kyle and Zettlemoyer, Luke and Dodge,
+                   Jesse and Lo, Kyle and Soldaini, Luca and Smith, Noah A and
+                   Hajishirzi, Hannaneh",
+  abstract      = "Language models (LMs) have become ubiquitous in both NLP
+                   research and in commercial product offerings. As their
+                   commercial importance has surged, the most powerful models
+                   have become closed off, gated behind proprietary interfaces,
+                   with important details of their training data,
+                   architectures, and development undisclosed. Given the
+                   importance of these details in scientifically studying these
+                   models, including their biases and potential risks, we
+                   believe it is essential for the research community to have
+                   access to powerful, truly open LMs. To this end, this
+                   technical report details the first release of OLMo, a
+                   state-of-the-art, truly Open Language Model and its
+                   framework to build and study the science of language
+                   modeling. Unlike most prior efforts that have only released
+                   model weights and inference code, we release OLMo and the
+                   whole framework, including training data and training and
+                   evaluation code. We hope this release will empower and
+                   strengthen the open research community and inspire a new
+                   wave of innovation.",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.00838",
+  keywords      = "WP3;Models",
+  archivePrefix = "arXiv",
+  eprint        = "2402.00838",
+  primaryClass  = "cs.CL",
+  arxivid       = "2402.00838"
+}
+
+@ARTICLE{Kong2024-yl,
+  title         = "Audio Flamingo: A Novel Audio Language Model with {Few-Shot}
+                   Learning and Dialogue Abilities",
+  author        = "Kong, Zhifeng and Goel, Arushi and Badlani, Rohan and Ping,
+                   Wei and Valle, Rafael and Catanzaro, Bryan",
+  abstract      = "Augmenting large language models (LLMs) to understand audio
+                   -- including non-speech sounds and non-verbal speech -- is
+                   critically important for diverse real-world applications of
+                   LLMs. In this paper, we propose Audio Flamingo, a novel
+                   audio language model with 1) strong audio understanding
+                   abilities, 2) the ability to quickly adapt to unseen tasks
+                   via in-context learning and retrieval, and 3) strong
+                   multi-turn dialogue abilities. We introduce a series of
+                   training techniques, architecture design, and data
+                   strategies to enhance our model with these abilities.
+                   Extensive evaluations across various audio understanding
+                   tasks confirm the efficacy of our method, setting new
+                   state-of-the-art benchmarks.",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.01831",
+  keywords      = "WP3;Models",
+  archivePrefix = "arXiv",
+  eprint        = "2402.01831",
+  primaryClass  = "cs.SD",
+  arxivid       = "2402.01831"
+}
+
+@ARTICLE{Guo2024-qb,
+  title         = "Vision Superalignment: {Weak-to-Strong} Generalization for
+                   Vision Foundation Models",
+  author        = "Guo, Jianyuan and Chen, Hanting and Wang, Chengcheng and
+                   Han, Kai and Xu, Chang and Wang, Yunhe",
+  abstract      = "Recent advancements in large language models have sparked
+                   interest in their extraordinary and near-superhuman
+                   capabilities, leading researchers to explore methods for
+                   evaluating and optimizing these abilities, which is called
+                   superalignment. In this context, our paper delves into the
+                   realm of vision foundation models, focusing on the concept
+                   of weak-to-strong generalization, which involves using a
+                   weaker model to supervise a stronger one, aiming to enhance
+                   the latter's capabilities beyond the former's limits. We
+                   introduce a novel and adaptively adjustable loss function
+                   for weak-to-strong supervision. Our comprehensive
+                   experiments span various scenarios, including few-shot
+                   learning, transfer learning, noisy label learning, and
+                   common knowledge distillation settings. The results are
+                   striking: our approach not only exceeds the performance
+                   benchmarks set by strong-to-strong generalization but also
+                   surpasses the outcomes of fine-tuning strong models with
+                   whole datasets. This compelling evidence underscores the
+                   significant potential of weak-to-strong generalization,
+                   showcasing its capability to substantially elevate the
+                   performance of vision foundation models. The code is
+                   available at
+                   https://github.com/ggjy/vision\_weak\_to\_strong.",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.03749",
+  archivePrefix = "arXiv",
+  eprint        = "2402.03749",
+  primaryClass  = "cs.CV",
+  arxivid       = "2402.03749"
+}
+
+@ARTICLE{Nguyen2024-iu,
+  title         = "{SpiRit-LM}: Interleaved Spoken and Written Language Model",
+  author        = "Nguyen, Tu Anh and Muller, Benjamin and Yu, Bokai and
+                   Costa-jussa, Marta R and Elbayad, Maha and Popuri, Sravya
+                   and Duquenne, Paul-Ambroise and Algayres, Robin and
+                   Mavlyutov, Ruslan and Gat, Itai and Synnaeve, Gabriel and
+                   Pino, Juan and Sagot, Benoit and Dupoux, Emmanuel",
+  abstract      = "We introduce SPIRIT-LM, a foundation multimodal language
+                   model that freely mixes text and speech. Our model is based
+                   on a pretrained text language model that we extend to the
+                   speech modality by continuously training it on text and
+                   speech units. Speech and text sequences are concatenated as
+                   a single set of tokens, and trained with a word-level
+                   interleaving method using a small automatically-curated
+                   speech-text parallel corpus. SPIRIT-LM comes in two
+                   versions: a BASE version that uses speech semantic units and
+                   an EXPRESSIVE version that models expressivity using pitch
+                   and style units in addition to the semantic units. For both
+                   versions, the text is encoded with subword BPE tokens. The
+                   resulting model displays both the semantic abilities of text
+                   models and the expressive abilities of speech models.
+                   Additionally, we demonstrate that SPIRIT-LM is able to learn
+                   new tasks in a few-shot fashion across modalities (i.e. ASR,
+                   TTS, Speech Classification).",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.05755",
+  keywords      = "Models;WP3;WP4",
+  archivePrefix = "arXiv",
+  eprint        = "2402.05755",
+  primaryClass  = "cs.CL",
+  arxivid       = "2402.05755"
+}
+
+@ARTICLE{Ustun2024-gv,
+  title         = "Aya Model: An Instruction Finetuned {Open-Access}
+                   Multilingual Language Model",
+  author        = "{\"U}st{\"u}n, Ahmet and Aryabumi, Viraat and Yong,
+                   Zheng-Xin and Ko, Wei-Yin and D'souza, Daniel and Onilude,
+                   Gbemileke and Bhandari, Neel and Singh, Shivalika and Ooi,
+                   Hui-Lee and Kayid, Amr and Vargus, Freddie and Blunsom, Phil
+                   and Longpre, Shayne and Muennighoff, Niklas and Fadaee,
+                   Marzieh and Kreutzer, Julia and Hooker, Sara",
+  abstract      = "Recent breakthroughs in large language models (LLMs) have
+                   centered around a handful of data-rich languages. What does
+                   it take to broaden access to breakthroughs beyond
+                   first-class citizen languages? Our work introduces Aya, a
+                   massively multilingual generative language model that
+                   follows instructions in 101 languages of which over 50\% are
+                   considered as lower-resourced. Aya outperforms mT0 and
+                   BLOOMZ on the majority of tasks while covering double the
+                   number of languages. We introduce extensive new evaluation
+                   suites that broaden the state-of-art for multilingual eval
+                   across 99 languages -- including discriminative and
+                   generative tasks, human evaluation, and simulated win rates
+                   that cover both held-out tasks and in-distribution
+                   performance. Furthermore, we conduct detailed investigations
+                   on the optimal finetuning mixture composition, data pruning,
+                   as well as the toxicity, bias, and safety of our models. We
+                   open-source our instruction datasets and our model at
+                   https://hf.co/CohereForAI/aya-101",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.07827",
+  keywords      = "Models;WP3",
+  archivePrefix = "arXiv",
+  eprint        = "2402.07827",
+  primaryClass  = "cs.CL",
+  arxivid       = "2402.07827"
+}
+
 @ARTICLE{Lajszczak2024-vz,
   title         = "{BASE} {TTS}: Lessons from building a billion-parameter
                    {Text-to-Speech} model on {100K} hours of data",
@@ -729,155 +777,44 @@
   arxivid       = "2402.08093"
 }
 
-@ARTICLE{Ustun2024-gv,
-  title         = "Aya Model: An Instruction Finetuned {Open-Access}
-                   Multilingual Language Model",
-  author        = "{\"U}st{\"u}n, Ahmet and Aryabumi, Viraat and Yong,
-                   Zheng-Xin and Ko, Wei-Yin and D'souza, Daniel and Onilude,
-                   Gbemileke and Bhandari, Neel and Singh, Shivalika and Ooi,
-                   Hui-Lee and Kayid, Amr and Vargus, Freddie and Blunsom, Phil
-                   and Longpre, Shayne and Muennighoff, Niklas and Fadaee,
-                   Marzieh and Kreutzer, Julia and Hooker, Sara",
-  abstract      = "Recent breakthroughs in large language models (LLMs) have
-                   centered around a handful of data-rich languages. What does
-                   it take to broaden access to breakthroughs beyond
-                   first-class citizen languages? Our work introduces Aya, a
-                   massively multilingual generative language model that
-                   follows instructions in 101 languages of which over 50\% are
-                   considered as lower-resourced. Aya outperforms mT0 and
-                   BLOOMZ on the majority of tasks while covering double the
-                   number of languages. We introduce extensive new evaluation
-                   suites that broaden the state-of-art for multilingual eval
-                   across 99 languages -- including discriminative and
-                   generative tasks, human evaluation, and simulated win rates
-                   that cover both held-out tasks and in-distribution
-                   performance. Furthermore, we conduct detailed investigations
-                   on the optimal finetuning mixture composition, data pruning,
-                   as well as the toxicity, bias, and safety of our models. We
-                   open-source our instruction datasets and our model at
-                   https://hf.co/CohereForAI/aya-101",
+@ARTICLE{Ma2024-fj,
+  title         = "An Embarrassingly Simple Approach for {LLM} with Strong
+                   {ASR} Capacity",
+  author        = "Ma, Ziyang and Yang, Guanrou and Yang, Yifan and Gao, Zhifu
+                   and Wang, Jiaming and Du, Zhihao and Yu, Fan and Chen, Qian
+                   and Zheng, Siqi and Zhang, Shiliang and Chen, Xie",
+  abstract      = "In this paper, we focus on solving one of the most important
+                   tasks in the field of speech processing, i.e., automatic
+                   speech recognition (ASR), with speech foundation encoders
+                   and large language models (LLM). Recent works have complex
+                   designs such as compressing the output temporally for the
+                   speech encoder, tackling modal alignment for the projector,
+                   and utilizing parameter-efficient fine-tuning for the LLM.
+                   We found that delicate designs are not necessary, while an
+                   embarrassingly simple composition of off-the-shelf speech
+                   encoder, LLM, and the only trainable linear projector is
+                   competent for the ASR task. To be more specific, we
+                   benchmark and explore various combinations of LLMs and
+                   speech encoders, leading to the optimal LLM-based ASR
+                   system, which we call SLAM-ASR. The proposed SLAM-ASR
+                   provides a clean setup and little task-specific design,
+                   where only the linear projector is trained. To the best of
+                   our knowledge, SLAM-ASR achieves the best performance on the
+                   Librispeech benchmark among LLM-based ASR models and even
+                   outperforms the latest LLM-based audio-universal model
+                   trained on massive pair data. Finally, we explore the
+                   capability emergence of LLM-based ASR in the process of
+                   modal alignment. We hope that our study can facilitate the
+                   research on extending LLM with cross-modality capacity and
+                   shed light on the LLM-based ASR community.",
   month         =  feb,
   year          =  2024,
-  url           = "http://arxiv.org/abs/2402.07827",
+  url           = "http://arxiv.org/abs/2402.08846",
   keywords      = "Models;WP3",
   archivePrefix = "arXiv",
-  eprint        = "2402.07827",
+  eprint        = "2402.08846",
   primaryClass  = "cs.CL",
-  arxivid       = "2402.07827"
-}
-
-@ARTICLE{Kusupati2022-db,
-  title         = "Matryoshka Representation Learning",
-  author        = "Kusupati, Aditya and Bhatt, Gantavya and Rege, Aniket and
-                   Wallingford, Matthew and Sinha, Aditya and Ramanujan, Vivek
-                   and Howard-Snyder, William and Chen, Kaifeng and Kakade,
-                   Sham and Jain, Prateek and Farhadi, Ali",
-  abstract      = "Learned representations are a central component in modern ML
-                   systems, serving a multitude of downstream tasks. When
-                   training such representations, it is often the case that
-                   computational and statistical constraints for each
-                   downstream task are unknown. In this context rigid, fixed
-                   capacity representations can be either over or
-                   under-accommodating to the task at hand. This leads us to
-                   ask: can we design a flexible representation that can adapt
-                   to multiple downstream tasks with varying computational
-                   resources? Our main contribution is Matryoshka
-                   Representation Learning (MRL) which encodes information at
-                   different granularities and allows a single embedding to
-                   adapt to the computational constraints of downstream tasks.
-                   MRL minimally modifies existing representation learning
-                   pipelines and imposes no additional cost during inference
-                   and deployment. MRL learns coarse-to-fine representations
-                   that are at least as accurate and rich as independently
-                   trained low-dimensional representations. The flexibility
-                   within the learned Matryoshka Representations offer: (a) up
-                   to 14x smaller embedding size for ImageNet-1K classification
-                   at the same level of accuracy; (b) up to 14x real-world
-                   speed-ups for large-scale retrieval on ImageNet-1K and 4K;
-                   and (c) up to 2\% accuracy improvements for long-tail
-                   few-shot classification, all while being as robust as the
-                   original representations. Finally, we show that MRL extends
-                   seamlessly to web-scale datasets (ImageNet, JFT) across
-                   various modalities -- vision (ViT, ResNet), vision +
-                   language (ALIGN) and language (BERT). MRL code and
-                   pretrained models are open-sourced at
-                   https://github.com/RAIVNLab/MRL.",
-  month         =  may,
-  year          =  2022,
-  url           = "http://arxiv.org/abs/2205.13147",
-  keywords      = "WP4",
-  archivePrefix = "arXiv",
-  eprint        = "2205.13147",
-  primaryClass  = "cs.LG",
-  arxivid       = "2205.13147"
-}
-
-@MISC{noauthor_undated-zf,
-  title        = "Revisiting Feature Prediction for Learning Visual
-                  Representations from Video",
-  abstract     = "This paper explores feature prediction as a stand-alone
-                  objective for unsupervised learning from video and introduces
-                  V-JEPA, a collection of vision...",
-  url          = "https://ai.meta.com/research/publications/revisiting-feature-prediction-for-learning-visual-representations-from-video/",
-  howpublished = "\url{https://ai.meta.com/research/publications/revisiting-feature-prediction-for-learning-visual-representations-from-video/}",
-  note         = "Accessed: 2024-2-27",
-  keywords     = "Models",
-  language     = "en"
-}
-
-@MISC{Banks2024-ca,
-  title        = "Gemma: Introducing new state-of-the-art open models",
-  booktitle    = "Google",
-  author       = "Banks, Jeanine",
-  abstract     = "Gemma is a family of lightweight, state-of-the art open
-                  models built from the same research and technology used to
-                  create the Gemini models.",
-  month        =  feb,
-  year         =  2024,
-  url          = "https://blog.google/technology/developers/gemma-open-models/",
-  howpublished = "\url{https://blog.google/technology/developers/gemma-open-models/}",
-  note         = "Accessed: 2024-2-27",
-  keywords     = "Models;WP3",
-  language     = "en"
-}
-
-@ARTICLE{Maaz2024-vd,
-  title         = "{PALO}: A Polyglot Large Multimodal Model for {5B} People",
-  author        = "Maaz, Muhammad and Rasheed, Hanoona and Shaker, Abdelrahman
-                   and Khan, Salman and Cholakal, Hisham and Anwer, Rao M and
-                   Baldwin, Tim and Felsberg, Michael and Khan, Fahad S",
-  abstract      = "In pursuit of more inclusive Vision-Language Models (VLMs),
-                   this study introduces a Large Multilingual Multimodal Model
-                   called \textbackslashtextsc\{Palo\}.
-                   \textbackslashtextsc\{Palo\} offers visual reasoning
-                   capabilities in 10 major languages, including English,
-                   Chinese, Hindi, Spanish, French, Arabic, Bengali, Russian,
-                   Urdu, and Japanese, that span a total of $\sim$5B people
-                   (65\% of the world population). Our approach involves a
-                   semi-automated translation approach to adapt the multimodal
-                   instruction dataset from English to the target languages
-                   using a fine-tuned Large Language Model, thereby ensuring
-                   high linguistic fidelity while allowing scalability due to
-                   minimal manual effort. The incorporation of diverse
-                   instruction sets helps us boost overall performance across
-                   multiple languages especially those that are
-                   underrepresented like Hindi, Arabic, Bengali, and Urdu. The
-                   resulting models are trained across three scales (1.7B, 7B
-                   and 13B parameters) to show the generalization and
-                   scalability where we observe substantial improvements
-                   compared to strong baselines. We also propose the first
-                   multilingual multimodal benchmark for the forthcoming
-                   approaches to evaluate their vision-language reasoning
-                   capabilities across languages. Code:
-                   https://github.com/mbzuai-oryx/PALO.",
-  month         =  feb,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2402.14818",
-  keywords      = "Models;WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2402.14818",
-  primaryClass  = "cs.CL",
-  arxivid       = "2402.14818"
+  arxivid       = "2402.08846"
 }
 
 @ARTICLE{Zhan2024-aq,
@@ -920,395 +857,73 @@
   arxivid       = "2402.12226"
 }
 
-@ARTICLE{Han2023-oa,
-  title         = "{OneLLM}: One Framework to Align All Modalities with
-                   Language",
-  author        = "Han, Jiaming and Gong, Kaixiong and Zhang, Yiyuan and Wang,
-                   Jiaqi and Zhang, Kaipeng and Lin, Dahua and Qiao, Yu and
-                   Gao, Peng and Yue, Xiangyu",
-  abstract      = "Multimodal large language models (MLLMs) have gained
-                   significant attention due to their strong multimodal
-                   understanding capability. However, existing works rely
-                   heavily on modality-specific encoders, which usually differ
-                   in architecture and are limited to common modalities. In
-                   this paper, we present OneLLM, an MLLM that aligns eight
-                   modalities to language using a unified framework. We achieve
-                   this through a unified multimodal encoder and a progressive
-                   multimodal alignment pipeline. In detail, we first train an
-                   image projection module to connect a vision encoder with
-                   LLM. Then, we build a universal projection module (UPM) by
-                   mixing multiple image projection modules and dynamic
-                   routing. Finally, we progressively align more modalities to
-                   LLM with the UPM. To fully leverage the potential of OneLLM
-                   in following instructions, we also curated a comprehensive
-                   multimodal instruction dataset, including 2M items from
-                   image, audio, video, point cloud, depth/normal map, IMU and
-                   fMRI brain activity. OneLLM is evaluated on 25 diverse
-                   benchmarks, encompassing tasks such as multimodal
-                   captioning, question answering and reasoning, where it
-                   delivers excellent performance. Code, data, model and online
-                   demo are available at https://github.com/csuhan/OneLLM",
-  month         =  dec,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2312.03700",
-  keywords      = "WP3;Models",
-  archivePrefix = "arXiv",
-  eprint        = "2312.03700",
-  primaryClass  = "cs.CV",
-  arxivid       = "2312.03700"
-}
-
-@ARTICLE{Ioannis_Tsiamas_and_Gerard_I_Gallego_and_Jose_A_R_Fonollosa_and_Marta_R_Costa-jussa2024-fy,
-  title    = "Pushing the Limits of Zero-shot {End-to-End} Speech Translation",
-  author   = "{Ioannis Tsiamas and Gerard I. G{\'a}llego and Jos{\'e} A. R.
-              Fonollosa and Marta R. Costa-juss{\`a}}",
-  abstract = "Data scarcity and the modality gap between the speech and text
-              modalities are two major obstacles of end-to-end Speech
-              Translation (ST) systems, thus hindering their performance. Prior
-              work has attempted to mitigate these challenges by leveraging
-              external MT data and optimizing distance metrics that bring
-              closer the speech-text representations. However, achieving
-              competitive results typically requires some ST data. For this
-              reason, we introduce ZeroSwot, a method for zero-shot ST that
-              bridges the modality gap without any paired ST data. Leveraging a
-              novel CTC compression and Optimal Transport, we train a speech
-              encoder using only ASR data, to align with the representation
-              space of a massively multilingual MT model. The speech encoder
-              seamlessly integrates with the MT model at inference, enabling
-              direct translation from speech to text, across all languages
-              supported by the MT model. Our experiments show that we can
-              effectively close the modality gap without ST data, while our
-              results on MuST-C and CoVoST demonstrate our method's superiority
-              over not only previous zero-shot models, but also supervised
-              ones, achieving state-of-the-art results.",
-  journal  = "arXiv",
-  year     =  2024,
-  url      = "https://arxiv.org/abs/2402.10422",
-  keywords = "WP4;Models",
-  doi      = " https://doi.org/10.48550/arXiv.2402.10422"
-}
-
-@ARTICLE{Xu2024-wc,
-  title         = "{VASA-1}: Lifelike {Audio-Driven} Talking Faces Generated in
-                   Real Time",
-  author        = "Xu, Sicheng and Chen, Guojun and Guo, Yu-Xiao and Yang,
-                   Jiaolong and Li, Chong and Zang, Zhenyu and Zhang, Yizhong
-                   and Tong, Xin and Guo, Baining",
-  abstract      = "We introduce VASA, a framework for generating lifelike
-                   talking faces with appealing visual affective skills (VAS)
-                   given a single static image and a speech audio clip. Our
-                   premiere model, VASA-1, is capable of not only producing lip
-                   movements that are exquisitely synchronized with the audio,
-                   but also capturing a large spectrum of facial nuances and
-                   natural head motions that contribute to the perception of
-                   authenticity and liveliness. The core innovations include a
-                   holistic facial dynamics and head movement generation model
-                   that works in a face latent space, and the development of
-                   such an expressive and disentangled face latent space using
-                   videos. Through extensive experiments including evaluation
-                   on a set of new metrics, we show that our method
-                   significantly outperforms previous methods along various
-                   dimensions comprehensively. Our method not only delivers
-                   high video quality with realistic facial and head dynamics
-                   but also supports the online generation of 512x512 videos at
-                   up to 40 FPS with negligible starting latency. It paves the
-                   way for real-time engagements with lifelike avatars that
-                   emulate human conversational behaviors.",
-  month         =  apr,
+@ARTICLE{Zhou2024-wp,
+  title         = "{TinyLLaVA}: A Framework of Small-scale Large Multimodal
+                   Models",
+  author        = "Zhou, Baichuan and Hu, Ying and Weng, Xi and Jia, Junlong
+                   and Luo, Jie and Liu, Xien and Wu, Ji and Huang, Lei",
+  abstract      = "We present the TinyLLaVA framework that provides a unified
+                   perspective in designing and analyzing the small-scale Large
+                   Multimodal Models (LMMs). We empirically study the effects
+                   of different vision encoders, connection modules, language
+                   models, training data and training recipes. Our extensive
+                   experiments showed that better quality of data combined with
+                   better training recipes, smaller LMMs can consistently
+                   achieve on-par performances compared to bigger LMMs. Under
+                   our framework, we train a family of small-scale LMMs. Our
+                   best model, TinyLLaVA-3.1B, achieves better overall
+                   performance against existing 7B models such as LLaVA-1.5 and
+                   Qwen-VL. We hope our findings can serve as baselines for
+                   future research in terms of data scaling, training setups
+                   and model selections. Our model weights and codes will be
+                   made public.",
+  month         =  feb,
   year          =  2024,
-  url           = "http://arxiv.org/abs/2404.10667",
-  keywords      = "WP3;Models",
+  url           = "http://arxiv.org/abs/2402.14289",
+  keywords      = "Models;WP3",
   archivePrefix = "arXiv",
-  eprint        = "2404.10667",
-  primaryClass  = "cs.CV",
-  arxivid       = "2404.10667"
+  eprint        = "2402.14289",
+  primaryClass  = "cs.LG",
+  arxivid       = "2402.14289"
 }
 
-@ARTICLE{Zhang2023-dh,
-  title         = "{SpeechGPT}: Empowering Large Language Models with Intrinsic
-                   {Cross-Modal} Conversational Abilities",
-  author        = "Zhang, Dong and Li, Shimin and Zhang, Xin and Zhan, Jun and
-                   Wang, Pengyu and Zhou, Yaqian and Qiu, Xipeng",
-  abstract      = "Multi-modal large language models are regarded as a crucial
-                   step towards Artificial General Intelligence (AGI) and have
-                   garnered significant interest with the emergence of ChatGPT.
-                   However, current speech-language models typically adopt the
-                   cascade paradigm, preventing inter-modal knowledge transfer.
-                   In this paper, we propose SpeechGPT, a large language model
-                   with intrinsic cross-modal conversational abilities, capable
-                   of perceiving and generating multi-model content. With
-                   discrete speech representations, we first construct
-                   SpeechInstruct, a large-scale cross-modal speech instruction
-                   dataset. Additionally, we employ a three-stage training
-                   strategy that includes modality-adaptation pre-training,
-                   cross-modal instruction fine-tuning, and chain-of-modality
-                   instruction fine-tuning. The experimental results
-                   demonstrate that SpeechGPT has an impressive capacity to
-                   follow multi-modal human instructions and highlight the
-                   potential of handling multiple modalities with one model.
-                   Demos are shown in
-                   https://0nutation.github.io/SpeechGPT.github.io/.",
-  month         =  may,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2305.11000",
-  keywords      = "WP3;Models",
+@ARTICLE{Maaz2024-vd,
+  title         = "{PALO}: A Polyglot Large Multimodal Model for {5B} People",
+  author        = "Maaz, Muhammad and Rasheed, Hanoona and Shaker, Abdelrahman
+                   and Khan, Salman and Cholakal, Hisham and Anwer, Rao M and
+                   Baldwin, Tim and Felsberg, Michael and Khan, Fahad S",
+  abstract      = "In pursuit of more inclusive Vision-Language Models (VLMs),
+                   this study introduces a Large Multilingual Multimodal Model
+                   called \textbackslashtextsc\{Palo\}.
+                   \textbackslashtextsc\{Palo\} offers visual reasoning
+                   capabilities in 10 major languages, including English,
+                   Chinese, Hindi, Spanish, French, Arabic, Bengali, Russian,
+                   Urdu, and Japanese, that span a total of $\sim$5B people
+                   (65\% of the world population). Our approach involves a
+                   semi-automated translation approach to adapt the multimodal
+                   instruction dataset from English to the target languages
+                   using a fine-tuned Large Language Model, thereby ensuring
+                   high linguistic fidelity while allowing scalability due to
+                   minimal manual effort. The incorporation of diverse
+                   instruction sets helps us boost overall performance across
+                   multiple languages especially those that are
+                   underrepresented like Hindi, Arabic, Bengali, and Urdu. The
+                   resulting models are trained across three scales (1.7B, 7B
+                   and 13B parameters) to show the generalization and
+                   scalability where we observe substantial improvements
+                   compared to strong baselines. We also propose the first
+                   multilingual multimodal benchmark for the forthcoming
+                   approaches to evaluate their vision-language reasoning
+                   capabilities across languages. Code:
+                   https://github.com/mbzuai-oryx/PALO.",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.14818",
+  keywords      = "Models;WP3",
   archivePrefix = "arXiv",
-  eprint        = "2305.11000",
+  eprint        = "2402.14818",
   primaryClass  = "cs.CL",
-  arxivid       = "2305.11000"
-}
-
-@ARTICLE{Hu2024-ua,
-  title         = "{WavLLM}: Towards Robust and Adaptive Speech Large Language
-                   Model",
-  author        = "Hu, Shujie and Zhou, Long and Liu, Shujie and Chen, Sanyuan
-                   and Hao, Hongkun and Pan, Jing and Liu, Xunying and Li,
-                   Jinyu and Sivasankaran, Sunit and Liu, Linquan and Wei, Furu",
-  abstract      = "The recent advancements in large language models (LLMs) have
-                   revolutionized the field of natural language processing,
-                   progressively broadening their scope to multimodal
-                   perception and generation. However, effectively integrating
-                   listening capabilities into LLMs poses significant
-                   challenges, particularly with respect to generalizing across
-                   varied contexts and executing complex auditory tasks. In
-                   this work, we introduce WavLLM, a robust and adaptive speech
-                   large language model with dual encoders, and a prompt-aware
-                   LoRA weight adapter, optimized by a two-stage curriculum
-                   learning approach. Leveraging dual encoders, we decouple
-                   different types of speech information, utilizing a Whisper
-                   encoder to process the semantic content of speech, and a
-                   WavLM encoder to capture the unique characteristics of the
-                   speaker's identity. Within the curriculum learning
-                   framework, WavLLM first builds its foundational capabilities
-                   by optimizing on mixed elementary single tasks, followed by
-                   advanced multi-task training on more complex tasks such as
-                   combinations of the elementary tasks. To enhance the
-                   flexibility and adherence to different tasks and
-                   instructions, a prompt-aware LoRA weight adapter is
-                   introduced in the second advanced multi-task training stage.
-                   We validate the proposed model on universal speech
-                   benchmarks including tasks such as ASR, ST, SV, ER, and also
-                   apply it to specialized datasets like Gaokao English
-                   listening comprehension set for SQA, and speech
-                   Chain-of-Thought (CoT) evaluation set. Experiments
-                   demonstrate that the proposed model achieves
-                   state-of-the-art performance across a range of speech tasks
-                   on the same model size, exhibiting robust generalization
-                   capabilities in executing complex tasks using CoT approach.
-                   Furthermore, our model successfully completes Gaokao tasks
-                   without specialized training. The codes, models, audio, and
-                   Gaokao evaluation set can be accessed at
-                   \textbackslashurl\{aka.ms/wavllm\}.",
-  month         =  mar,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2404.00656",
-  keywords      = "WP3;Models",
-  archivePrefix = "arXiv",
-  eprint        = "2404.00656",
-  primaryClass  = "cs.CL",
-  arxivid       = "2404.00656"
-}
-
-@INPROCEEDINGS{Carletta2006-la,
-  title     = "The {AMI} Meeting Corpus: A Pre-announcement",
-  booktitle = "Machine Learning for Multimodal Interaction",
-  author    = "Carletta, Jean and Ashby, Simone and Bourban, Sebastien and
-               Flynn, Mike and Guillemot, Mael and Hain, Thomas and Kadlec,
-               Jaroslav and Karaiskos, Vasilis and Kraaij, Wessel and
-               Kronenthal, Melissa and Lathoud, Guillaume and Lincoln, Mike and
-               Lisowska, Agnes and McCowan, Iain and Post, Wilfried and
-               Reidsma, Dennis and Wellner, Pierre",
-  abstract  = "The AMI Meeting Corpus is a multi-modal data set consisting of
-               100 hours of meeting recordings. It is being created in the
-               context of a project that is developing meeting browsing
-               technology and will eventually be released publicly. Some of the
-               meetings it contains are naturally occurring, and some are
-               elicited, particularly using a scenario in which the
-               participants play different roles in a design team, taking a
-               design project from kick-off to completion over the course of a
-               day. The corpus is being recorded using a wide range of devices
-               including close-talking and far-field microphones, individual
-               and room-view video cameras, projection, a whiteboard, and
-               individual pens, all of which produce output signals that are
-               synchronized with each other. It is also being hand-annotated
-               for many different phenomena, including orthographic
-               transcription, discourse properties such as named entities and
-               dialogue acts, summaries, emotions, and some head and hand
-               gestures. We describe the data set, including the rationale
-               behind using elicited material, and explain how the material is
-               being recorded, transcribed and annotated.",
-  publisher = "Springer Berlin Heidelberg",
-  pages     = "28--39",
-  year      =  2006,
-  url       = "http://dx.doi.org/10.1007/11677482_3",
-  keywords  = "WP3;Datasets",
-  doi       = "10.1007/11677482\_3"
-}
-
-@ARTICLE{Yang2024-la,
-  title         = "A {Large-Scale} Evaluation of Speech Foundation Models",
-  author        = "Yang, Shu-Wen and Chang, Heng-Jui and Huang, Zili and Liu,
-                   Andy T and Lai, Cheng-I and Wu, Haibin and Shi, Jiatong and
-                   Chang, Xuankai and Tsai, Hsiang-Sheng and Huang, Wen-Chin
-                   and Feng, Tzu-Hsun and Chi, Po-Han and Lin, Yist Y and
-                   Chuang, Yung-Sung and Huang, Tzu-Hsien and Tseng, Wei-Cheng
-                   and Lakhotia, Kushal and Li, Shang-Wen and Mohamed,
-                   Abdelrahman and Watanabe, Shinji and Lee, Hung-Yi",
-  abstract      = "The foundation model paradigm leverages a shared foundation
-                   model to achieve state-of-the-art (SOTA) performance for
-                   various tasks, requiring minimal downstream-specific
-                   modeling and data annotation. This approach has proven
-                   crucial in the field of Natural Language Processing (NLP).
-                   However, the speech processing community lacks a similar
-                   setup to explore the paradigm systematically. In this work,
-                   we establish the Speech processing Universal PERformance
-                   Benchmark (SUPERB) to study the effectiveness of the
-                   paradigm for speech. We propose a unified multi-tasking
-                   framework to address speech processing tasks in SUPERB using
-                   a frozen foundation model followed by task-specialized,
-                   lightweight prediction heads. Combining our results with
-                   community submissions, we verify that the foundation model
-                   paradigm is promising for speech, and our multi-tasking
-                   framework is simple yet effective, as the best-performing
-                   foundation model shows competitive generalizability across
-                   most SUPERB tasks. For reproducibility and extensibility, we
-                   have developed a long-term maintained platform that enables
-                   deterministic benchmarking, allows for result sharing via an
-                   online leaderboard, and promotes collaboration through a
-                   community-driven benchmark database to support new
-                   development cycles. Finally, we conduct a series of analyses
-                   to offer an in-depth understanding of SUPERB and speech
-                   foundation models, including information flows across tasks
-                   inside the models, the correctness of the weighted-sum
-                   benchmarking protocol and the statistical significance and
-                   robustness of the benchmark.",
-  month         =  apr,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2404.09385",
-  keywords      = "WP3;Datasets;WP4",
-  archivePrefix = "arXiv",
-  eprint        = "2404.09385",
-  primaryClass  = "eess.AS",
-  arxivid       = "2404.09385"
-}
-
-@ARTICLE{Tedeschi2024-ya,
-  title         = "{ALERT}: A Comprehensive Benchmark for Assessing Large
-                   Language Models' Safety through Red Teaming",
-  author        = "Tedeschi, Simone and Friedrich, Felix and Schramowski,
-                   Patrick and Kersting, Kristian and Navigli, Roberto and
-                   Nguyen, Huu and Li, Bo",
-  abstract      = "When building Large Language Models (LLMs), it is paramount
-                   to bear safety in mind and protect them with guardrails.
-                   Indeed, LLMs should never generate content promoting or
-                   normalizing harmful, illegal, or unethical behavior that may
-                   contribute to harm to individuals or society. This principle
-                   applies to both normal and adversarial use. In response, we
-                   introduce ALERT, a large-scale benchmark to assess safety
-                   based on a novel fine-grained risk taxonomy. It is designed
-                   to evaluate the safety of LLMs through red teaming
-                   methodologies and consists of more than 45k instructions
-                   categorized using our novel taxonomy. By subjecting LLMs to
-                   adversarial testing scenarios, ALERT aims to identify
-                   vulnerabilities, inform improvements, and enhance the
-                   overall safety of the language models. Furthermore, the
-                   fine-grained taxonomy enables researchers to perform an
-                   in-depth evaluation that also helps one to assess the
-                   alignment with various policies. In our experiments, we
-                   extensively evaluate 10 popular open- and closed-source LLMs
-                   and demonstrate that many of them still struggle to attain
-                   reasonable levels of safety.",
-  month         =  apr,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2404.08676",
-  keywords      = "Datasets;WP5",
-  archivePrefix = "arXiv",
-  eprint        = "2404.08676",
-  primaryClass  = "cs.CL",
-  arxivid       = "2404.08676"
-}
-
-@ARTICLE{Wadhawan2024-tf,
-  title         = "{ConTextual}: Evaluating {Context-Sensitive} {Text-Rich}
-                   Visual Reasoning in Large Multimodal Models",
-  author        = "Wadhawan, Rohan and Bansal, Hritik and Chang, Kai-Wei and
-                   Peng, Nanyun",
-  abstract      = "Recent advancements in AI have led to the development of
-                   large multimodal models (LMMs) capable of processing complex
-                   tasks involving joint reasoning over text and visual content
-                   in the image (e.g., navigating maps in public places). This
-                   paper introduces ConTextual, a novel benchmark comprising
-                   instructions designed explicitly to evaluate LMMs' ability
-                   to perform context-sensitive text-rich visual reasoning.
-                   ConTextual emphasizes diverse real-world scenarios (e.g.,
-                   time-reading, navigation, shopping and more) demanding a
-                   deeper understanding of the interactions between textual and
-                   visual elements. Our findings reveal a significant
-                   performance gap of 30.8\% between the best-performing LMM,
-                   GPT-4V(ision), and human capabilities using human evaluation
-                   indicating substantial room for improvement in
-                   context-sensitive text-rich visual reasoning. Notably, while
-                   GPT-4V excelled in abstract categories like meme and quote
-                   interpretation, its overall performance still lagged behind
-                   humans. In addition to human evaluations, we also employed
-                   automatic evaluation metrics using GPT-4, uncovering similar
-                   trends in performance disparities. We also perform a
-                   fine-grained evaluation across diverse visual contexts and
-                   provide qualitative analysis which provides a robust
-                   framework for future advancements in the LMM design.
-                   https://con-textual.github.io/",
-  month         =  jan,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2401.13311",
-  keywords      = "WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2401.13311",
-  primaryClass  = "cs.CV",
-  arxivid       = "2401.13311"
-}
-
-@ARTICLE{Zhu2023-bv,
-  title         = "{LanguageBind}: Extending {Video-Language} Pretraining to
-                   N-modality by Language-based Semantic Alignment",
-  author        = "Zhu, Bin and Lin, Bin and Ning, Munan and Yan, Yang and Cui,
-                   Jiaxi and Wang, Hongfa and Pang, Yatian and Jiang, Wenhao
-                   and Zhang, Junwu and Li, Zongwei and Zhang, Wancai and Li,
-                   Zhifeng and Liu, Wei and Yuan, Li",
-  abstract      = "The video-language (VL) pretraining has achieved remarkable
-                   improvement in multiple downstream tasks. However, the
-                   current VL pretraining framework is hard to extend to
-                   multiple modalities (N modalities, N>=3) beyond vision and
-                   language. We thus propose LanguageBind, taking the language
-                   as the bind across different modalities because the language
-                   modality is well-explored and contains rich semantics.
-                   Specifically, we freeze the language encoder acquired by VL
-                   pretraining, then train encoders for other modalities with
-                   contrastive learning. As a result, all modalities are mapped
-                   to a shared feature space, implementing multi-modal semantic
-                   alignment. While LanguageBind ensures that we can extend VL
-                   modalities to N modalities, we also need a high-quality
-                   dataset with alignment data pairs centered on language. We
-                   thus propose VIDAL-10M with Video, Infrared, Depth, Audio
-                   and their corresponding Language, naming as VIDAL-10M. In
-                   our VIDAL-10M, all videos are from short video platforms
-                   with complete semantics rather than truncated segments from
-                   long videos, and all the video, depth, infrared, and audio
-                   modalities are aligned to their textual descriptions.
-                   LanguageBind has achieved superior performance on a wide
-                   range of 15 benchmarks covering video, audio, depth, and
-                   infrared. Moreover, multiple experiments have provided
-                   evidence for the effectiveness of LanguageBind in achieving
-                   indirect alignment and complementarity among diverse
-                   modalities. Code address:
-                   https://github.com/PKU-YuanGroup/LanguageBind",
-  month         =  oct,
-  year          =  2023,
-  url           = "http://arxiv.org/abs/2310.01852",
-  keywords      = "WP3",
-  archivePrefix = "arXiv",
-  eprint        = "2310.01852",
-  primaryClass  = "cs.CV",
-  arxivid       = "2310.01852"
+  arxivid       = "2402.14818"
 }
 
 @ARTICLE{Yeo2024-tp,
@@ -1381,6 +996,210 @@
   arxivid       = "2402.17485"
 }
 
+@ARTICLE{Alves2024-fx,
+  title         = "Tower: An Open Multilingual Large Language Model for
+                   {Translation-Related} Tasks",
+  author        = "Alves, Duarte M and Pombal, Jos{\'e} and Guerreiro, Nuno M
+                   and Martins, Pedro H and Alves, Jo{\~a}o and Farajian, Amin
+                   and Peters, Ben and Rei, Ricardo and Fernandes, Patrick and
+                   Agrawal, Sweta and Colombo, Pierre and de Souza, Jos{\'e} G
+                   C and Martins, Andr{\'e} F T",
+  abstract      = "While general-purpose large language models (LLMs)
+                   demonstrate proficiency on multiple tasks within the domain
+                   of translation, approaches based on open LLMs are
+                   competitive only when specializing on a single task. In this
+                   paper, we propose a recipe for tailoring LLMs to multiple
+                   tasks present in translation workflows. We perform continued
+                   pretraining on a multilingual mixture of monolingual and
+                   parallel data, creating TowerBase, followed by finetuning on
+                   instructions relevant for translation processes, creating
+                   TowerInstruct. Our final model surpasses open alternatives
+                   on several tasks relevant to translation workflows and is
+                   competitive with general-purpose closed LLMs. To facilitate
+                   future research, we release the Tower models, our
+                   specialization dataset, an evaluation framework for LLMs
+                   focusing on the translation ecosystem, and a collection of
+                   model generations, including ours, on our benchmark.",
+  month         =  feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.17733",
+  keywords      = "WP3;Models",
+  archivePrefix = "arXiv",
+  eprint        = "2402.17733",
+  primaryClass  = "cs.CL",
+  arxivid       = "2402.17733"
+}
+
+@ARTICLE{Hu2024-ua,
+  title         = "{WavLLM}: Towards Robust and Adaptive Speech Large Language
+                   Model",
+  author        = "Hu, Shujie and Zhou, Long and Liu, Shujie and Chen, Sanyuan
+                   and Hao, Hongkun and Pan, Jing and Liu, Xunying and Li,
+                   Jinyu and Sivasankaran, Sunit and Liu, Linquan and Wei, Furu",
+  abstract      = "The recent advancements in large language models (LLMs) have
+                   revolutionized the field of natural language processing,
+                   progressively broadening their scope to multimodal
+                   perception and generation. However, effectively integrating
+                   listening capabilities into LLMs poses significant
+                   challenges, particularly with respect to generalizing across
+                   varied contexts and executing complex auditory tasks. In
+                   this work, we introduce WavLLM, a robust and adaptive speech
+                   large language model with dual encoders, and a prompt-aware
+                   LoRA weight adapter, optimized by a two-stage curriculum
+                   learning approach. Leveraging dual encoders, we decouple
+                   different types of speech information, utilizing a Whisper
+                   encoder to process the semantic content of speech, and a
+                   WavLM encoder to capture the unique characteristics of the
+                   speaker's identity. Within the curriculum learning
+                   framework, WavLLM first builds its foundational capabilities
+                   by optimizing on mixed elementary single tasks, followed by
+                   advanced multi-task training on more complex tasks such as
+                   combinations of the elementary tasks. To enhance the
+                   flexibility and adherence to different tasks and
+                   instructions, a prompt-aware LoRA weight adapter is
+                   introduced in the second advanced multi-task training stage.
+                   We validate the proposed model on universal speech
+                   benchmarks including tasks such as ASR, ST, SV, ER, and also
+                   apply it to specialized datasets like Gaokao English
+                   listening comprehension set for SQA, and speech
+                   Chain-of-Thought (CoT) evaluation set. Experiments
+                   demonstrate that the proposed model achieves
+                   state-of-the-art performance across a range of speech tasks
+                   on the same model size, exhibiting robust generalization
+                   capabilities in executing complex tasks using CoT approach.
+                   Furthermore, our model successfully completes Gaokao tasks
+                   without specialized training. The codes, models, audio, and
+                   Gaokao evaluation set can be accessed at
+                   \textbackslashurl\{aka.ms/wavllm\}.",
+  month         =  mar,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.00656",
+  keywords      = "WP3;Models",
+  archivePrefix = "arXiv",
+  eprint        = "2404.00656",
+  primaryClass  = "cs.CL",
+  arxivid       = "2404.00656"
+}
+
+@ARTICLE{Tedeschi2024-ya,
+  title         = "{ALERT}: A Comprehensive Benchmark for Assessing Large
+                   Language Models' Safety through Red Teaming",
+  author        = "Tedeschi, Simone and Friedrich, Felix and Schramowski,
+                   Patrick and Kersting, Kristian and Navigli, Roberto and
+                   Nguyen, Huu and Li, Bo",
+  abstract      = "When building Large Language Models (LLMs), it is paramount
+                   to bear safety in mind and protect them with guardrails.
+                   Indeed, LLMs should never generate content promoting or
+                   normalizing harmful, illegal, or unethical behavior that may
+                   contribute to harm to individuals or society. This principle
+                   applies to both normal and adversarial use. In response, we
+                   introduce ALERT, a large-scale benchmark to assess safety
+                   based on a novel fine-grained risk taxonomy. It is designed
+                   to evaluate the safety of LLMs through red teaming
+                   methodologies and consists of more than 45k instructions
+                   categorized using our novel taxonomy. By subjecting LLMs to
+                   adversarial testing scenarios, ALERT aims to identify
+                   vulnerabilities, inform improvements, and enhance the
+                   overall safety of the language models. Furthermore, the
+                   fine-grained taxonomy enables researchers to perform an
+                   in-depth evaluation that also helps one to assess the
+                   alignment with various policies. In our experiments, we
+                   extensively evaluate 10 popular open- and closed-source LLMs
+                   and demonstrate that many of them still struggle to attain
+                   reasonable levels of safety.",
+  month         =  apr,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.08676",
+  keywords      = "Datasets;WP5",
+  archivePrefix = "arXiv",
+  eprint        = "2404.08676",
+  primaryClass  = "cs.CL",
+  arxivid       = "2404.08676"
+}
+
+@ARTICLE{Yang2024-la,
+  title         = "A {Large-Scale} Evaluation of Speech Foundation Models",
+  author        = "Yang, Shu-Wen and Chang, Heng-Jui and Huang, Zili and Liu,
+                   Andy T and Lai, Cheng-I and Wu, Haibin and Shi, Jiatong and
+                   Chang, Xuankai and Tsai, Hsiang-Sheng and Huang, Wen-Chin
+                   and Feng, Tzu-Hsun and Chi, Po-Han and Lin, Yist Y and
+                   Chuang, Yung-Sung and Huang, Tzu-Hsien and Tseng, Wei-Cheng
+                   and Lakhotia, Kushal and Li, Shang-Wen and Mohamed,
+                   Abdelrahman and Watanabe, Shinji and Lee, Hung-Yi",
+  abstract      = "The foundation model paradigm leverages a shared foundation
+                   model to achieve state-of-the-art (SOTA) performance for
+                   various tasks, requiring minimal downstream-specific
+                   modeling and data annotation. This approach has proven
+                   crucial in the field of Natural Language Processing (NLP).
+                   However, the speech processing community lacks a similar
+                   setup to explore the paradigm systematically. In this work,
+                   we establish the Speech processing Universal PERformance
+                   Benchmark (SUPERB) to study the effectiveness of the
+                   paradigm for speech. We propose a unified multi-tasking
+                   framework to address speech processing tasks in SUPERB using
+                   a frozen foundation model followed by task-specialized,
+                   lightweight prediction heads. Combining our results with
+                   community submissions, we verify that the foundation model
+                   paradigm is promising for speech, and our multi-tasking
+                   framework is simple yet effective, as the best-performing
+                   foundation model shows competitive generalizability across
+                   most SUPERB tasks. For reproducibility and extensibility, we
+                   have developed a long-term maintained platform that enables
+                   deterministic benchmarking, allows for result sharing via an
+                   online leaderboard, and promotes collaboration through a
+                   community-driven benchmark database to support new
+                   development cycles. Finally, we conduct a series of analyses
+                   to offer an in-depth understanding of SUPERB and speech
+                   foundation models, including information flows across tasks
+                   inside the models, the correctness of the weighted-sum
+                   benchmarking protocol and the statistical significance and
+                   robustness of the benchmark.",
+  month         =  apr,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.09385",
+  keywords      = "WP3;Datasets;WP4",
+  archivePrefix = "arXiv",
+  eprint        = "2404.09385",
+  primaryClass  = "eess.AS",
+  arxivid       = "2404.09385"
+}
+
+@ARTICLE{Xu2024-wc,
+  title         = "{VASA-1}: Lifelike {Audio-Driven} Talking Faces Generated in
+                   Real Time",
+  author        = "Xu, Sicheng and Chen, Guojun and Guo, Yu-Xiao and Yang,
+                   Jiaolong and Li, Chong and Zang, Zhenyu and Zhang, Yizhong
+                   and Tong, Xin and Guo, Baining",
+  abstract      = "We introduce VASA, a framework for generating lifelike
+                   talking faces with appealing visual affective skills (VAS)
+                   given a single static image and a speech audio clip. Our
+                   premiere model, VASA-1, is capable of not only producing lip
+                   movements that are exquisitely synchronized with the audio,
+                   but also capturing a large spectrum of facial nuances and
+                   natural head motions that contribute to the perception of
+                   authenticity and liveliness. The core innovations include a
+                   holistic facial dynamics and head movement generation model
+                   that works in a face latent space, and the development of
+                   such an expressive and disentangled face latent space using
+                   videos. Through extensive experiments including evaluation
+                   on a set of new metrics, we show that our method
+                   significantly outperforms previous methods along various
+                   dimensions comprehensively. Our method not only delivers
+                   high video quality with realistic facial and head dynamics
+                   but also supports the online generation of 512x512 videos at
+                   up to 40 FPS with negligible starting latency. It paves the
+                   way for real-time engagements with lifelike avatars that
+                   emulate human conversational behaviors.",
+  month         =  apr,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.10667",
+  keywords      = "WP3;Models",
+  archivePrefix = "arXiv",
+  eprint        = "2404.10667",
+  primaryClass  = "cs.CV",
+  arxivid       = "2404.10667"
+}
+
 @ARTICLE{Ormazabal2024-xe,
   title         = "Reka Core, Flash, and Edge: A Series of Powerful Multimodal
                    Language Models",
@@ -1426,18 +1245,36 @@
   arxivid       = "2404.12387"
 }
 
-% The entry below contains non-ASCII chars that could not be converted
-% to a LaTeX equivalent.
-@MISC{undated-jk,
-  title       = "speech-trident: Awesome speech/audio {LLMs}, representation
-                 learning, and codec models",
-  author      = "(張凱爲), Kai-Wei Chang",
-  abstract    = "Awesome speech/audio LLMs, representation learning, and codec
-                 models - ga642381/speech-trident",
-  institution = "Github",
-  url         = "https://github.com/ga642381/speech-trident",
-  keywords    = "WP3;Models",
-  language    = "en"
+@ARTICLE{Wallace2024-dv,
+  title         = "The Instruction Hierarchy: Training {LLMs} to Prioritize
+                   Privileged Instructions",
+  author        = "Wallace, Eric and Xiao, Kai and Leike, Reimar and Weng,
+                   Lilian and Heidecke, Johannes and Beutel, Alex",
+  abstract      = "Today's LLMs are susceptible to prompt injections,
+                   jailbreaks, and other attacks that allow adversaries to
+                   overwrite a model's original instructions with their own
+                   malicious prompts. In this work, we argue that one of the
+                   primary vulnerabilities underlying these attacks is that
+                   LLMs often consider system prompts (e.g., text from an
+                   application developer) to be the same priority as text from
+                   untrusted users and third parties. To address this, we
+                   propose an instruction hierarchy that explicitly defines how
+                   models should behave when instructions of different
+                   priorities conflict. We then propose a data generation
+                   method to demonstrate this hierarchical instruction
+                   following behavior, which teaches LLMs to selectively ignore
+                   lower-privileged instructions. We apply this method to
+                   GPT-3.5, showing that it drastically increases robustness --
+                   even for attack types not seen during training -- while
+                   imposing minimal degradations on standard capabilities.",
+  month         =  apr,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.13208",
+  keywords      = "WP5",
+  archivePrefix = "arXiv",
+  eprint        = "2404.13208",
+  primaryClass  = "cs.CR",
+  arxivid       = "2404.13208"
 }
 
 @ARTICLE{Abdin2024-el,
@@ -1497,53 +1334,6 @@
   arxivid       = "2404.14219"
 }
 
-@MISC{Snowflake_AI_Research2024-yo,
-  title        = "Snowflake Arctic - {LLM} for Enterprise {AI}",
-  booktitle    = "Snowflake",
-  author       = "{Snowflake AI Research}",
-  abstract     = "Snowflake Arctic from the Snowflake AI research team is a
-                  top-tier enterprise LLM that pushes the frontiers of
-                  cost-effective training and openness.",
-  month        =  apr,
-  year         =  2024,
-  url          = "https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake",
-  howpublished = "\url{https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake}",
-  note         = "Accessed: 2024-5-3",
-  language     = "en"
-}
-
-@ARTICLE{Wallace2024-dv,
-  title         = "The Instruction Hierarchy: Training {LLMs} to Prioritize
-                   Privileged Instructions",
-  author        = "Wallace, Eric and Xiao, Kai and Leike, Reimar and Weng,
-                   Lilian and Heidecke, Johannes and Beutel, Alex",
-  abstract      = "Today's LLMs are susceptible to prompt injections,
-                   jailbreaks, and other attacks that allow adversaries to
-                   overwrite a model's original instructions with their own
-                   malicious prompts. In this work, we argue that one of the
-                   primary vulnerabilities underlying these attacks is that
-                   LLMs often consider system prompts (e.g., text from an
-                   application developer) to be the same priority as text from
-                   untrusted users and third parties. To address this, we
-                   propose an instruction hierarchy that explicitly defines how
-                   models should behave when instructions of different
-                   priorities conflict. We then propose a data generation
-                   method to demonstrate this hierarchical instruction
-                   following behavior, which teaches LLMs to selectively ignore
-                   lower-privileged instructions. We apply this method to
-                   GPT-3.5, showing that it drastically increases robustness --
-                   even for attack types not seen during training -- while
-                   imposing minimal degradations on standard capabilities.",
-  month         =  apr,
-  year          =  2024,
-  url           = "http://arxiv.org/abs/2404.13208",
-  keywords      = "WP5",
-  archivePrefix = "arXiv",
-  eprint        = "2404.13208",
-  primaryClass  = "cs.CR",
-  arxivid       = "2404.13208"
-}
-
 @ARTICLE{Elhoushi2024-ee,
   title         = "{LayerSkip}: Enabling Early Exit Inference and
                    {Self-Speculative} Decoding",
@@ -1581,4 +1371,215 @@
   eprint        = "2404.16710",
   primaryClass  = "cs.CL",
   arxivid       = "2404.16710"
+}
+
+@ARTICLE{Ioannis_Tsiamas_and_Gerard_I_Gallego_and_Jose_A_R_Fonollosa_and_Marta_R_Costa-jussa2024-fy,
+  title    = "Pushing the Limits of Zero-shot {End-to-End} Speech Translation",
+  author   = "{Ioannis Tsiamas and Gerard I. G{\'a}llego and Jos{\'e} A. R.
+              Fonollosa and Marta R. Costa-juss{\`a}}",
+  abstract = "Data scarcity and the modality gap between the speech and text
+              modalities are two major obstacles of end-to-end Speech
+              Translation (ST) systems, thus hindering their performance. Prior
+              work has attempted to mitigate these challenges by leveraging
+              external MT data and optimizing distance metrics that bring
+              closer the speech-text representations. However, achieving
+              competitive results typically requires some ST data. For this
+              reason, we introduce ZeroSwot, a method for zero-shot ST that
+              bridges the modality gap without any paired ST data. Leveraging a
+              novel CTC compression and Optimal Transport, we train a speech
+              encoder using only ASR data, to align with the representation
+              space of a massively multilingual MT model. The speech encoder
+              seamlessly integrates with the MT model at inference, enabling
+              direct translation from speech to text, across all languages
+              supported by the MT model. Our experiments show that we can
+              effectively close the modality gap without ST data, while our
+              results on MuST-C and CoVoST demonstrate our method's superiority
+              over not only previous zero-shot models, but also supervised
+              ones, achieving state-of-the-art results.",
+  journal  = "arXiv",
+  year     =  2024,
+  url      = "https://arxiv.org/abs/2402.10422",
+  keywords = "WP4;Models",
+  doi      = " https://doi.org/10.48550/arXiv.2402.10422"
+}
+
+@INPROCEEDINGS{Carletta2006-la,
+  title     = "The {AMI} Meeting Corpus: A Pre-announcement",
+  booktitle = "Machine Learning for Multimodal Interaction",
+  author    = "Carletta, Jean and Ashby, Simone and Bourban, Sebastien and
+               Flynn, Mike and Guillemot, Mael and Hain, Thomas and Kadlec,
+               Jaroslav and Karaiskos, Vasilis and Kraaij, Wessel and
+               Kronenthal, Melissa and Lathoud, Guillaume and Lincoln, Mike and
+               Lisowska, Agnes and McCowan, Iain and Post, Wilfried and
+               Reidsma, Dennis and Wellner, Pierre",
+  abstract  = "The AMI Meeting Corpus is a multi-modal data set consisting of
+               100 hours of meeting recordings. It is being created in the
+               context of a project that is developing meeting browsing
+               technology and will eventually be released publicly. Some of the
+               meetings it contains are naturally occurring, and some are
+               elicited, particularly using a scenario in which the
+               participants play different roles in a design team, taking a
+               design project from kick-off to completion over the course of a
+               day. The corpus is being recorded using a wide range of devices
+               including close-talking and far-field microphones, individual
+               and room-view video cameras, projection, a whiteboard, and
+               individual pens, all of which produce output signals that are
+               synchronized with each other. It is also being hand-annotated
+               for many different phenomena, including orthographic
+               transcription, discourse properties such as named entities and
+               dialogue acts, summaries, emotions, and some head and hand
+               gestures. We describe the data set, including the rationale
+               behind using elicited material, and explain how the material is
+               being recorded, transcribed and annotated.",
+  publisher = "Springer Berlin Heidelberg",
+  pages     = "28--39",
+  year      =  2006,
+  url       = "http://dx.doi.org/10.1007/11677482_3",
+  keywords  = "WP3;Datasets",
+  doi       = "10.1007/11677482\_3"
+}
+
+@MISC{Puvvada_undated-ry,
+  title        = "{NVIDIA} {NeMo} Canary",
+  author       = "Puvvada*', ['krishna C and {\.Z}elasko*', 'piotr and Huang*',
+                  'he and Hrinchuk*', 'oleksii and Koluguri*', 'nithin Rao and
+                  Majumdar', 'somshubra and Rastorgueva', 'elena and Dhawan',
+                  'kunal and Chen', 'zhehuai and Larukhin', 'vitaly and Balam',
+                  'jagadeesh and Ginsburg'], 'boris",
+  abstract     = "State of the Art Speech Recognition and Translation",
+  url          = "https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/",
+  howpublished = "\url{https://nvidia.github.io/NeMo/blogs/2024/2024-02-canary/}",
+  note         = "Accessed: 2024-2-27",
+  keywords     = "Models;WP3;WP4"
+}
+
+@MISC{Banks2024-ca,
+  title        = "Gemma: Introducing new state-of-the-art open models",
+  booktitle    = "Google",
+  author       = "Banks, Jeanine",
+  abstract     = "Gemma is a family of lightweight, state-of-the art open
+                  models built from the same research and technology used to
+                  create the Gemini models.",
+  month        =  feb,
+  year         =  2024,
+  url          = "https://blog.google/technology/developers/gemma-open-models/",
+  howpublished = "\url{https://blog.google/technology/developers/gemma-open-models/}",
+  note         = "Accessed: 2024-2-27",
+  keywords     = "Models;WP3",
+  language     = "en"
+}
+
+@ARTICLE{Norelli2024-ui,
+  title   = "{ASIF}: Coupled data turns unimodal models to multimodal without
+             training",
+  author  = "Norelli, Antonio and Fumero, Marco and Maiorca, Valentino and
+             Moschella, Luca and Rodola, Emanuele and Locatello, Francesco",
+  journal = "Adv. Neural Inf. Process. Syst.",
+  volume  =  36,
+  year    =  2024,
+  url     = "https://proceedings.neurips.cc/paper_files/paper/2023/hash/3186591903d9db31770ad131adb5ceb4-Abstract-Conference.html",
+  issn    = "1049-5258"
+}
+
+@MISC{Snowflake_AI_Research2024-yo,
+  title        = "Snowflake Arctic - {LLM} for Enterprise {AI}",
+  booktitle    = "Snowflake",
+  author       = "{Snowflake AI Research}",
+  abstract     = "Snowflake Arctic from the Snowflake AI research team is a
+                  top-tier enterprise LLM that pushes the frontiers of
+                  cost-effective training and openness.",
+  month        =  apr,
+  year         =  2024,
+  url          = "https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake",
+  howpublished = "\url{https://www.snowflake.com/blog/arctic-open-efficient-foundation-language-models-snowflake}",
+  note         = "Accessed: 2024-5-3",
+  keywords     = "Models",
+  language     = "en"
+}
+
+% The entry below contains non-ASCII chars that could not be converted
+% to a LaTeX equivalent.
+@MISC{undated-jk,
+  title       = "speech-trident: Awesome speech/audio {LLMs}, representation
+                 learning, and codec models",
+  author      = "(張凱爲), Kai-Wei Chang",
+  abstract    = "Awesome speech/audio LLMs, representation learning, and codec
+                 models - ga642381/speech-trident",
+  institution = "Github",
+  url         = "https://github.com/ga642381/speech-trident",
+  keywords    = "WP3;Models",
+  language    = "en"
+}
+
+@MISC{Pandey2024-fy,
+  title        = "{BharatGPT} Aims to Become Meta of Indic {LLMs}",
+  booktitle    = "Analytics India Magazine",
+  author       = "Pandey, Mohit",
+  abstract     = "BharatGPT researchers know the power of open source and have
+                  plans to release a bunch of models initially for the
+                  developer community.",
+  month        =  jan,
+  year         =  2024,
+  url          = "https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/",
+  howpublished = "\url{https://analyticsindiamag.com/bharatgpt-aims-to-become-meta-of-indic-llms/}",
+  note         = "Accessed: 2024-2-27",
+  language     = "en"
+}
+
+@MISC{Xiong_undated-oy,
+  title        = "Introducing The Foundation Model Transparency Index",
+  booktitle    = "Stanford {HAI}",
+  author       = "Xiong, Betty and Zhang, Daniel",
+  abstract     = "A new index rates the transparency of 10 foundation model
+                  companies and finds them lacking.",
+  url          = "https://hai.stanford.edu/news/introducing-foundation-model-transparency-index",
+  howpublished = "\url{https://hai.stanford.edu/news/introducing-foundation-model-transparency-index}",
+  note         = "Accessed: 2024-2-27",
+  language     = "en"
+}
+
+@MISC{noauthor_undated-zf,
+  title        = "Revisiting Feature Prediction for Learning Visual
+                  Representations from Video",
+  abstract     = "This paper explores feature prediction as a stand-alone
+                  objective for unsupervised learning from video and introduces
+                  V-JEPA, a collection of vision...",
+  url          = "https://ai.meta.com/research/publications/revisiting-feature-prediction-for-learning-visual-representations-from-video/",
+  howpublished = "\url{https://ai.meta.com/research/publications/revisiting-feature-prediction-for-learning-visual-representations-from-video/}",
+  note         = "Accessed: 2024-2-27",
+  keywords     = "Models",
+  language     = "en"
+}
+
+@MISC{noauthor_undated-qk,
+  title        = "Empathic Voice Interface ({EVI})",
+  abstract     = "Hume's Empathic Voice Interface (EVI) is the world's first
+                  emotionally intelligent voice AI.",
+  url          = "https://dev.hume.ai/docs/empathic-voice-interface-evi/overview",
+  howpublished = "\url{https://dev.hume.ai/docs/empathic-voice-interface-evi/overview}",
+  note         = "Accessed: 2024-4-2",
+  keywords     = "WP3",
+  language     = "en"
+}
+
+@MISC{noauthor_undated-xw,
+  title        = "Accelerating Generative {AI} with {PyTorch} {IV}: Seamless
+                  {M4T}, fast",
+  booktitle    = "{PyTorch}",
+  abstract     = "This post is the fourth part of a multi-series blog focused
+                  on how to accelerate generative AI models with pure, native
+                  PyTorch. To skip to the code, check out our github
+                  (seamless\_communication, fairseq2). We are excited to share
+                  a breadth of newly released PyTorch performance features
+                  alongside practical examples to see how far we can push
+                  PyTorch native performance. In part one, we showed how to
+                  accelerate Segment Anything over 8x using only pure, native
+                  PyTorch. In part two, we showed how to accelerate Llama-7B by
+                  almost 10x using only native PyTorch optimizations. In part
+                  three, we showed how to accelerate text-to-image diffusion
+                  models up to 3x using only native Pytorch optimizations.",
+  url          = "https://pytorch.org/blog/accelerating-generative-ai-4/",
+  howpublished = "\url{https://pytorch.org/blog/accelerating-generative-ai-4/}",
+  note         = "Accessed: 2024-2-27",
+  language     = "en"
 }
