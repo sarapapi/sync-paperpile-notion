@@ -2369,6 +2369,176 @@
                    speech modality."
 }
 
+@ARTICLE{Chen2024-fm,
+  title         = "An image is worth 1/2 tokens after layer 2: Plug-and-play
+                   inference acceleration for Large Vision-Language Models",
+  author        = "Chen, Liang and Zhao, Haozhe and Liu, Tianyu and Bai, Shuai
+                   and Lin, Junyang and Zhou, Chang and Chang, Baobao",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "In this study, we identify the inefficient attention
+                   phenomena in Large Vision-Language Models (LVLMs), notably
+                   within prominent models like LLaVA-1.5, QwenVL-Chat and
+                   Video-LLaVA. We find out that the attention computation over
+                   visual tokens is of extreme inefficiency in the deep layers
+                   of popular LVLMs, suggesting a need for a sparser approach
+                   compared to textual data handling. To this end, we introduce
+                   FastV, a versatile plug-and-play method designed to optimize
+                   computational efficiency by learning adaptive attention
+                   patterns in early layers and pruning visual tokens in
+                   subsequent ones. Our evaluations demonstrate FastV's ability
+                   to dramatically reduce computational costs (e.g., a 45
+                   reduction in FLOPs for LLaVA-1.5-13B) without sacrificing
+                   performance in a wide range of image and video understanding
+                   tasks. The computational efficiency and performance trade-off
+                   of FastV are highly customizable and pareto-efficient. It can
+                   compress the FLOPs of a 13B-parameter model to achieve a
+                   lower budget than that of a 7B-parameter model, while still
+                   maintaining superior performance. We believe FastV has
+                   practical values for deployment of LVLMs in edge devices and
+                   commercial models. Code is released at
+                   https://github.com/pkunlp-icler/FastV.",
+  month         =  "11~" # mar,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2403.06764",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV",
+  eprint        = "2403.06764",
+  keywords      = "WP3",
+  annote        = "[KIT - Irem Eyiokur] Recent work presented @ECCV2024. This
+                   study identifies inefficiencies in attention computation over
+                   visual tokens in Large Vision-Language Models (LVLMs) like
+                   LLaVA-1.5, QwenVL-Chat, and Video-LLaVA, particularly in deep
+                   layers, suggesting the need for a sparser approach.The
+                   proposed FastV is reducing computational costs significantly
+                   (e.g., 45\% FLOP reduction) without sacrificing performance
+                   across image and video tasks."
+}
+
+@ARTICLE{Liu2024-jo,
+  title         = "{ST}-{LLM}: Large Language Models are effective temporal
+                   learners",
+  author        = "Liu, Ruyang and Li, Chen and Tang, Haoran and Ge, Yixiao and
+                   Shan, Ying and Li, Ge",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "Large Language Models (LLMs) have showcased impressive
+                   capabilities in text comprehension and generation, prompting
+                   research efforts towards video LLMs to facilitate human-AI
+                   interaction at the video level. However, how to effectively
+                   encode and understand videos in video-based dialogue systems
+                   remains to be solved. In this paper, we investigate a
+                   straightforward yet unexplored question: Can we feed all
+                   spatial-temporal tokens into the LLM, thus delegating the
+                   task of video sequence modeling to the LLMs? Surprisingly,
+                   this simple approach yields significant improvements in video
+                   understanding. Based upon this, we propose ST-LLM, an
+                   effective video-LLM baseline with Spatial-Temporal sequence
+                   modeling inside LLM. Furthermore, to address the overhead and
+                   stability issues introduced by uncompressed video tokens
+                   within LLMs, we develop a dynamic masking strategy with
+                   tailor-made training objectives. For particularly long
+                   videos, we have also designed a global-local input module to
+                   balance efficiency and effectiveness. Consequently, we
+                   harness LLM for proficient spatial-temporal modeling, while
+                   upholding efficiency and stability. Extensive experimental
+                   results attest to the effectiveness of our method. Through a
+                   more concise model and training pipeline, ST-LLM establishes
+                   a new state-of-the-art result on VideoChatGPT-Bench and
+                   MVBench. Codes have been available at
+                   https://github.com/TencentARC/ST-LLM.",
+  month         =  "30~" # mar,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2404.00308",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV",
+  eprint        = "2404.00308",
+  keywords      = "WP3",
+  annote        = "[KIT - Irem Eyiokur] Recent work presented @ECCV2024. This
+                   paper introduces ST-LLM, a novel video-Language Model
+                   baseline that handles spatial-temporal sequence modeling
+                   within LLMs. To address computational overhead and stability
+                   challenges, the authors propose a dynamic masking strategy
+                   and a global-local input module to balance efficiency and
+                   performance, particularly for long videos."
+}
+
+@ARTICLE{Shen2024-jg,
+  title         = "{LongVU}: Spatiotemporal adaptive compression for long
+                   video-language understanding",
+  author        = "Shen, Xiaoqian and Xiong, Yunyang and Zhao, Changsheng and
+                   Wu, Lemeng and Chen, Jun and Zhu, Chenchen and Liu, Zechun
+                   and Xiao, Fanyi and Varadarajan, Balakrishnan and Bordes,
+                   Florian and Liu, Zhuang and Xu, Hu and Kim, Hyunwoo J and
+                   Soran, Bilge and Krishnamoorthi, Raghuraman and Elhoseiny,
+                   Mohamed and Chandra, Vikas",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "Multimodal Large Language Models (MLLMs) have shown promising
+                   progress in understanding and analyzing video content.
+                   However, processing long videos remains a significant
+                   challenge constrained by LLM's context size. To address this
+                   limitation, we propose LongVU, a spatiotemporal adaptive
+                   compression mechanism thats reduces the number of video
+                   tokens while preserving visual details of long videos. Our
+                   idea is based on leveraging cross-modal query and inter-frame
+                   dependencies to adaptively reduce temporal and spatial
+                   redundancy in videos. Specifically, we leverage DINOv2
+                   features to remove redundant frames that exhibit high
+                   similarity. Then we utilize text-guided cross-modal query for
+                   selective frame feature reduction. Further, we perform
+                   spatial token reduction across frames based on their temporal
+                   dependencies. Our adaptive compression strategy effectively
+                   processes a large number of frames with little visual
+                   information loss within given context length. Our LongVU
+                   consistently surpass existing methods across a variety of
+                   video understanding benchmarks, especially on hour-long video
+                   understanding tasks such as VideoMME and MLVU. Given a
+                   light-weight LLM, our LongVU also scales effectively into a
+                   smaller size with state-of-the-art video understanding
+                   performance.",
+  month         =  "22~" # oct,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2410.17434",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV",
+  eprint        = "2410.17434",
+  keywords      = "WP3",
+  annote        = "[ITU - Izzet Mustu] They propose <span
+                   style=``background-color:
+                   var(--reference-notes-active-background-color, \#FFFFFF);''>a
+                   spatiotemporal adaptive </span><span
+                   style=``background-color:
+                   var(--reference-notes-active-background-color, \#FFFFFF);
+                   color: var(--reference-notes-text-color, \#37393C);
+                   font-family: inherit; font-size: var(--medium-font-size,
+                   14px); font-weight: var(--regular-font-weight,
+                   400);''>compression mechanism that reduces the number of
+                   video tokens while preserving visual details of long
+                   </span><span style=``background-color:
+                   var(--reference-notes-active-background-color, \#FFFFFF);
+                   color: var(--reference-notes-text-color, \#37393C);
+                   font-family: inherit; font-size: var(--medium-font-size,
+                   14px); font-weight: var(--regular-font-weight,
+                   400);''>videos. The compression mechanism includes DINOv2 to
+                   remove redundant frames,</span><span
+                   style=``background-color:
+                   var(--reference-notes-active-background-color,
+                   \#FFFFFF);''>text-guided cross-modal query for </span><span
+                   style=``background-color:
+                   var(--reference-notes-active-background-color, \#FFFFFF);
+                   color: var(--reference-notes-text-color, \#37393C);
+                   font-family: inherit; font-size: var(--medium-font-size,
+                   14px); font-weight: var(--regular-font-weight,
+                   400);''>selective frame feature reduction and </span><span
+                   style=``background-color:
+                   var(--reference-notes-active-background-color,
+                   \#FFFFFF);''>spatial token reduction across frames based on
+                   </span><span style=``background-color:
+                   var(--reference-notes-active-background-color, \#FFFFFF);
+                   color: var(--reference-notes-text-color, \#37393C);
+                   font-family: inherit; font-size: var(--medium-font-size,
+                   14px); font-weight: var(--regular-font-weight, 400);''>their
+                   temporal dependencies.</span>"
+}
+
 @MISC{Pandey2024-fy,
   title        = "{BharatGPT} Aims to Become Meta of Indic {LLMs}",
   author       = "Pandey, Mohit",
