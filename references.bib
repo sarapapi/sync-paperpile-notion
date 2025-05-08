@@ -2722,6 +2722,44 @@
                    based on their temporal dependencies."
 }
 
+@ARTICLE{Peng2024-xk,
+  title    = "{VoiceTextBlender}: Augmenting large language models with speech
+              capabilities via single-stage joint speech-text supervised
+              fine-tuning",
+  author   = "Peng, Yifan and Puvvada, Krishna C and Chen, Zhehuai and Zelasko,
+              Piotr and Huang, He and Dhawan, Kunal and Hu, Ke and Watanabe,
+              Shinji and Balam, Jagadeesh and Ginsburg, Boris",
+  journal  = "ArXiv",
+  volume   = "abs/2410.17485",
+  abstract = "Recent studies have augmented large language models (LLMs) with
+              speech capabilities, leading to the development of speech language
+              models (SpeechLMs). Earlier SpeechLMs focused on single-turn
+              speech-based question answering (QA), where user input comprised a
+              speech context and a text question. More recent studies have
+              extended this to multi-turn conversations, though they often
+              require complex, multi-stage supervised fine-tuning (SFT) with
+              diverse data. Another critical challenge with SpeechLMs is
+              catastrophic forgetting, where models optimized for speech tasks
+              suffer significant degradation in text-only performance. To
+              mitigate these issues, we propose a novel single-stage joint
+              speech-text SFT approach on the low-rank adaptation (LoRA) of the
+              LLM backbone. Our joint SFT combines text-only SFT data with three
+              types of speech-related data: speech recognition and translation,
+              speech-based QA, and mixed-modal SFT. Compared to previous
+              SpeechLMs with 7B or 13B parameters, our 3B model demonstrates
+              superior performance across various speech benchmarks while
+              preserving the original capabilities on text-only tasks.
+              Furthermore, our model shows emergent abilities of effectively
+              handling previously unseen prompts and tasks, including
+              multi-turn, mixed-modal inputs.",
+  month    =  "23~" # oct,
+  year     =  2024,
+  url      = "https://github.com/pyf98/NeMo_VoiceTextBlender",
+  eprint   = "2410.17485",
+  doi      = "10.48550/arXiv.2410.17485",
+  issn     = "2331-8422"
+}
+
 @ARTICLE{Liu2024-nz,
   title         = "Protecting privacy in Multimodal Large Language Models with
                    {MLLMU}-Bench",
