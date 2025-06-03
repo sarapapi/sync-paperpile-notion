@@ -3724,7 +3724,7 @@
                    https://huggingface.co/collections/Qwen/qwen3-67dd247413f0e2e4f653967f"
 }
 
-@ARTICLE{Wang2025-oc,
+@ARTICLE{Wang2025-hj,
   title         = "Vision as {LoRA}",
   author        = "Wang, Han and Ye, Yongjie and Li, Bingru and Nie, Yuxiang and
                    Lu, Jinghui and Tang, Jingqun and Wang, Yanjie and Huang, Can",
@@ -3755,9 +3755,44 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.CV",
   eprint        = "2503.20680",
-  keywords      = "WP4;WP3",
-  annote        = "[FBK- Francesco Giuliari] Here they showcase how you can
+  keywords      = "WP3;WP4",
+  annote        = "[FBK - Francesco Giuliari] Here they showcase how you can
                    bypass the use of an encoder (vision encoder here) and
                    instead train directly as set of lora weights for the LLM
                    that act as encoder"
+}
+
+@ARTICLE{Xie2025-xm,
+  title         = "Enhancing generalization of speech large language models with
+                   multi-task behavior imitation and speech-text interleaving",
+  author        = "Xie, Jingran and Li, Xiang and Wang, Hui and Yu, Yue and
+                   Xiang, Yang and Wu, Xixin and Wu, Zhiyong",
+  journal       = "arXiv [eess.AS]",
+  abstract      = "Large language models (LLMs) have shown remarkable
+                   generalization across tasks, leading to increased interest in
+                   integrating speech with LLMs. These speech LLMs (SLLMs)
+                   typically use supervised fine-tuning to align speech with
+                   text-based LLMs. However, the lack of annotated speech data
+                   across a wide range of tasks hinders alignment efficiency,
+                   resulting in poor generalization. To address these issues, we
+                   propose a novel multi-task 'behavior imitation' method with
+                   speech-text interleaving, called MTBI, which relies solely on
+                   paired speech and transcripts. By ensuring the LLM decoder
+                   generates equivalent responses to paired speech and text, we
+                   achieve a more generalized SLLM. Interleaving is used to
+                   further enhance alignment efficiency. We introduce a simple
+                   benchmark to evaluate prompt and task generalization across
+                   different models. Experimental results demonstrate that our
+                   MTBI outperforms SOTA SLLMs on both prompt and task
+                   generalization, while requiring less supervised speech data.",
+  month         =  "24~" # may,
+  year          =  2025,
+  url           = "http://arxiv.org/abs/2505.18644",
+  archivePrefix = "arXiv",
+  primaryClass  = "eess.AS",
+  eprint        = "2505.18644",
+  annote        = "[FBK - Sara Papi] A a novel multi-task ’behavior imitation’
+                   method with speech-text interleaving (called MTBI, which
+                   relies solely on paired speech and transcripts, is proposed
+                   to create"
 }
