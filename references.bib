@@ -4249,3 +4249,47 @@
                    introduces a dataset ``PEEP'' to measure LLM adherence to the
                    privacy profiles and finds consistent challenges."
 }
+
+@ARTICLE{Hwang2025-kz,
+  title         = "Dynamic chunking for end-to-end hierarchical sequence
+                   modeling",
+  author        = "Hwang, Sukjun and Wang, Brandon and Gu, Albert",
+  journal       = "arXiv [cs.LG]",
+  abstract      = "Despite incredible progress in language models (LMs) in
+                   recent years, largely resulting from moving away from
+                   specialized models designed for specific tasks to general
+                   models based on powerful architectures (e.g. the Transformer)
+                   that learn everything from raw data, pre-processing steps
+                   such as tokenization remain a barrier to true end-to-end
+                   foundation models. We introduce a collection of new
+                   techniques that enable a dynamic chunking mechanism which
+                   automatically learns content -- and context -- dependent
+                   segmentation strategies learned jointly with the rest of the
+                   model. Incorporating this into an explicit hierarchical
+                   network (H-Net) allows replacing the (implicitly
+                   hierarchical) tokenization-LM-detokenization pipeline with a
+                   single model learned fully end-to-end. When compute- and
+                   data- matched, an H-Net with one stage of hierarchy operating
+                   at the byte level outperforms a strong Transformer language
+                   model operating over BPE tokens. Iterating the hierarchy to
+                   multiple stages further increases its performance by modeling
+                   multiple levels of abstraction, demonstrating significantly
+                   better scaling with data and matching a token-based
+                   Transformer of twice its size. H-Nets pretrained on English
+                   show significantly increased character-level robustness, and
+                   qualitatively learn meaningful data-dependent chunking
+                   strategies without any heuristics or explicit supervision.
+                   Finally, the H-Net's improvement over tokenized pipelines is
+                   further increased in languages and modalities with weaker
+                   tokenization heuristics, such as Chinese and code, or DNA
+                   sequences (nearly 4x improvement in data efficiency over
+                   baselines), showing the potential of true end-to-end models
+                   that learn and scale better from unprocessed data.",
+  month         =  "10~" # jul,
+  year          =  2025,
+  url           = "http://arxiv.org/abs/2507.07955",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.LG",
+  eprint        = "2507.07955",
+  keywords      = "WP3"
+}
