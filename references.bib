@@ -3528,6 +3528,39 @@
                    a significant risk for AI safety and alignment."
 }
 
+@ARTICLE{Von_Neumann2023-ta,
+  title         = "{MeetEval}: A toolkit for computation of Word Error Rates for
+                   meeting transcription systems",
+  author        = "von Neumann, Thilo and Boeddeker, Christoph and Delcroix,
+                   Marc and Haeb-Umbach, Reinhold",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "MeetEval is an open-source toolkit to evaluate all kinds of
+                   meeting transcription systems. It provides a unified
+                   interface for the computation of commonly used Word Error
+                   Rates (WERs), specifically cpWER, ORC-WER and MIMO-WER along
+                   other WER definitions. We extend the cpWER computation by a
+                   temporal constraint to ensure that only words are identified
+                   as correct when the temporal alignment is plausible. This
+                   leads to a better quality of the matching of the hypothesis
+                   string to the reference string that more closely resembles
+                   the actual transcription quality, and a system is penalized
+                   if it provides poor time annotations. Since word-level timing
+                   information is often not available, we present a way to
+                   approximate exact word-level timings from segment-level
+                   timings (e.g., a sentence) and show that the approximation
+                   leads to a similar WER as a matching with exact word-level
+                   annotations. At the same time, the time constraint leads to a
+                   speedup of the matching algorithm, which outweighs the
+                   additional overhead caused by processing the time stamps.",
+  month         =  "21~" # jul,
+  year          =  2023,
+  url           = "https://github.com/usnistgov/SCTK",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2307.11394",
+  annote        = "[KIT - Maike Züfle]"
+}
+
 @MISC{Pandey2024-fy,
   title        = "{BharatGPT} Aims to Become Meta of Indic {LLMs}",
   author       = "Pandey, Mohit",
@@ -4412,36 +4445,4 @@
   primaryClass  = "cs.SD",
   eprint        = "2403.14402",
   keywords      = "Models;WP3"
-}
-
-@ARTICLE{Von_Neumann2023-ta,
-  title         = "{MeetEval}: A toolkit for computation of Word Error Rates for
-                   meeting transcription systems",
-  author        = "von Neumann, Thilo and Boeddeker, Christoph and Delcroix,
-                   Marc and Haeb-Umbach, Reinhold",
-  journal       = "arXiv [cs.CL]",
-  abstract      = "MeetEval is an open-source toolkit to evaluate all kinds of
-                   meeting transcription systems. It provides a unified
-                   interface for the computation of commonly used Word Error
-                   Rates (WERs), specifically cpWER, ORC-WER and MIMO-WER along
-                   other WER definitions. We extend the cpWER computation by a
-                   temporal constraint to ensure that only words are identified
-                   as correct when the temporal alignment is plausible. This
-                   leads to a better quality of the matching of the hypothesis
-                   string to the reference string that more closely resembles
-                   the actual transcription quality, and a system is penalized
-                   if it provides poor time annotations. Since word-level timing
-                   information is often not available, we present a way to
-                   approximate exact word-level timings from segment-level
-                   timings (e.g., a sentence) and show that the approximation
-                   leads to a similar WER as a matching with exact word-level
-                   annotations. At the same time, the time constraint leads to a
-                   speedup of the matching algorithm, which outweighs the
-                   additional overhead caused by processing the time stamps.",
-  month         =  "21~" # jul,
-  year          =  2023,
-  url           = "https://github.com/usnistgov/SCTK",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CL",
-  eprint        = "2307.11394"
 }
