@@ -2500,18 +2500,19 @@
   archivePrefix = "arXiv",
   primaryClass  = "cs.LG",
   eprint        = "2405.17604",
-  annote        = "[KIT - Enes Ugan]This paper presents LoRA-XS (Low-Rank
-                   Adaptation with eXtremly Small number of parameters), a
-                   method that pushes parameter efficiency in LoRA-style
-                   fine-tuning. They initialize two frozen low-rank matices
-                   (A,B) via truncated SVD of the original pretrained weights,
-                   and insert a tiny trainable (r x r) matrix R in between. In
-                   this setup only the R matrices are trained which are flexible
-                   and independent of the original hidden dimension of the
-                   foundation model, significantly reducing the number of
-                   trainable parameters. They achieve comparable or better
-                   results in most tests in some they showed reduced
-                   performance, however, which needs more investigation."
+  annote        = "[KIT - Enes Ugan] <p class=``p1''>This paper presents
+                   <b>LoRA-XS (Low-Rank Adaptation with eXtremely Small number
+                   of parameters)</b>, a method that advances parameter
+                   efficiency in LoRA-style fine-tuning. The approach
+                   initializes two frozen low-rank matrices (A, B) via truncated
+                   SVD of the pretrained weights and inserts a tiny trainable (r
+                   \times r) matrix R in between. In this setup, only the R
+                   matrices are trained, which are flexible and independent of
+                   the foundation model’s hidden dimension, thereby
+                   significantly reducing the number of trainable parameters.
+                   The authors report comparable or better results in most
+                   benchmarks; in some cases, however, performance is reduced,
+                   which warrants further investigation.</p>"
 }
 
 @ARTICLE{Wang2024-pb,
