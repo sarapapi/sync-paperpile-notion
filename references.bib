@@ -2505,7 +2505,11 @@
                    method that pushes parameter efficiency in LoRA-style
                    fine-tuning. They initialize two frozen low-rank matices
                    (A,B) via truncated SVD of the original pretrained weights,
-                   and insert a tiny trainable (r x r) matrix R in between."
+                   and insert a tiny trainable (r x r) matrix R in between. In
+                   this setup only the R matrices are trained which are flexible
+                   and independent of the original hidden dimension of the
+                   foundation model, significantly reducing the number of
+                   trainable parameters."
 }
 
 @ARTICLE{Wang2024-pb,
