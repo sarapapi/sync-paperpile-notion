@@ -1,15 +1,9 @@
-
 import bibtexparser
 import json
 import os
 import pickle
 import pprint
 import requests
-
-"""
-TODO:
-- Default icon for papers.
-"""
 
 ARCHIVE_PATH = "archive.pk"
 BIB_PATH = "references.bib"
@@ -28,7 +22,8 @@ STANDARD_TYPES = set([
     'mastersthesis',
     'phdthesis',
     'proceedings',
-    'techreport'])
+    'techreport'
+])
 
 
 def notion_add_entry(
@@ -41,6 +36,7 @@ def notion_add_entry(
     content_type=[{"name": "Blog Post"}],
     wp=[],
     bibtex="",
+    comment="",
     icon="",
 ):
     url = "https://api.notion.com/v1/pages"
@@ -49,59 +45,28 @@ def notion_add_entry(
             "database_id": DATABASE_IDENTIFIER,
         },
         "properties": {
-            "Title": {
-                "title": [{"text": {"content": title}}],
-            },
-            "Type": {
-                "multi_select": content_type,
-            },
-            "Interested WP": {
-                "multi_select": wp,
-            },
-            "Authors": {
-                "rich_text": [{
-                    "text": {
-                        "content": authors,
-                    }
-                }],
-            },
-            "Abstract": {
-                "rich_text": [{
-                    "text": {
-                        "content": abstract,
-                    }
-                }],
-            },
-            "BibTex": {
-                "rich_text": [{
-                    "text": {
-                        "content": bibtex,
-                    }
-                }],
-            },
-            "Year": {
-                "rich_text": [{
-                    "text": {
-                        "content": year,
-                    }
-                }],
-            },     
+            "Title": {"title": [{"text": {"content": title}}]},
+            "Type": {"multi_select": content_type},
+            "Interested WP": {"multi_select": wp},
+            "Authors": {"rich_text": [{"text": {"content": authors}}]},
+            "Abstract": {"rich_text": [{"text": {"content": abstract}}]},
+            # "BibTex": {"rich_text": [{"text": {"content": bibtex}}]},
+            "Year": {"rich_text": [{"text": {"content": year}}]},
+            "Comment": {"rich_text": [{"text": {"content": comment}}]},  
         },
-        "icon": {
-        "type": "emoji",
-        "emoji": icon,
-        },
+        "icon": {"type": "emoji", "emoji": icon},
     }
+
     if link:
-        payload["properties"]["Link"]= {"url": link}
+        payload["properties"]["Link"] = {"url": link}
     if doi:
-        payload["properties"]["DOI"]= {"url": doi}
-    #   pprint.pprint(payload)
+        payload["properties"]["DOI"] = {"url": doi}
+
     headers = {
         "Accept": "application/json",
         "Notion-Version": "2022-06-28",
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {NOTION_TOKEN}"
+        "Authorization": f"Bearer {NOTION_TOKEN}",
     }
     response = requests.post(url, json=payload, headers=headers)
     # pprint.pprint(json.loads(response.text))
@@ -118,67 +83,35 @@ def notion_update_page(
     content_type=[{"name": "Blog Post"}],
     wp=[],
     bibtex="",
+    comment="",
     icon="",
 ):
     url = f"https://api.notion.com/v1/pages/{page_id}"
     payload = {
-        "parent": {
-            "database_id": DATABASE_IDENTIFIER,
-        },
+        "parent": {"database_id": DATABASE_IDENTIFIER},
         "properties": {
-            "Title": {
-                "title": [{"text": {"content": title}}],
-            },
-            "Type": {
-                "multi_select": content_type,
-            },
-            "Interested WP": {
-                "multi_select": wp,
-            },
-            "Authors": {
-                "rich_text": [{
-                    "text": {
-                        "content": authors,
-                    }
-                }],
-            },
-            "Abstract": {
-                "rich_text": [{
-                    "text": {
-                        "content": abstract,
-                    }
-                }],
-            },
-            "BibTex": {
-                "rich_text": [{
-                    "text": {
-                        "content": bibtex,
-                    }
-                }],
-            },
-            "Year": {
-                "rich_text": [{
-                    "text": {
-                        "content": year,
-                    }
-                }],
-            },     
+            "Title": {"title": [{"text": {"content": title}}]},
+            "Type": {"multi_select": content_type},
+            "Interested WP": {"multi_select": wp},
+            "Authors": {"rich_text": [{"text": {"content": authors}}]},
+            "Abstract": {"rich_text": [{"text": {"content": abstract}}]},
+            # "BibTex": {"rich_text": [{"text": {"content": bibtex}}]},
+            "Year": {"rich_text": [{"text": {"content": year}}]},
+            "Comment": {"rich_text": [{"text": {"content": comment}}]},  
         },
-        "icon": {
-        "type": "emoji",
-        "emoji": icon,
-        },
+        "icon": {"type": "emoji", "emoji": icon},
     }
+
     if link:
-        payload["properties"]["Link"]= {"url": link}
+        payload["properties"]["Link"] = {"url": link}
     if doi:
-        payload["properties"]["DOI"]= {"url": doi}
-    #  pprint.pprint(payload)
+        payload["properties"]["DOI"] = {"url": doi}
+
     headers = {
         "Accept": "application/json",
         "Notion-Version": "2022-06-28",
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {NOTION_TOKEN}"
+        "Authorization": f"Bearer {NOTION_TOKEN}",
     }
     response = requests.patch(url, json=payload, headers=headers)
     pprint.pprint(json.loads(response.text))
@@ -186,8 +119,6 @@ def notion_update_page(
 
 def notion_fetch_page(ref_id):
     url = f"https://api.notion.com/v1/databases/{DATABASE_IDENTIFIER}/query"
-
-    # list database pages
     payload = {
         "page_size": 1,
         "filter": {
@@ -199,13 +130,11 @@ def notion_fetch_page(ref_id):
         "Accept": "application/json",
         "Notion-Version": "2022-06-28",
         "Content-Type": "application/json",
-        "Authorization": f"Bearer {NOTION_TOKEN}"
+        "Authorization": f"Bearer {NOTION_TOKEN}",
     }
-    
+
     response = requests.post(url, json=payload, headers=headers)
-    
     response = json.loads(response.text)
-    # pprint.pprint(response)
     try:
         if len(response["results"]) > 0:
             return response["results"][0]["id"]
@@ -245,17 +174,14 @@ def clean_str(string):
 
 
 def main():
-
-    # instantiate the parser
     parser = bibtexparser.bparser.BibTexParser()
     parser.ignore_nonstandard_types = True
     parser.homogenize_fields = False
     parser.interpolate_strings = False
 
-
     with open(BIB_PATH) as bib_file:
         bibliography = bibtexparser.load(bib_file, parser=parser)
-    
+
     writer = bibtexparser.bwriter.BibTexWriter()
 
     if os.path.exists(ARCHIVE_PATH):
@@ -265,53 +191,33 @@ def main():
         archive = []
     archive_ids = [e["ID"] for e in archive]
 
-    # add each entry to notion database
     update_archive = False
     for entry in bibliography.entries:
-
-        title = entry.get("title", "")
-        title = clean_str(title)
-
-        authors = entry.get("author", "")
-        authors = authors.replace(" and ", "; ")
-        authors = clean_str(authors)
-
+        title = clean_str(entry.get("title", ""))
+        authors = clean_str(entry.get("author", "").replace(" and ", "; "))
         abstract = entry.get("abstract", "")
+        annote = entry.get("annote", "")
+        comment = clean_str(annote)
+
         content_type = [{"name": "Paper"}] if entry.get("ENTRYTYPE", "") in STANDARD_TYPES else [{"name": "Blog Post"}]
         if "Models" in entry.get("keywords", ""):
             content_type.append({"name": "Model"})
         if "Datasets" in entry.get("keywords", ""):
             content_type.append({"name": "Dataset"})
+
         wp = []
-        if "WP3" in entry.get("keywords", ""):
-            wp.append({"name": "WP3"})
-        if "WP4" in entry.get("keywords", ""):
-            wp.append({"name": "WP4"})
-        if "WP5" in entry.get("keywords", ""):
-            wp.append({"name": "WP5"})
-        if "WP6" in entry.get("keywords", ""):
-            wp.append({"name": "WP6"})    
+        for wp_key in ["WP3", "WP4", "WP5", "WP6"]:
+            if wp_key in entry.get("keywords", ""):
+                wp.append({"name": wp_key})
+
         year = entry.get("year", "")
         link = entry.get("url", "")
         doi = entry.get("DOI", "")
         ref_id = entry.get("ID")
         icon = "📄" if entry.get("ENTRYTYPE", "") in STANDARD_TYPES else "🌍"
-        
-        bibtex = writer._entry_to_bibtex(entry)
-        bibtex = bibtex[:2000]
-        
-        # notion_add_entry(
-        #         title=title,
-        #         authors=authors,
-        #         abstract=abstract,
-        #         year=year,
-        #         link=link,
-        #         doi=doi,
-        #         content_type=content_type,
-        #         bibtex=bibtex,
-        #         icon=icon,
-        #     )
-        if ref_id not in archive_ids: # new page
+        bibtex = writer._entry_to_bibtex(entry)[:2000]
+
+        if ref_id not in archive_ids:
             notion_add_entry(
                 title=title,
                 authors=authors,
@@ -322,13 +228,12 @@ def main():
                 content_type=content_type,
                 wp=wp,
                 bibtex=bibtex,
+                comment=comment, 
                 icon=icon,
             )
             update_archive = True
-        #elif entry not in archive: # update existing page
         else:
             page_id = notion_fetch_page(title)
-            print(page_id)
             if page_id != -1:
                 notion_update_page(
                     page_id=page_id,
@@ -341,14 +246,14 @@ def main():
                     content_type=content_type,
                     wp=wp,
                     bibtex=bibtex,
+                    comment=comment, 
                     icon=icon,
                 )
                 update_archive = True
 
-    # only update the archive if necessary
     if update_archive:
         with open(ARCHIVE_PATH, "wb") as archive_file:
-            archive = pickle.dump(bibliography.entries, archive_file)
+            pickle.dump(bibliography.entries, archive_file)
 
 
 if __name__ == "__main__":
