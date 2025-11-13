@@ -112,56 +112,6 @@
                    that could be useful for meetings."
 }
 
-@ARTICLE{Chen2025-ut,
-  title         = "True Multimodal In-Context Learning needs attention to the
-                   visual context",
-  author        = "Chen, Shuo and Liu, Jianzhe and Han, Zhen and Xia, Yan and
-                   Cremers, Daniel and Torr, Philip and Tresp, Volker and Gu,
-                   Jindong",
-  journal       = "arXiv [cs.CV]",
-  abstract      = "Multimodal Large Language Models (MLLMs), built on powerful
-                   language backbones, have enabled Multimodal In-Context
-                   Learning (MICL)-adapting to new tasks from a few multimodal
-                   demonstrations consisting of images, questions, and answers.
-                   Despite showing noticeable improvement on standard
-                   vision-language datasets, current MLLMs struggle to leverage
-                   visual information in the demonstrations. Specifically, they
-                   tend to neglect visual cues and over-rely on textual
-                   patterns, leading to mere text imitation rather than genuine
-                   multimodal adaptation. This behavior makes MICL still
-                   unimodal and largely restricts its practical utility. More
-                   importantly, this limitation is often concealed by the
-                   improved performance on tasks that do not require
-                   understanding the visual context. As a result, how to
-                   effectively enhance MICL ability and reliably evaluate the
-                   MICL performance remains underexplored. To address these
-                   issues, we first introduce Dynamic Attention Reallocation
-                   (DARA), an efficient fine-tuning strategy that encourages
-                   models to attend to the visual context by rebalancing
-                   attention across visual and textual tokens. In addition, we
-                   present TrueMICL, an MICL-dedicated dataset with both support
-                   and test sets that explicitly requires the integration of
-                   multimodal information-particularly visual content-for
-                   correct task completion. Extensive experiments demonstrate
-                   the effectiveness of our holistic solution, showcasing
-                   substantial improvements in the true multimodal in-context
-                   learning capabilities. Code and datasets are available at
-                   https://chenxshuo.github.io/true-micl-colm .",
-  month         =  "6~" # aug,
-  year          =  2025,
-  url           = "http://arxiv.org/abs/2507.15807",
-  archivePrefix = "arXiv",
-  primaryClass  = "cs.CV",
-  eprint        = "2507.15807",
-  annote        = "[KIT- Irem Eyiokur] In this paper, Dynamic Attention
-                   Reallocation (DARA) approach is presented which enables
-                   efficient finetuning of large multimodal model similar to
-                   LORA, while helping the model focus on visual tokens as much
-                   as on text tokens to improve in-context learning.This
-                   approach can be useful for visual question answering or
-                   similar downstream tasks when adapting SpeechLMM."
-}
-
 @INPROCEEDINGS{Pandey2025-tf,
   title     = "{SIFT}-{50M}: A large-scale multilingual dataset for speech
                instruction fine-tuning",
