@@ -28,16 +28,12 @@ jobs:
         env:
           NOTION_TOKEN: ${{secrets.NOTION_TOKEN}}
           DATABASE_IDENTIFIER: ${{secrets.DATABASE_IDENTIFIER}}
-     
-      - name: Pull changes
-        uses: ad-m/github-pull-action@master
-        with:
-           github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Update archive
         run: |
             git config --global user.email "sara95papi@hotmail.com"
             git config --global user.name "Paperpile to Notion"
+            git pull
             git add .
             git commit -am 'Update archive.'
         shell: bash
