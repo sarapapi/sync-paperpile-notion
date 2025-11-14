@@ -183,6 +183,45 @@
                Relevant for SpeechLMM design and also scrutiny workshop/WP 5."
 }
 
+@ARTICLE{Chegini2025-gn,
+  title         = "Reasoning's razor: Reasoning improves accuracy but can hurt
+                   recall at critical operating points in safety and
+                   hallucination detection",
+  author        = "Chegini, Atoosa and Kazemi, Hamid and Souza, Garrett and
+                   Safi, Maria and Song, Yang and Bengio, Samy and Williamson,
+                   Sinead and Farajtabar, Mehrdad",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Reasoning has become a central paradigm for large language
+                   models (LLMs), consistently boosting accuracy across diverse
+                   benchmarks. Yet its suitability for precision-sensitive tasks
+                   remains unclear. We present the first systematic study of
+                   reasoning for classification tasks under strict low false
+                   positive rate (FPR) regimes. Our analysis covers two
+                   tasks--safety detection and hallucination
+                   detection--evaluated in both fine-tuned and zero-shot
+                   settings, using standard LLMs and Large Reasoning Models
+                   (LRMs). Our results reveal a clear trade-off: Think On
+                   (reasoning-augmented) generation improves overall accuracy,
+                   but underperforms at the low-FPR thresholds essential for
+                   practical use. In contrast, Think Off (no reasoning during
+                   inference) dominates in these precision-sensitive regimes,
+                   with Think On surpassing only when higher FPRs are
+                   acceptable. In addition, we find token-based scoring
+                   substantially outperforms self-verbalized confidence for
+                   precision-sensitive deployments. Finally, a simple ensemble
+                   of the two modes recovers the strengths of each. Taken
+                   together, our findings position reasoning as a double-edged
+                   tool: beneficial for average accuracy, but often ill-suited
+                   for applications requiring strict precision.",
+  month         =  "23~" # oct,
+  year          =  2025,
+  url           = "http://dx.doi.org/10.48550/arXiv.2510.21049",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2510.21049",
+  doi           = "10.48550/arXiv.2510.21049"
+}
+
 @ARTICLE{Sanchez2023-pd,
   title         = "Stay on topic with Classifier-Free Guidance",
   author        = "Sanchez, Guillaume and Fan, Honglu and Spangher, Alexander
