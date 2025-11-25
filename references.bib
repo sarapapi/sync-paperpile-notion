@@ -4195,7 +4195,11 @@
                encoders, MIO converts everything into a shared token space,
                allowing the model to transfer structure learned in one modality
                to another and to perform multimodal tasks with far less
-               task-specific engineering."
+               task-specific engineering. For the training of SpeechLMM-v2, this
+               is useful because it provides a blueprint for unifying speech,
+               audio embeddings, and text into a single tokenized
+               representation, reducing the need for separate pipelines and
+               making cross-modal supervision easier."
 }
 
 @ARTICLE{Alves2024-fx,
