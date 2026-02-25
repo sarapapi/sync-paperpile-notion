@@ -5253,3 +5253,98 @@
                    five X→English tasks, and can adapt to a new language with
                    under 1000h of speech."
 }
+
+@ARTICLE{Ao2024-jb,
+  title         = "{SD}-Eval: A benchmark dataset for spoken dialogue
+                   understanding beyond words",
+  author        = "Ao, Junyi and Wang, Yuancheng and Tian, Xiaohai and Chen,
+                   Dekun and Zhang, Jun and Lu, Lu and Wang, Yuxuan and Li,
+                   Haizhou and Wu, Zhizheng",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Speech encompasses a wealth of information, including but not
+                   limited to content, paralinguistic, and environmental
+                   information. This comprehensive nature of speech
+                   significantly impacts communication and is crucial for
+                   human-computer interaction. Chat-Oriented Large Language
+                   Models (LLMs), known for their general-purpose assistance
+                   capabilities, have evolved to handle multi-modal inputs,
+                   including speech. Although these models can be adept at
+                   recognizing and analyzing speech, they often fall short of
+                   generating appropriate responses. We argue that this is due
+                   to the lack of principles on task definition and model
+                   development, which requires open-source datasets and metrics
+                   suitable for model evaluation. To bridge the gap, we present
+                   SD-Eval, a benchmark dataset aimed at multidimensional
+                   evaluation of spoken dialogue understanding and generation.
+                   SD-Eval focuses on paralinguistic and environmental
+                   information and includes 7,303 utterances, amounting to 8.76
+                   hours of speech data. The data is aggregated from eight
+                   public datasets, representing four perspectives: emotion,
+                   accent, age, and background sound. To assess the SD-Eval
+                   benchmark dataset, we implement three different models and
+                   construct a training set following a process similar to that
+                   of SD-Eval. The training set contains 1,052.72 hours of
+                   speech data and 724.4k utterances. We also conduct a
+                   comprehensive evaluation using objective evaluation methods
+                   (e.g. BLEU and ROUGE), subjective evaluations and LLM-based
+                   metrics for the generated responses. Models conditioned with
+                   paralinguistic and environmental information outperform their
+                   counterparts in both objective and subjective measures.
+                   Moreover, experiments demonstrate that LLM-based metrics show
+                   a higher correlation with human evaluation compared to
+                   traditional metrics. We open-source SD-Eval at
+                   https://github.com/amphionspace/SD-Eval.",
+  month         =  "19~" # jun,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2406.13340",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2406.13340"
+}
+
+@ARTICLE{Yang2024-db,
+  title         = "{AIR}-Bench: Benchmarking Large Audio-Language Models via
+                   generative comprehension",
+  author        = "Yang, Qian and Xu, Jin and Liu, Wenrui and Chu, Yunfei and
+                   Jiang, Ziyue and Zhou, Xiaohuan and Leng, Yichong and Lv,
+                   Yuanjun and Zhao, Zhou and Zhou, Chang and Zhou, Jingren",
+  journal       = "arXiv [eess.AS]",
+  abstract      = "Recently, instruction-following audio-language models have
+                   received broad attention for human-audio interaction.
+                   However, the absence of benchmarks capable of evaluating
+                   audio-centric interaction capabilities has impeded
+                   advancements in this field. Previous models primarily focus
+                   on assessing different fundamental tasks, such as Automatic
+                   Speech Recognition (ASR), and lack an assessment of the
+                   open-ended generative capabilities centered around audio.
+                   Thus, it is challenging to track the progression in the Large
+                   Audio-Language Models (LALMs) domain and to provide guidance
+                   for future improvement. In this paper, we introduce AIR-Bench
+                   (\textbf{A}udio \textbf{I}nst\textbf{R}uction
+                   \textbf{Bench}mark), the first benchmark designed to evaluate
+                   the ability of LALMs to understand various types of audio
+                   signals (including human speech, natural sounds, and music),
+                   and furthermore, to interact with humans in the textual
+                   format. AIR-Bench encompasses two dimensions:
+                   \textit{foundation} and \textit{chat} benchmarks. The former
+                   consists of 19 tasks with approximately 19k single-choice
+                   questions, intending to inspect the basic single-task ability
+                   of LALMs. The latter one contains 2k instances of open-ended
+                   question-and-answer data, directly assessing the
+                   comprehension of the model on complex audio and its capacity
+                   to follow instructions. Both benchmarks require the model to
+                   generate hypotheses directly. We design a unified framework
+                   that leverages advanced language models, such as GPT-4, to
+                   evaluate the scores of generated hypotheses given the
+                   meta-information of the audio. Experimental results
+                   demonstrate a high level of consistency between GPT-4-based
+                   evaluation and human evaluation. By revealing the limitations
+                   of existing LALMs through evaluation results, AIR-Bench can
+                   provide insights into the direction of future research.",
+  month         =  "12~" # feb,
+  year          =  2024,
+  url           = "http://arxiv.org/abs/2402.07729",
+  archivePrefix = "arXiv",
+  primaryClass  = "eess.AS",
+  eprint        = "2402.07729"
+}
