@@ -5729,5 +5729,17 @@
   primaryClass  = "eess.AS",
   eprint        = "2502.04128",
   keywords      = "WP3;WP4",
-  doi           = "10.48550/arXiv.2502.04128"
+  doi           = "10.48550/arXiv.2502.04128",
+  annote        = "[PI - Giuseppe Tanzi] This paper proposes Llasa, a
+                   Llama-aligned framework for text-to-speech that uses a single
+                   autoregressive Transformer and a single-layer vector
+                   quantizer codec (X-Codec2), fully aligning TTS with the
+                   standard LLM architecture -- no diffusion models, no
+                   multi-stage pipelines. The key insight is applying the
+                   scaling paradigm from text LLMs to speech synthesis: scaling
+                   train-time compute consistently improves naturalness and
+                   prosody quality, while scaling inference-time compute (using
+                   speech understanding models as verifiers during search)
+                   improves emotional expressiveness, timbre consistency, and
+                   content accuracy."
 }
