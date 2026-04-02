@@ -5797,3 +5797,42 @@
                    approach to optimizing SpeechLMM’s inference by offering a
                    technique for KV cache compression"
 }
+
+@ARTICLE{Huang2026-nb,
+  title         = "When {AVSR} meets video conferencing: Dataset, degradation,
+                   and the hidden mechanism behind performance collapse",
+  author        = "Huang, Yihuan and Xue, Jun and Jiajun, Liu and Li, Daixian
+                   and Zhang, Tong and Yi, Zhuolin and Ren, Yanzhen and Li, Kai",
+  journal       = "arXiv [cs.CV]",
+  abstract      = "Audio-Visual Speech Recognition (AVSR) has achieved
+                   remarkable progress in offline conditions, yet its robustness
+                   in real-world video conferencing (VC) remains largely
+                   unexplored. This paper presents the first systematic
+                   evaluation of state-of-the-art AVSR models across mainstream
+                   VC platforms, revealing severe performance degradation caused
+                   by transmission distortions and spontaneous human
+                   hyper-expression. To address this gap, we construct
+                   \textbf{MLD-VC}, the first multimodal dataset tailored for
+                   VC, comprising 31 speakers, 22.79 hours of audio-visual data,
+                   and explicit use of the Lombard effect to enhance human
+                   hyper-expression. Through comprehensive analysis, we find
+                   that speech enhancement algorithms are the primary source of
+                   distribution shift, which alters the first and second
+                   formants of audio. Interestingly, we find that the
+                   distribution shift induced by the Lombard effect closely
+                   resembles that introduced by speech enhancement, which
+                   explains why models trained on Lombard data exhibit greater
+                   robustness in VC. Fine-tuning AVSR models on MLD-VC mitigates
+                   this issue, achieving an average 17.5\% reduction in CER
+                   across several VC platforms. Our findings and dataset provide
+                   a foundation for developing more robust and generalizable
+                   AVSR systems in real-world video conferencing. MLD-VC is
+                   available at https://huggingface.co/datasets/nccm2p2/MLD-VC.",
+  month         =  "24~" # mar,
+  year          =  2026,
+  url           = "http://dx.doi.org/10.48550/arXiv.2603.22915",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CV",
+  eprint        = "2603.22915",
+  doi           = "10.48550/arXiv.2603.22915"
+}
