@@ -1045,6 +1045,39 @@
                    multilingual models."
 }
 
+@ARTICLE{Li2026-uz,
+  title         = "Phonemes vs. Projectors: An investigation of speech-language
+                   interfaces for {LLM}-based {ASR}",
+  author        = "Li, Ziwei and Dong, Lukuang and Yusuyin, Saierdaer and Zhao,
+                   Xianyu and Ou, Zhijian",
+  journal       = "arXiv [eess.AS]",
+  abstract      = "Integrating pretrained speech encoders with large language
+                   models (LLMs) is promising for ASR, but performance and data
+                   efficiency depend on the speech-language interface. A common
+                   choice is a learned projector that maps encoder features into
+                   the LLM embedding space, whereas an alternative is to expose
+                   discrete phoneme sequences to the LLM. Using the same encoder
+                   and LLM backbones, we compare phoneme-based and vanilla
+                   projector-based interfaces in high-resource English and
+                   low-resource Tatar. We also propose a BPE-phoneme interface
+                   that groups frequent local phoneme patterns while preserving
+                   explicit word-boundary cues for phoneme-to-grapheme
+                   generation. On LibriSpeech, the phoneme-based interface is
+                   competitive with the vanilla projector, and the BPE-phoneme
+                   interface yields further gains. On Tatar, the phoneme-based
+                   interface substantially outperforms the vanilla projector. We
+                   further find that phoneme supervision yields a
+                   phoneme-informed hybrid interface that is stronger than the
+                   vanilla projector.",
+  month         =  "10~" # apr,
+  year          =  2026,
+  url           = "http://dx.doi.org/10.48550/arXiv.2604.09332",
+  archivePrefix = "arXiv",
+  primaryClass  = "eess.AS",
+  eprint        = "2604.09332",
+  doi           = "10.48550/arXiv.2604.09332"
+}
+
 @MISC{DefossezUnknown-hc,
   title        = "Moshi: a speech-text foundation model for real-time dialogue",
   author       = "Defossez, Alexandre and Mazare, Laurent",
