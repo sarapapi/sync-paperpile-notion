@@ -1260,7 +1260,13 @@
                    real-time streaming, stability in long-duration generation,
                    and talking-listening interaction (current methods mostly
                    focus on talking state and neglecting listening state) are
-                   key challenges in the literature."
+                   key challenges in the literature. To overcome this, the
+                   authors first train a powerful non-causal diffusion model for
+                   interactive human avatar generation as the teacher model
+                   which works slow. After that, they adapt the attention
+                   mechanism of the model from bidirectional attention into
+                   block-wise causal attention and perform distillation from the
+                   teacher model to obtain a few-step autoregressive generator."
 }
 
 @MISC{DefossezUnknown-hc,
