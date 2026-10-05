@@ -7105,3 +7105,41 @@
   doi           = "10.48550/arXiv.2603.07025",
   annote        = "TEST"
 }
+
+@ARTICLE{Koudounas2026-cp,
+  title         = "Benchmarking Speech-to-Speech Translation Models",
+  author        = "Koudounas, Alkis and Futami, Hayato and Jodelet, Quentin and
+                   Take, Osamu and Watanabe, Shinji and Tsunoo, Emiru",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "Speech-to-speech translation (S2ST) has advanced rapidly, but
+                   offline evaluation lacks a unified protocol: studies report
+                   non-overlapping metric subsets, preventing direct
+                   comparisons. We introduce COMPASS, a unified and reproducible
+                   benchmarking framework integrating 46 metrics across eight
+                   dimensions, and deploy it on 1,248 model-language
+                   configurations from FLEURS and CVSS, spanning cascaded and
+                   end-to-end architectures over ten language pairs.
+                   Architectures exhibit complementary strengths: best-vs-worst
+                   gaps exceed 30\% on naturalness and speaker preservation but
+                   remain within a few points on translation quality, so
+                   single-metric rankings systematically misrepresent system
+                   quality. Correlation filtering reduces 46 metrics to 10 per
+                   direction, with three axes requiring different metrics across
+                   X$\to$EN and EN$\to$X (e.g., TER/UTMOS vs. ChrF++/NISQA-MOS);
+                   these subsets preserve rankings (Spearman's $\rho>0.80$)
+                   while cutting evaluation time by $\approx 2.5\times$. Human
+                   validation across dubbing, podcasts, and medical domains
+                   shows standalone MOS predictors fail to predict listener
+                   preference, while top domain-specific metrics correlate with
+                   human judgment ($\rho \geq 0.90$). We release COMPASS as a
+                   foundation for domain-aware S2ST evaluation.",
+  month         =  "2~" # jun,
+  year          =  2026,
+  url           = "http://dx.doi.org/10.48550/arXiv.2606.03241",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2606.03241",
+  keywords      = "WP5",
+  doi           = "10.48550/arXiv.2606.03241",
+  annote        = "Relevant benchmark for speech input and output"
+}
