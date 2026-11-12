@@ -7248,3 +7248,38 @@
                    this architecture in an agentic setup, but it may be
                    adaptable to a Butler-scenario."
 }
+
+@ARTICLE{Kovalev2025-ez,
+  title         = "Iterative layer-wise distillation for efficient compression
+                   of large language models",
+  author        = "Kovalev, Grigory and Tikhomirov, Mikhail",
+  journal       = "arXiv [cs.CL]",
+  abstract      = "This work investigates distillation methods for large
+                   language models (LLMs) with the goal of developing compact
+                   models that preserve high performance. Several existing
+                   approaches are reviewed, with a discussion of their
+                   respective strengths and limitations. An improved method
+                   based on the ShortGPT approach has been developed, building
+                   upon the idea of incorporating iterative evaluation of layer
+                   importance. At each step, importance is assessed by measuring
+                   performance degradation when individual layers are removed,
+                   using a set of representative datasets. This process is
+                   combined with further training using a joint loss function
+                   based on KL divergence and mean squared error. Experiments on
+                   the Qwen2.5-3B model show that the number of layers can be
+                   reduced from 36 to 28 (resulting in a 2.47 billion parameter
+                   model) with only a 9.7\% quality loss, and to 24 layers with
+                   an 18\% loss. The findings suggest that the middle
+                   transformer layers contribute less to inference, underscoring
+                   the potential of the proposed method for creating efficient
+                   models. The results demonstrate the effectiveness of
+                   iterative distillation and fine-tuning, making the approach
+                   suitable for deployment in resource-limited settings.",
+  month         =  "7~" # nov,
+  year          =  2025,
+  url           = "http://dx.doi.org/10.48550/arXiv.2511.05085",
+  archivePrefix = "arXiv",
+  primaryClass  = "cs.CL",
+  eprint        = "2511.05085",
+  doi           = "10.48550/arXiv.2511.05085"
+}
