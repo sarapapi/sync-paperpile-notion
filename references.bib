@@ -6707,21 +6707,22 @@
                projector and a frozen text LLM (Qwen2.5 at 1.5B, 3B and 7B, and
                Llama at similar sizes). They remove a contiguous block of
                layers, chosen as the block whose input and output hidden states
-               are closest in angle, and they heal by a small LoRA on the MLP of
-               the layer that receives the cut, together with the projector.
-               Text-only and speech inputs point to the same blocks, so the
-               block can be chosen from text forward passes. The same blocks are
-               redundant for speech recognition and for speech translation
-               (CoVoST2 French→English and English→German). Larger decoders
-               tolerate a deeper cut: a 7–8B model keeps recognition quality
-               with about 60\% of its layers, while Qwen2.5-1.5B stays inside
-               their threshold only up to a 25\% cut and Qwen2.5-3B up to about
-               31\%. Healing the decoder alone is not enough; on Qwen2.5-7B with
-               29\% of the layers removed, word error on LibriSpeech test-clean
-               is 2.36 with the joint heal and 5.93 with the decoder heal alone.
-               Useful to build model S: a way to pick the Thinker block, with
-               the warning that a 1.5–3B decoder cannot be cut as hard as a 7B
-               one, and that the projector has to be healed with it."
+               are closest in angle, and they heal it with a small LoRA on the
+               MLP of the layer that receives the cut, together with the
+               projector. Text-only and speech inputs point to the same blocks,
+               so the block can be chosen from text forward passes. The same
+               blocks are redundant for speech recognition and for speech
+               translation (CoVoST2 French→English and English→German). Larger
+               decoders tolerate a deeper cut: a 7–8B model keeps recognition
+               quality with about 60\% of its layers, while Qwen2.5-1.5B stays
+               inside their threshold only up to a 25\% cut and Qwen2.5-3B up to
+               about 31\%. Healing the decoder alone is not enough; on
+               Qwen2.5-7B with 29\% of the layers removed, word error on
+               LibriSpeech test-clean is 2.36 with the joint heal and 5.93 with
+               the decoder heal alone. Useful to build model S: a way to pick
+               the Thinker block, with the warning that a 1.5–3B decoder cannot
+               be cut as hard as a 7B one, and that the projector has to be
+               healed with it."
 }
 
 @ARTICLE{Zhe_Chen_Weiyun_Wang_Hao_Tian_Shenglong_Ye_Zhangwei_Gao_Erfei_Cui_Wenwen_Tong_Kongzhi_Hu_Jiapeng_Luo_Zheng_Ma_Ji_Ma_Jiaqi_Wang_Xiaoyi_Dong_Hang_Yan_Hewei_Guo_Conghui_He_Botian_Shi_Zhenjiang_Jin_Chao_Xu_Bin_Wang_Xingjian_Wei_Wei_Li_Wenjian_Zhang_Bo_Zhang_Pinlong_Cai_Licheng_Wen_Xiangchao_Yan_Min_Dou_Lewei_Lu_Xizhou_Zhu_Tong_Lu_Dahua_Lin_Yu_Qiao_Jifeng_Dai_Wenhai_Wang2024-ns,
